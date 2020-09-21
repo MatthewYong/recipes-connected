@@ -15,9 +15,9 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 
 mongo = PyMongo(app)
 
-@app.route('/')
-def test():
-    return 'Hello Test'
+@app.route('/get_recipes')
+def get_recipes():
+    return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
