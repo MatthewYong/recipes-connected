@@ -6,3 +6,15 @@ body{
     color: #152a23;
     font-family: 'Playfair Display', serif, sans-serif;
 }
+
+.sm-font{
+    font-size: 0.75rem;
+}
+
+.md-font{
+    font-size: 1.25rem;
+}
+
+.lg-font{
+    font-size: 2rem;
+}
