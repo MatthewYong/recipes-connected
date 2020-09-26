@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap:100,200,300,400,500,600,700');
 
-
 body{
     background-color: #F0F0F0;
     color: #152a23;
@@ -23,6 +22,18 @@ body{
     background-color: #2222;
 }
 
+.nav-hover:hover{
+    color: rgb(79, 136, 6);
+}
+
 .social-media{
     color: #152a23;
+}
+
+.social-media:hover{
+    color: rgb(79, 136, 6);
+}
+
+#copyright{
+    padding-top: 0.3rem;
 }
