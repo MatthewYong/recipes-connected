@@ -31,9 +31,9 @@ footer{
     color: rgb(79, 136, 6);
 }
 
-#nav-bg-colour{
-    background-color:rgba(120, 189, 29, 0.705);
-    padding: 1.2rem 0 1.2rem 0; 
+#navbar-custom{
+    background-color:rgba(82, 194, 30, 0.705);
+    padding: 1rem 0 1rem 0; 
 }
 
 #logo{
