@@ -31,25 +31,15 @@ footer{
     color: rgb(79, 136, 6);
 }
 
-.nav-button{
-    color: #ffff;
-    background-color: rgba(231, 10, 10, 0.884);
-    border-radius: 0.25rem;
-    border: solid 0.125rem #000000;
-    font-size: 1rem;    
-    text-transform: uppercase;   
-    padding:0.3125rem 1.25rem 0.3125rem 1.25rem;        
-}
-
 #nav-bg-colour{
     background-color:rgb(79, 136, 6);
     padding: 1.2rem 0 1.2rem 0; 
 }
-
+/*
 #logo{
     position: absolute;
     top: 0.5rem;
-}
+}*/
 
 #logo:hover{
     color: rgb(79, 136, 6);    
