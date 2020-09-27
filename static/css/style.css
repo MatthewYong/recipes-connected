@@ -32,14 +32,13 @@ footer{
 }
 
 #nav-bg-colour{
-    background-color:rgb(79, 136, 6);
+    background-color:rgba(120, 189, 29, 0.705);
     padding: 1.2rem 0 1.2rem 0; 
 }
-/*
+
 #logo{
-    position: absolute;
-    top: 0.5rem;
-}*/
+    color: rgb(0, 0, 0);
+}
 
 #logo:hover{
     color: rgb(79, 136, 6);    
