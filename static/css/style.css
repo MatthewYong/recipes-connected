@@ -8,6 +8,7 @@ body{
 }
 
 footer{
+    text-align: center;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -28,6 +29,16 @@ footer{
 /*Navbar*/
 .nav-hover:hover{
     color: rgb(79, 136, 6);
+}
+
+.nav-button{
+    color: #ffff;
+    background-color: rgba(231, 10, 10, 0.884);
+    border-radius: 0.25rem;
+    border: solid 0.125rem #000000;
+    font-size: 1rem;    
+    text-transform: uppercase;   
+    padding:0.3125rem 1.25rem 0.3125rem 1.25rem;        
 }
 
 #nav-bg-colour{
@@ -53,7 +64,6 @@ footer{
 .social-media:hover{
     color: rgb(79, 136, 6);
 }
-
 
 #copyright{
     padding-top: 1.3rem;
