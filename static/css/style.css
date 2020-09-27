@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap:100,200,300,400,500,600,700');
 
+/*General styling*/
 body{
     background-color: #F0F0F0;
     color: #152a23;
@@ -24,10 +25,6 @@ footer{
     font-size: 2rem;
 }
 
-.hf-bg{
-    background-color: #2222;
-}
-
 .nav-hover:hover{
     color: rgb(79, 136, 6);
 }
@@ -40,6 +37,15 @@ footer{
     color: rgb(79, 136, 6);
 }
 
+#logo{
+    position: absolute;
+    top: 0;
+}
+
+#logo:hover{
+    color: rgb(79, 136, 6);    
+}
+
 #copyright{
-    padding-top: 0.3rem;
+    padding-top: 1.3rem;
 }

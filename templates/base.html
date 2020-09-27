@@ -19,10 +19,12 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light hf-bg">
-        <a class="navbar-brand nav-hover lg-font" href="#">Recipes Connected</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div>
+            <a class="navbar-brand nav-hover lg-font" id="logo" href="{{url_for('home')}}">Recipes Connected</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto md-font">
                 <li class="nav-item active">
@@ -47,10 +49,7 @@
 <footer>
  	<div class="container-fluid">
 		<div class="row hf-bg">
-			<div class="col-8 md-font">
-				<p id="copyright"><i class="far fa-copyright" aria-hidden="true"></i>
-					<span class="sr-only">Copyright</span> 2020 Matthew Yong All Rights Reserved</p>
-			</div>
+            <div class="col-4"></div>
 			<div class="col-1 col-md-1">
                 <a href="https://twitter.com" class="social-media lg-font" target="_blank" rel="noopener">
                 <i class="fab fa-twitter-square" aria-hidden="true"></i>
@@ -74,7 +73,16 @@
                 <i class="fab fa-instagram-square" aria-hidden="true"></i>
 				<span class="sr-only">twitter</span>
 				</a>
-			</div>                                     
+			</div>
+            <div class="col-4"></div>                                     
+		</div>
+		<div class="row">
+            <div class="col-5"></div>
+			<div class="col-2 sm-font">
+				<p id="copyright"><i class="far fa-copyright" aria-hidden="true"></i>
+					<span class="sr-only">Copyright</span> 2020 Matthew Yong All Rights Reserved</p>
+			</div>
+            <div class="col-5"></div>
 		</div>
  	</div>
     
