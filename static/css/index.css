@@ -7,3 +7,11 @@
     width: 100%;
     height: 100vh;
 }
+
+.welcome{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 10rem 0 1rem 0;
+}
