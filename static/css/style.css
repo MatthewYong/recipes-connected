@@ -26,6 +26,10 @@ footer{
 }
 
 /*Navbar*/
+nav a{
+    color: #152a23;
+}
+
 .nav-hover:hover{
     color: rgb(79, 136, 6);
 }
@@ -36,7 +40,7 @@ footer{
 }
 
 #logo{
-    color: rgb(0, 0, 0);
+    color: #152a23;
 }
 
 #logo:hover{
