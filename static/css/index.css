@@ -1,9 +1,9 @@
 .image-hero{
     background-image: url("../images/image-banner1.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
     width: 100%;
     height: 100vh;
 }
@@ -13,7 +13,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0.5rem;
     padding: 2rem 0 1.25rem 0;
-    margin: 10rem 0 1rem 0;
+    margin: 8rem 0 5rem 0;
 }
 
 .recipe-category{
@@ -22,8 +22,8 @@
 
 .recipe-box{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);    
+    background-color: rgba(77, 197, 7, 0.8);    
     border-radius: 0.1rem;
-    padding: 5rem 1rem 5rem 1rem;
-    margin-top: 1rem;    
+    padding: 7rem 1rem 5rem 1rem;
+    margin-top: 3rem;    
 }
