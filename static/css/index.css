@@ -10,8 +10,8 @@
 
 .welcome{
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.25rem 0 1.25rem 0;
     margin: 10rem 0 1rem 0;
 }
