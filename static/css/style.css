@@ -10,7 +10,7 @@ body{
 footer{
     text-align: center;
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .sm-font{
@@ -58,5 +58,5 @@ nav a{
 }
 
 #copyright{
-    padding-top: 1.3rem;
+    padding-top: 0.5rem;
 }
