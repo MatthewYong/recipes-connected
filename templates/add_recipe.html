@@ -4,18 +4,21 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
 <div class="image-bg-recipe">
-    <form>
-        <label for="rname">Recipe Name</label>
-        <div>
-            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
-        </div>        
-
-        <input type="submit" value="Submit">      
-                    
-                    
-                    
-                    
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-10 add_recipe">
+                <form>
+                    <label for="rname">Recipe Name</label>
+                        <div>
+                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                        </div>
+                    <input type="submit" value="Submit">                 
+                </form>              
+            </div>
+            <div class="col-2"></div>  
+        </div>
+    </div>
 </div>
 
 
