@@ -21,13 +21,26 @@ mongo = PyMongo(app)
 def home():
     return render_template("index.html")
 
+
 @app.route('/all_recipes')
 def all_recipes():
     return render_template("recipes.html")
 
+
+@app.route('/add_recipe')
+def add_recipe():
+    return render_template("add_recipe.html")
+
+
+@app.route('/edit_recipe')
+def edit_recipe():
+    return render_template("edit_recipe.html")
+
+
 @app.route('/register')
 def register():
     return render_template("register.html")
+
 
 @app.route('/login')
 def login():
