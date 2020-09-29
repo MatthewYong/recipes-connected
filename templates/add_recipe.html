@@ -3,20 +3,22 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-<section>
-    <div class="image-bg-recipe">
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8">
-                    <h2>Add your Recipe</h2>
-                    <p class="md-font">Test</p>
-                </div>
-                <div class="col-2"></div>
-            </div>   
-        </div>
-    </div>
-</section>
+<div class="image-bg-recipe">
+    <form>
+        <label for="rname">Recipe Name</label>
+        <div>
+            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+        </div>        
+
+        <input type="submit" value="Submit">      
+                    
+                    
+                    
+                    
+    </form>
+</div>
+
+
 
 
 {% endblock %}
