@@ -1,6 +1,5 @@
 .image-bg-recipe {
     background-image: url("../images/image-bg-recipe.jpg");
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
