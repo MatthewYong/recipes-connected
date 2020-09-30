@@ -1,27 +1,26 @@
+label{
+    font-size: 1.25rem;
+}
+
 .image-bg-recipe {
     background-image: url("../images/image-bg-recipe.jpg");
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
 }
 
 .add_recipe{
     text-align: center;
     background-color: rgba(253, 243, 243, 0.781);
     border-radius: 0.5rem;
-    padding: 1rem 5rem 0 5rem;
-    margin-top: 10rem;
+    padding: 2rem 5rem 2rem 5rem;
+    margin: 5rem 0 2rem 0;
 }
 
 .recipe-input{
-    margin-top: 1rem;
+    text-align: center;
+    margin: 0.5rem 0 1rem 0;
     width: 50rem;
-
 }
 
-.label-recipe{
-    text-align: center;    
-}
 
