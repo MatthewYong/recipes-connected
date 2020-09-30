@@ -23,4 +23,8 @@ label{
     width: 50rem;
 }
 
+#ingredients, #instructions{
+    text-align: left;
+}
+
 
