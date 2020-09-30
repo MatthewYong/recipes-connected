@@ -6,10 +6,9 @@
 <div class="image-bg-recipe">
     <div class="container">
         <div class="row mx-auto">
-            <div class="col-2"></div>
-            <div class="col-8 add_recipe sm-font">
+            <div class="col add_recipe">
                 <form>
-                    <label for="name">Recipe Name</label>
+                    <label class="label-recipe" for="name">Recipe Name</label>
                         <div>
                             <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>
@@ -25,18 +24,17 @@
                         <div>
                             <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>                                
-                    <label for="ingredients">Ingredient List</label>
+                    <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
                             <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>                                
                     <label for="instructions">Instructions</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                            <textarea name="instructions" id="instructions" cols="10" rows="20"></textarea>
                         </div>                          
                     <input type="submit" value="Share!">                 
                 </form>              
-            </div>
-            <div class="col-2"></div>  
+            </div>  
         </div>
     </div>
 </div>

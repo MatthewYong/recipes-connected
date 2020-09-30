@@ -11,6 +11,11 @@
     text-align: center;
     background-color: rgba(253, 243, 243, 0.781);
     border-radius: 0.5rem;
-    padding-top: 1rem;
+    padding: 1rem 25rem 0 25rem;
     margin-top: 10rem;
+}
+
+
+.label-ingredients{
+
 }
