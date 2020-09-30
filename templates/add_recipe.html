@@ -7,30 +7,30 @@
     <div class="container">
         <div class="row mx-auto">
             <div class="col add_recipe">
-                <form>
+                <form class="recipe-form">
                     <label class="label-recipe" for="name">Recipe Name</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>                        
                     <label for="category">Category</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>                        
                     <label for="description">Description</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>
                         </div>                                
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <input type="text" name="rname" aria-label="recipe name" maxlength="50" required>
-                        </div>                                
-                    <label for="instructions">Instructions</label>
+                            <textarea class="recipe-input" name="ingredients" id="ingredients" cols="50" rows="8"></textarea>
+                        </div>                          
+                    <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea name="instructions" id="instructions" cols="10" rows="20"></textarea>
+                            <textarea class="recipe-input" name="instructions" id="instructions" cols="50" rows="8"></textarea>
                         </div>                          
                     <input type="submit" value="Share!">                 
                 </form>              
