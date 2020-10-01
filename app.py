@@ -29,7 +29,9 @@ def all_recipes():
 
 @app.route('/add_recipe', methods=['POST'])
 def add_recipe():
-    return render_template("add_recipe.html")
+    recipes = mongo.db.recipes
+    recipes.insert_one(request.form.to_dict())
+    return redirect(url_for('home'))
 
 
 @app.route('/edit_recipe')
