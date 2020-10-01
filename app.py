@@ -27,8 +27,13 @@ def all_recipes():
     return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
-@app.route('/insert_recipe', methods=['POST'])
+@app.route('/add_recipe')
 def add_recipe():
+    return render_template("add_recipe.html")
+
+
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipe():
     test = mongo.db.recipes
     test.insert_one(request.form.to_dict())
     return redirect(url_for('home'))
