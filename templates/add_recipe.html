@@ -12,7 +12,7 @@
         </div>
         <div class="row mx-auto">
             <div class="col add_recipe">
-                <form action="{{ url_for('add_recipe)') }}" method="POST" class="recipe-form">
+                <form action="{{ url_for('insert_recipe)') }}" method="POST" class="recipe-form">
                     <label for="name">Recipe Name</label>
                         <div>
                             <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>
