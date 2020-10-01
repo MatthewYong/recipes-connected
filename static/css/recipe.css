@@ -9,6 +9,11 @@ label{
     width: 100%;
 }
 
+.recipe-header{
+    text-align: center;
+    padding-top: 2rem;
+}
+
 .add_recipe{
     text-align: center;
     background-color: rgba(253, 243, 243, 0.781);

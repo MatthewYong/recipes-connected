@@ -6,13 +6,13 @@
 <div class="image-bg-recipe">
     <div class="container">
         <div class="row">
-            <div class="col ">
+            <div class="col recipe-header">
             <h1>Connect your Recipe</h1>
             </div>    
         </div>
         <div class="row mx-auto">
             <div class="col add_recipe">
-                <form class="recipe-form">
+                <form action="{{ url_for('add_recipe)') }}" method="POST" class="recipe-form">
                     <label for="name">Recipe Name</label>
                         <div>
                             <input class="recipe-input" type="text" name="rname" aria-label="recipe name" maxlength="50" required>

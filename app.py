@@ -24,10 +24,10 @@ def home():
 
 @app.route('/all_recipes')
 def all_recipes():
-    return render_template("recipes.html")
+    return render_template("recipes.html", recipes=mongo.db.recipes.find())
 
 
-@app.route('/add_recipe')
+@app.route('/add_recipe', methods=['POST'])
 def add_recipe():
     return render_template("add_recipe.html")
 
