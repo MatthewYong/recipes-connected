@@ -39,10 +39,9 @@ def insert_recipe():
     return redirect(url_for('all_recipes'))
 
 
-#@app.route('/get_recipe/<recipe_id>')
-#def get_recipe(recipe_id):
-
-    #return render_template("get_recipe.html")
+@app.route('/get_recipe/')
+def get_recipe():
+    return render_template("get_recipe.html")
 
 
 @app.route('/edit_recipe')

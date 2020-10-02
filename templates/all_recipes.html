@@ -9,7 +9,7 @@
 	<div class="row">
 		{% for recipe in recipes %}
 		<div class="col-4">
-        <a href="">
+        <a href="{{ url_for('get_recipe') }}">
 			<div class="recipe-box">
 				<div>
 					<img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
