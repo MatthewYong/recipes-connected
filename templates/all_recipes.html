@@ -1,15 +1,14 @@
 {% extends 'base.html' %} {% block content %}
 
+
 <!--Link to css files-->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-
-
 <div class="container">
 	<div class="row">
 		{% for recipe in recipes %}
-		<div class="col-3">
+		<div class="col-4">
 			<div class="recipe-box">
 				<div>
 					<img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
