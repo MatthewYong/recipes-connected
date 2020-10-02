@@ -36,11 +36,16 @@ label{
 
 /*All recipes styling */
 
-.recipe-box{
+.recipe-box-content{
     display: block;
+    color: #152a23;
     padding: 1rem;
     border: 0.1rem solid rgb(0, 0, 0);
     margin: 1rem 0 1rem 0;
+}
+
+.recipe-box:hover{
+    text-decoration: none;
 }
 
 .recipe-image{
