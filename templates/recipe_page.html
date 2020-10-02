@@ -2,8 +2,9 @@
 {% block content %}
     {% for recipe in recipes%}
     {{recipe.recipe_name}}
+    {{recipe_category}}
     {{recipe.recipe_description}}   
-    {{recipe.recipe_ingredient_list}}  
-    {{recipe.recipe_method}} 
+    {{recipe.recipe_ingredients}}  
+    {{recipe.recipe_instructions}} 
     {% endfor %}
 {% endblock %}

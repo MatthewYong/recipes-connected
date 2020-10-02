@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+
+<!--Link to css files-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% for recipe in recipes%}
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+{{recipe._id}}
+{{recipe.recipe_name}}
+{{recipe.recipe_description}}
+{{recipe.recipe_category}}
+{{recipe.recipe_ingredients}}
+{{recipe.recipe_instructions}}
+{% endfor %}
+
+{% endblock %}
