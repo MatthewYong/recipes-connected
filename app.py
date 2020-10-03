@@ -64,7 +64,7 @@ def update_recipe(recipe_id):
                             "recipe_ingredients": request.form.get('recipe_ingredients'),
                             "recipe_instructions": request.form.get('recipe_instructions')
                           })
-    return redirect(url_for('get_recipe'))
+    return redirect(url_for('get_recipe', recipe_id=recipe_id))
 
 
 @app.route('/register')
