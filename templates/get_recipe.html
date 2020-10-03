@@ -1,14 +1,18 @@
 {% extends 'base.html' %} {% block content %}
 
+
+<!--Link to css files-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 <div class="container">
 	<div class="row">
-		{% for recipe in recipes %}
 		<div class="col-4">
-			<div class="recipe-box">
+			<div class="get-recipe-box">
 				<div>
-					<img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
+					<img class="get-recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
                 </div>
-				<div>
+				<div class="get-recipe-box-content">
 					<h4>{{recipe.recipe_name}}</h4>
 					<p>{{recipe.recipe_description}}</p>
 					<p> {{recipe.recipe_category}} </p>
@@ -16,7 +20,6 @@
 				</div>
 			</div>
 		</div>
-        {% endfor %}
 	</div>
 </div>
 

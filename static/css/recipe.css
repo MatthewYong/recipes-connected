@@ -1,8 +1,8 @@
+/*Add recipe page styling*/
 label{
     font-size: 1.25rem;
 }
 
-/*Add recipe styling */
 .image-bg-recipe {
     background-image: url("../images/image-bg-recipe.jpg");
     background-position: center;
@@ -34,7 +34,7 @@ label{
 }
 
 
-/*All recipes styling */
+/*All recipes page styling*/
 
 .recipe-box-content{
     display: block;
@@ -51,4 +51,19 @@ label{
 .recipe-image{
     width: 5rem;
     height: 5rem;
+}
+
+
+/*Get recipe page styling*/
+.get-recipe-box{
+    margin: 2rem 0 2rem 0;
+}
+
+.get-recipe-image{
+    width: 30rem;
+    height: 30rem;
+}
+
+.get-recipe-box-content{
+    padding: 1rem;
 }

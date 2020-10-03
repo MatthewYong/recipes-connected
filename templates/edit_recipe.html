@@ -1,4 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-4">
+			<div class="recipe-box">
+				<div>
+					<img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
+                </div>
+				<div>
+					<h4>{{recipe.recipe_name}}</h4>
+					<p>{{recipe.recipe_description}}</p>
+					<p> {{recipe.recipe_category}} </p>
+                    <p> {{recipe.recipe_preptime}} </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}{% extends 'base.html' %}
 
 {% block content %}
 

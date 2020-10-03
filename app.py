@@ -46,8 +46,9 @@ def get_recipe(recipe_id):
 
 
 @app.route('/edit_recipe')
-def edit_recipe():
-    return render_template("edit_recipe.html")
+def edit_recipe(recipe_id):
+    one_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=one_recipe)
 
 
 @app.route('/register')
