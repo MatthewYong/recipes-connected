@@ -47,14 +47,14 @@
                             <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions"
                             required>{{recipe.recipe_instructions}}</textarea>
                         </div>                          
-                    <button type="submit" name="action">Update</button>
+                    <button onclick="update_alert()" type="submit" name="action">Update</button>
                 </form>              
             </div>  
         </div>
     </div>
 </div>
 
-
-
+<!--Link to script recipe.js-->
+<script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
 
 {% endblock %}
