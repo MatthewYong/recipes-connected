@@ -74,7 +74,7 @@ label{
     padding: 1rem;
 }
 
-.edit-button{
+.get-recipe-button{
     border: 0.1rem solid #000000;
     border-radius: 0.1rem;
     color: #152a23;
@@ -82,10 +82,14 @@ label{
     padding: 0.5rem;
 }
 
-.edit-button:hover{
+.get-recipe-button:hover{
     color: #152a23;
     background-color: #fff;
     border: 0.2rem solid #000000;
     text-decoration: none;    
+}
+
+#delete-recipe-button{
+    background-color: rgb(118, 231, 103);
 }
 
