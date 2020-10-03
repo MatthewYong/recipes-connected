@@ -31,10 +31,11 @@
 		</div>
 		<div>
 			<div>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="get-recipe-button" id="delete-recipe-button">Delete</a>
-			</div>
+                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="get-recipe-button" id="delete-recipe-button" onclick="alert('Recipe is Deleted!')">Delete</a>
+			</div>          
 		</div>              
 	</div>
 </div>
 
 {% endblock %}
+
