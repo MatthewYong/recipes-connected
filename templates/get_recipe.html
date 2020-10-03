@@ -17,21 +17,22 @@
 					<p>{{recipe.recipe_description}}</p>
 					<p> {{recipe.recipe_category}} </p>
                     <p> {{recipe.recipe_preptime}} </p>
+                    <p> {{recipe._id}} </p>                   
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row">  
 		<div class="col-6">
 			<div>
-                <a href="" class="edit-button">Edit</a>
+                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="edit-button">Edit</a>
 			</div>
 		</div>
 		<div>
 			<div>
                 <a href="" class="delete-button">Done</a>
 			</div>
-		</div>        
+		</div>              
 	</div>
 </div>
 

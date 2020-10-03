@@ -45,10 +45,15 @@ def get_recipe(recipe_id):
     return render_template("get_recipe.html", recipe=one_recipe)
 
 
-@app.route('/edit_recipe')
+"""@app.route('/edit_recipe')
+def edit_recipe():
+    return render_template("edit_recipe.html")"""
+
+
+@app.route('/edit_recipe/<recipe_id>')
 def edit_recipe(recipe_id):
-    one_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("edit_recipe.html", recipe=one_recipe)
+    edit_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("edit_recipe.html", recipe=edit_recipe)
 
 
 @app.route('/register')
