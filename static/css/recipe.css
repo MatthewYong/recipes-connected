@@ -1,4 +1,5 @@
 /*Add recipe page styling*/
+
 label{
     font-size: 1.25rem;
 }
@@ -36,6 +37,11 @@ label{
 
 /*All recipes page styling*/
 
+.recipes-header{
+    padding: 2rem;
+    text-align: center;
+}
+
 .recipe-box-content{
     display: block;
     color: #152a23;
@@ -67,3 +73,4 @@ label{
 .get-recipe-box-content{
     padding: 1rem;
 }
+
