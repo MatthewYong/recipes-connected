@@ -32,8 +32,8 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-@app.route('/insert_recipe', methods=['POST'])
-def insert_recipe():
+@app.route('/add_mongodb_recipe', methods=['POST'])
+def add_mongodb_recipe():
     recipe = mongo.db.recipes
     recipe.insert_one(request.form.to_dict())
     return redirect(url_for('all_recipes'))
@@ -65,6 +65,12 @@ def update_recipe(recipe_id):
                             "recipe_instructions": request.form.get('recipe_instructions')
                           })
     return redirect(url_for('get_recipe', recipe_id=recipe_id))
+
+
+@app.route('/delete_recipe/<recipe_id>')
+def delete_recipe(recipe_id):
+    delete_recipe = mongo.db.recipes.remove({"_id": ObjectId(recipe_id)}
+    return render_template("all_recipes.html", delete_recipe)
 
 
 @app.route('/register')
