@@ -8,39 +8,39 @@
         <div class="row">
             <div class="col recipe-header">
             <h1>Edit your Recipe</h1>
-            <h4>{{recipe.recipe_name}}</h4>
             </div>    
         </div>
         <div class="row mx-auto">
             <div class="col recipe-form-cover">
-                <form action="{{ url_for('insert_recipe') }}" method="POST" class="recipe-form">
+                <form action="{{ url_for('update_recipe', recipe_id=recipe._id) }}" method="POST" class="recipe-form">
                     <label for="name">Recipe Name</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" maxlength="50" value="{{edit_recipe.recipe_name}}" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" required>
+                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" value="{{edit_recipe.recipe_image}}" required>
                         </div>                        
                     <label for="category">Category</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_category" aria-label="category" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="recipe_category" aria-label="category" maxlength="50" value="{{edit_recipe.recipe_category}}"  required>
                         </div>                        
                     <label for="description">Description</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" value="{{edit_recipe.recipe_description}}"  required>
                         </div>       
                     <label for="description">Preparation Time</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_preptime" aria-label="description"  placeholder="30 mins" maxlength="20" required>
+                            <input class="recipe-input" type="text" name="recipe_preptime" aria-label="description"  placeholder="30 mins" maxlength="20" value="{{edit_recipe.recipe_preptime}}"  required>
                         </div>                                                   
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required></textarea>
+                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required>{{edit_recipe.recipe_ingredients}}</textarea>
                         </div>                          
                     <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" required></textarea>
+                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions"
+                            required>{{edit_recipe.recipe_instructions}}</textarea>
                         </div>                          
                     <button type="submit" name="action">Update</button>            
                 </form>              
