@@ -25,8 +25,12 @@
                         </div>                        
                     <label for="category">Category</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_category" aria-label="category" maxlength="50" 
-                            value="{{recipe.recipe_category}}" required>
+                            <select name="recipe_category" class="recipe-input">
+                            {% for cat in categories %}
+                                <option value="{{cat.recipe_category}}">
+                                {{cat.recipe_category}}</option> 
+                            {% endfor %}         
+                            </select>
                         </div>                        
                     <label for="description">Description</label>
                         <div>
