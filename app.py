@@ -29,7 +29,7 @@ def all_recipes():
 
 @app.route('/category_recipes/<category>')
 def category_recipes(category):
-    cat = { "recipe_category": category }
+    cat = {"recipe_category": category}
     return render_template("category_recipes.html", recipes = mongo.db.recipes.find(cat))
 
 
