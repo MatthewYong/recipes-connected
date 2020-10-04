@@ -10,8 +10,7 @@
         <h1>{{title.recipe_category}}</h1>
     </div>
 	<div class="row">
-		{% for recipe in recipes %}    
-        {%  if recipes.count() > 0 %}               
+		{% for recipe in recipes %}                  
 		<div class="col-4">
         <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}" class="recipe-box">
 			<div class="recipe-box-content">
@@ -26,15 +25,7 @@
 				</div>
 			</div>
         </a>
-		</div>    
-        {% else %}
-        <div>
-        	<div class="col-4">
-                <h4>No recipes</h4>
-            </div>
-        </div>
-        {% endif %}
-
+		</div>  
         {% endfor %}
 	</div>
 </div>
