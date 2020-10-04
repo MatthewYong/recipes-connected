@@ -31,7 +31,8 @@ def all_recipes():
 def category_recipes(category):
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
-    return render_template("category_recipes.html", recipes=recipes)
+    title = mongo.db.recipes.find_one(cat)    
+    return render_template("category_recipes.html", recipes=recipes, title=title)
 
 
 @app.route('/add_recipe')
