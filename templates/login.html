@@ -1,5 +1,22 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %} 
 
-{% block content %}
+<div class="container">
+    <div class="row">
+        <div>
+            <form action="" method="POST" class="login-register-form">
+                <label for="name">Username</label>
+                <div>
+                    <input class="login-input" type="text" name="username" aria-label="username" maxlength="20" placeholder="Username" required>
+                </div>
+                <label for="name">Password</label>                
+                <div>
+                    <input class="login-input" type="text" name="password_name" aria-label="password" maxlength="20" placeholder="Password" required>
+                </div>                  
+            </form>
+        </div>    
+    </div>
+</div>
+
+
 
 {% endblock %}
