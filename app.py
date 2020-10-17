@@ -1,7 +1,8 @@
 import os
-from flask import Flask, render_template, request, url_for, redirect, session
+from flask import Flask, render_template, request, url_for, redirect, session, flash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from functools import wraps
 
 from os import path
 if path.exists("env.py"):
@@ -14,6 +15,17 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 
 
 mongo = PyMongo(app)
+
+
+def login_required(f):
+    @wraps(f)
+    def wrap(*args, **kwargs):
+        if 'user' in session:
+            return f(*args, **kwargs)
+        else:
+            flash("You need to login first!")
+            return redirect(url_for('home'))
+    return wrap
 
 
 @app.route('/')
@@ -36,6 +48,7 @@ def category_recipes(category):
 
 
 @app.route('/add_recipe')
+@login_required
 def add_recipe():
     return render_template("add_recipe.html", categories=mongo.db.categories.find())
 
@@ -84,8 +97,8 @@ def delete_recipe(recipe_id):
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        users = mongo.db.users
-        users.insert_one(request.form.to_dict())
+        user = mongo.db.users
+        user.insert_one(request.form.to_dict())
         return redirect(url_for('home'))
     return render_template("register.html")
 
