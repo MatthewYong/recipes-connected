@@ -1,12 +1,19 @@
 .logreg-box{
     border: 1px solid rgba(34, 34, 34, 0.829);
-    background-color: #fff;
+    background-color: rgb(211, 156, 156);
     padding: 1rem;
     margin: 5rem 0 5rem 0;
 }
 
 .logreg-form{
     padding-bottom: 2rem;
+}
+
+.logreg-header{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.1rem 0 1rem 0;
+    font-size: 1.1rem;
 }
 
 .login-input{
@@ -16,15 +23,11 @@
     border-radius: 0.1rem;
 }
 
-label{
-    font-size: 1.1rem;
-    font-weight: bold; 
-}
-
 .logreg-button{
+    color: #fff;
     margin: 0.2rem 0 1rem 0;
     width: 20rem;
     border: 1px solid rgba(34, 34, 34, 0.829);
-    border-radius: 0.1rem;    
+    border-radius: 0.2rem;    
     background-color: rgb(94, 94, 206);
 }
