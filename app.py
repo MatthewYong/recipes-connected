@@ -12,11 +12,13 @@ app = Flask(__name__)
 
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 
 mongo = PyMongo(app)
 
 
+#Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
