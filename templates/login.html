@@ -1,15 +1,18 @@
 {% extends 'base.html' %} {% block content %} 
+<!--Link to css files-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginregister.css') }}">
+
 
 <div class="container">
     <div class="row">
-        <div>
-            <form action="" method="POST" class="login-register-form">
-                <label for="name">Username</label>
-                <div>
+        <div class="col-4 logreg-box mx-auto">
+            <form action="" method="POST">
+                <label for="name">Username</label>               
+                <div class="logreg-form">    
                     <input class="login-input" type="text" name="username" aria-label="username" maxlength="20" placeholder="Username" required>
-                </div>
-                <label for="name">Password</label>                
-                <div>
+                </div>    
+                <label for="name">Password</label>   
+                <div class="logreg-form">        
                     <input class="login-input" type="text" name="password_name" aria-label="password" maxlength="20" placeholder="Password" required>
                 </div>                  
             </form>

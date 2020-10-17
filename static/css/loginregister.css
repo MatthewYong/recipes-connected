@@ -1,0 +1,13 @@
+.logreg-box{
+    padding: 5rem 0 5rem 0;
+}
+
+.logreg-form{
+    padding-bottom: 2rem;
+}
+
+.login-input{
+    width: 20rem;
+    border: 1px solid rgba(34, 34, 34, 0.829);
+    border-radius: 0.1rem;
+}
