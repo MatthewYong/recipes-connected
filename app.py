@@ -81,8 +81,12 @@ def delete_recipe(recipe_id):
     return redirect(url_for('all_recipes'))
 
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
+    if request.method == 'POST':
+        users = mongo.db.users
+        users.insert_one(request.form.to_dict())
+        return redirect(url_for('home'))
     return render_template("register.html")
 
 
