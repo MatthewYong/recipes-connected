@@ -1,5 +1,8 @@
 .logreg-box{
-    padding: 5rem 0 5rem 0;
+    border: 1px solid rgba(34, 34, 34, 0.829);
+    background-color: #fff;
+    padding: 1rem;
+    margin: 5rem 0 5rem 0;
 }
 
 .logreg-form{
@@ -7,7 +10,20 @@
 }
 
 .login-input{
+    height: 2rem;
     width: 20rem;
     border: 1px solid rgba(34, 34, 34, 0.829);
     border-radius: 0.1rem;
+}
+
+label{
+    font-size: 1.25rem;
+    font-weight: bold; 
+}
+
+.logreg-button{
+    width: 20rem;
+    border: 1px solid rgba(34, 34, 34, 0.829);
+    border-radius: 0.1rem;    
+    background-color: rgb(94, 94, 206);
 }
