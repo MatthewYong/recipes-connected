@@ -16,13 +16,11 @@
                 </div>  
                 <button class="logreg-button" type="submit" name="action">Log In</button>                            
                 <div>
-                    <p>Don't have an account? <a href="">Register here.</a></p>
+                    <p>Don't have an account? <a href="{{ url_for('register') }}">Register here.</a></p>
                 </div>                      
             </form>
         </div>    
     </div>
 </div>
-
-
 
 {% endblock %}

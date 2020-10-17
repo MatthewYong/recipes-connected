@@ -1,9 +1,10 @@
 .logreg-box{
-    border: 1px solid rgba(34, 34, 34, 0.829);
-    background-color: rgb(211, 156, 156);
     padding: 1rem;
     margin: 5rem 0 5rem 0;
-}
+    border: 1px solid rgba(34, 34, 34, 0.829);
+    border-radius: 0.1rem;
+    background-color: rgb(226, 208, 208);
+}    
 
 .logreg-form{
     padding-bottom: 2rem;
