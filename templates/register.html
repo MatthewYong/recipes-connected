@@ -1,5 +1,29 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %} 
+<!--Link to css files-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/loginregister.css') }}">
 
-{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-4 logreg-box mx-auto">
+            <form action="" method="POST">
+                <div class="logreg-header">Register</div>   
+                <div class="logreg-form">        
+                    <input class="login-input sm-font" type="text" name="email" aria-label="enter your email" placeholder="Enter your Email" required>
+                </div>                            
+                <div class="logreg-form">    
+                    <input class="login-input sm-font" type="text" name="username" aria-label="choose username" placeholder="Choose Username" required>
+                </div>    
+                <div class="logreg-form">        
+                    <input class="login-input sm-font" type="text" name="password_name" aria-label="choose password" placeholder="Choose Password" required>
+                </div>  
+                <button class="logreg-button" type="submit" name="action">Register</button>                            
+                <div>
+                    <p>Already registered? <a href="{{ url_for('login') }}">Log In here.</a></p>
+                </div>                      
+            </form>
+        </div>    
+    </div>
+</div>
 
 {% endblock %}
