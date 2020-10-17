@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row">
         <div class="col-4 logreg-box mx-auto">
-            <form action="" method="POST">
+            <form action="{{ url_for('login') }}" method="POST">
                 <div class="logreg-header">Log In</div>             
                 <div class="logreg-form">    
                     <input class="login-input sm-font" type="text" name="username" aria-label="username" placeholder="Username" required>

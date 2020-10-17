@@ -25,7 +25,7 @@ def login_required(f):
         if 'user' in session:
             return f(*args, **kwargs)
         else:
-            flash("You need to login first!")
+            flash("Please Log In First!")
             return redirect(url_for('home'))
     return wrap
 
@@ -105,8 +105,13 @@ def register():
     return render_template("register.html")
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
+    user = mongo.db.users
+    login_user = user.find_one({"name": request.form['username']})
+    if login_user:
+        session['username'] == request.form['username']
+        return redirect(url_for('home'))
     return render_template("login.html")
 
 
