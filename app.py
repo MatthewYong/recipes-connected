@@ -18,7 +18,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-#Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
+# Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
@@ -107,11 +107,14 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    user = mongo.db.users
-    login_user = user.find_one({"name": request.form['username']})
-    if login_user:
-        session['username'] == request.form['username']
-        return redirect(url_for('home'))
+    if request.method == 'POST':
+        user = mongo.db.users
+        login_user = user.find_one({"username": request.form['username']})
+    # Check if user exist in database
+        if login_user:
+            session['user'] = request.form['username']
+            return redirect(url_for('home'))
+        return 'Invalid username/password'
     return render_template("login.html")
 
 
