@@ -83,6 +83,7 @@ def edit_recipe(recipe_id):
 def update_recipe(recipe_id):
     update_recipe = mongo.db.recipes
     update_recipe.update({"_id": ObjectId(recipe_id)}, {
+        "recipe_username": request.form.get('recipe_username'),
         "recipe_name": request.form.get('recipe_name'),
         "recipe_image": request.form.get('recipe_image'),
         "recipe_category": request.form.get('recipe_category'),
