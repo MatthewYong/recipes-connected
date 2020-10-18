@@ -12,6 +12,9 @@
         <div class="row mx-auto">
             <div class="col recipe-form-cover">
                 <form action="{{ url_for('update_recipe', recipe_id=recipe._id) }}" method="POST" class="recipe-form">
+                    <div>
+                        <input class="recipe-input" type="hidden" name="recipe_username" value="{{session['user']}}">
+                    </div>                
                     <label for="name">Recipe Name</label>
                         <div>
                             <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" maxlength="50" 
