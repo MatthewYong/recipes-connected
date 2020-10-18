@@ -27,8 +27,8 @@ def login_required(f):
         if 'user' in session:
             return f(*args, **kwargs)
         else:
-            flash("Please Log In First!")
-            return redirect(url_for('home'))
+            flash("Please Login First!")
+            return redirect(url_for('login'))
     return wrap
 
 
@@ -142,6 +142,7 @@ def login():
 @app.route('/logout')
 def logout():
     session.pop("user", None)
+    flash("Logout Succesfull!")
     return redirect(url_for('home'))
 
 

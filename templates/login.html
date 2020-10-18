@@ -5,6 +5,18 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-4 mx-auto">
+        <!--Code used from https://pythonise.com/series/learning-flask/flask-message-flashing-->
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+    <div class="row">
         <div class="col-4 logreg-box mx-auto">
             <form action="{{ url_for('login') }}" method="POST">
                 <div class="logreg-header">Log In</div>             
