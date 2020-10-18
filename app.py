@@ -145,7 +145,7 @@ def logout():
         session.pop("user", None)
         flash("Logout Succesfull!")
     else:
-        flash("You are already logged out")
+        flash("You Are Already Logged Out")
     return redirect(url_for('login'))
 
 

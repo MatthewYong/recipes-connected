@@ -31,18 +31,21 @@
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('all_recipes')}}">All Recipes</a>
                 </li>
+                {%  if 'user' in session %}                
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('add_recipe')}}">Add Recipe</a>
-                </li>                            
+                </li>    
+                <li class="nav-item">
+                    <a class="nav-link nav-hover" href="{{url_for('logout')}}">Logout</a>
+                </li>                   
+                {% else %}                        
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('register')}}">Register</a>
                 </li>                                  
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('login')}}">Login</a>
-                </li>                  
-                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('logout')}}">Logout</a>
-                </li>                    
+                </li>                 
+                {% endif %}                 
             </ul>
         </div>
     </nav>
