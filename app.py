@@ -108,7 +108,7 @@ def register():
                 "email": request.form['email'].lower()})
         if existing_email is None:
             if existing_user is None:
-                # Code used from 
+                # Code used from http://zetcode.com/python/bcrypt/
                 hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
                 user.insert_one({
                             "email": request.form['email'].lower(),
@@ -127,8 +127,12 @@ def login():
         login_user = user.find_one({"username": request.form['username']})
     # Check if user exist in database
         if login_user:
-            session['user'] = request.form['username']
-            return redirect(url_for('home'))
+            loginpass = request.form['password'].encode('utf-8')
+            hashpass = bcrypt.hashpw(loginpass, bcrypt.gensalt())            
+            if bcrypt.checkpw(loginpass, hashpass):
+                session['user'] = request.form['username']
+                return redirect(url_for('home'))
+            return 'Invalid username/password'
         return 'Invalid username/password'
     return render_template("login.html")
 
