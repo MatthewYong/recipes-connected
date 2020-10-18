@@ -127,9 +127,9 @@ def login():
         login_user = user.find_one({"username": request.form['username']})
     # Check if user exist in database
         if login_user:
-            loginpass = request.form['password'].encode('utf-8')
-            hashpass = bcrypt.hashpw(loginpass, bcrypt.gensalt())            
-            if bcrypt.checkpw(loginpass, hashpass):
+            hashpass = bcrypt.hashpw(login_user['password'], bcrypt.gensalt())
+             # Code used from http://zetcode.com/python/bcrypt/
+            if bcrypt.checkpw(login_user['password'], hashpass):
                 session['user'] = request.form['username']
                 return redirect(url_for('home'))
             return 'Invalid username/password'
