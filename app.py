@@ -1,8 +1,10 @@
 import os
+import bcrypt
 from flask import Flask, render_template, request, url_for, redirect, session, flash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from functools import wraps
+
 
 from os import path
 if path.exists("env.py"):
@@ -102,10 +104,16 @@ def register():
         user = mongo.db.users
         existing_user = user.find_one({"username": request.form['username']})
         existing_email = user.find_one({"email": request.form['email']})
-        if existing_user and existing_email is None:
-            user.insert_one(request.form.to_dict())
-            return redirect(url_for('home'))
-        return 'The username and/or emailaddress already exist'
+        if existing_email is None:
+            if existing_user is None:
+                hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
+                user.insert_one({
+                            "email": request.form['email'],
+                            "username": request.form['username'],
+                            "password": hashpass})
+                return redirect(url_for('home'))
+            return 'The username already exist'
+        return 'The emailaddress already exist'
     return render_template("register.html")
 
 
