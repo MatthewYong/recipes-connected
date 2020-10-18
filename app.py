@@ -58,6 +58,7 @@ def add_recipe():
 
 
 @app.route('/add_recipe_mongodb', methods=['POST'])
+@login_required
 def add_recipe_mongodb():
     recipe = mongo.db.recipes
     recipe.insert_one(request.form.to_dict())
@@ -71,12 +72,14 @@ def get_recipe(recipe_id):
 
 
 @app.route('/edit_recipe/<recipe_id>')
+@login_required
 def edit_recipe(recipe_id):
     edit_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=edit_recipe, categories=mongo.db.categories.find())
 
 
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
+@login_required
 def update_recipe(recipe_id):
     update_recipe = mongo.db.recipes
     update_recipe.update({"_id": ObjectId(recipe_id)}, {
@@ -92,6 +95,7 @@ def update_recipe(recipe_id):
 
 
 @app.route('/delete_recipe/<recipe_id>')
+@login_required
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     return redirect(url_for('all_recipes'))
@@ -140,6 +144,7 @@ def login():
 
 # Session logout
 @app.route('/logout')
+@login_required
 def logout():
     if 'user' in session:
         session.pop("user", None)
