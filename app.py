@@ -47,7 +47,7 @@ def all_recipes():
 def category_recipes(category):
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
-    title = mongo.db.recipes.find_one(cat)    
+    title = mongo.db.recipes.find_one(cat)
     return render_template("category_recipes.html", recipes=recipes, title=title)
 
 
@@ -79,16 +79,15 @@ def edit_recipe(recipe_id):
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 def update_recipe(recipe_id):
     update_recipe = mongo.db.recipes
-    update_recipe.update({"_id": ObjectId(recipe_id)},
-                         {
-                            "recipe_name": request.form.get('recipe_name'),
-                            "recipe_image": request.form.get('recipe_image'),
-                            "recipe_category": request.form.get('recipe_category'),
-                            "recipe_description": request.form.get('recipe_description'),
-                            "recipe_preptime": request.form.get('recipe_preptime'),
-                            "recipe_ingredients": request.form.get('recipe_ingredients'),
-                            "recipe_instructions": request.form.get('recipe_instructions')
-                          })
+    update_recipe.update({"_id": ObjectId(recipe_id)}, {
+        "recipe_name": request.form.get('recipe_name'),
+        "recipe_image": request.form.get('recipe_image'),
+        "recipe_category": request.form.get('recipe_category'),
+        "recipe_description": request.form.get('recipe_description'),
+        "recipe_preptime": request.form.get('recipe_preptime'),
+        "recipe_ingredients": request.form.get('recipe_ingredients'),
+        "recipe_instructions": request.form.get('recipe_instructions')
+    })
     return redirect(url_for('get_recipe', recipe_id=recipe_id))
 
 
@@ -103,17 +102,18 @@ def register():
     if request.method == 'POST':
         user = mongo.db.users
         existing_user = user.find_one({
-                "username": request.form['username'].lower()})
+            "username": request.form['username'].lower()})
         existing_email = user.find_one({
-                "email": request.form['email'].lower()})
+            "email": request.form['email'].lower()})
         if existing_email is None:
             if existing_user is None:
                 # Code used from http://zetcode.com/python/bcrypt/
-                hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
+                hashpass = bcrypt.hashpw(
+                    request.form['password'].encode('utf-8'), bcrypt.gensalt())
                 user.insert_one({
-                            "email": request.form['email'].lower(),
-                            "username": request.form['username'].lower(),
-                            "password": hashpass})
+                    "email": request.form['email'].lower(),
+                    "username": request.form['username'].lower(),
+                    "password": hashpass})
                 return redirect(url_for('home'))
             return 'The username already exist'
         return 'The emailaddress already exist'
@@ -124,7 +124,8 @@ def register():
 def login():
     if request.method == 'POST':
         user = mongo.db.users
-        login_user = user.find_one({"username": request.form['username'].lower()})
+        login_user = user.find_one({
+            "username": request.form['username'].lower()})
     # Check if user exist in database
         if login_user:
             hashpass = bcrypt.hashpw(login_user['password'], bcrypt.gensalt())
@@ -137,6 +138,7 @@ def login():
     return render_template("login.html")
 
 
+# Session logout
 @app.route('/logout')
 def logout():
     session.pop("user", None)
