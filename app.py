@@ -102,14 +102,17 @@ def delete_recipe(recipe_id):
 def register():
     if request.method == 'POST':
         user = mongo.db.users
-        existing_user = user.find_one({"username": request.form['username']})
-        existing_email = user.find_one({"email": request.form['email']})
+        existing_user = user.find_one({
+                "username": request.form['username'].lower()})
+        existing_email = user.find_one({
+                "email": request.form['email'].lower()})
         if existing_email is None:
             if existing_user is None:
+                # Code used from 
                 hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
                 user.insert_one({
-                            "email": request.form['email'],
-                            "username": request.form['username'],
+                            "email": request.form['email'].lower(),
+                            "username": request.form['username'].lower(),
                             "password": hashpass})
                 return redirect(url_for('home'))
             return 'The username already exist'
