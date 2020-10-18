@@ -100,8 +100,11 @@ def delete_recipe(recipe_id):
 def register():
     if request.method == 'POST':
         user = mongo.db.users
-        user.insert_one(request.form.to_dict())
-        return redirect(url_for('home'))
+        existing_user = user.find_one({"username": request.form['username']})
+        if existing_user is None:
+            user.insert_one(request.form.to_dict())
+            return redirect(url_for('home'))
+        return 'This username already exist'
     return render_template("register.html")
 
 
