@@ -102,12 +102,10 @@ def register():
         user = mongo.db.users
         existing_user = user.find_one({"username": request.form['username']})
         existing_email = user.find_one({"email": request.form['email']})
-        if existing_user is None:
-            if existing_email is None:
-                user.insert_one(request.form.to_dict())
-                return redirect(url_for('home'))
-            return 'This emailaddress already exist'
-        return 'This username already exist'
+        if existing_user and existing_email is None:
+            user.insert_one(request.form.to_dict())
+            return redirect(url_for('home'))
+        return 'The username and/or emailaddress already exist'
     return render_template("register.html")
 
 
