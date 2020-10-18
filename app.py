@@ -141,9 +141,12 @@ def login():
 # Session logout
 @app.route('/logout')
 def logout():
-    session.pop("user", None)
-    flash("Logout Succesfull!")
-    return redirect(url_for('home'))
+    if 'user' in session:
+        session.pop("user", None)
+        flash("Logout Succesfull!")
+    else:
+        flash("You are already logged out")
+    return redirect(url_for('login'))
 
 
 if __name__ == '__main__':
