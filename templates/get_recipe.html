@@ -24,6 +24,7 @@
 	</div>
 	<div class="row">  
 		<div class="col-6">
+        <!--Only show edit/delete button if user has added the recipe-->
         {% if session['user'] == recipe.recipe_username %}
 			<div>
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="get-recipe-button">Edit</a>
