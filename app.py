@@ -48,13 +48,15 @@ def category_recipes(category):
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
     title = mongo.db.recipes.find_one(cat)
-    return render_template("category_recipes.html", recipes=recipes, title=title)
+    return render_template(
+        "category_recipes.html", recipes=recipes, title=title)
 
 
 @app.route('/add_recipe')
 @login_required
 def add_recipe():
-    return render_template("add_recipe.html", categories=mongo.db.categories.find())
+    return render_template(
+        "add_recipe.html", categories=mongo.db.categories.find())
 
 
 @app.route('/add_recipe_mongodb', methods=['POST'])
@@ -75,7 +77,9 @@ def get_recipe(recipe_id):
 @login_required
 def edit_recipe(recipe_id):
     edit_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("edit_recipe.html", recipe=edit_recipe, categories=mongo.db.categories.find())
+    return render_template(
+        "edit_recipe.html",
+        recipe=edit_recipe, categories=mongo.db.categories.find())
 
 
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
@@ -129,14 +133,14 @@ def register():
 def login():
     if request.method == 'POST':
         user = mongo.db.users
+        # Code used from https://github.com/PrettyPrinted/mongodb-user-login
         login_user = user.find_one({
             "username": request.form['username'].lower()})
-    # Check if user exist in database
+        # Check if user exist in database
         if login_user:
             login_pass = login_user['password']
             hashpass = bcrypt.hashpw(
                 request.form['password'].encode('utf-8'), login_pass)
-            # Code used from https://github.com/PrettyPrinted/mongodb-user-login
             if login_pass == hashpass:
                 session['user'] = request.form['username']
                 return redirect(url_for('home'))

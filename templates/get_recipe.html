@@ -17,14 +17,14 @@
 					<p> {{recipe.recipe_category}} </p>
                     <p> {{recipe.recipe_preptime}} </p>    
                     <p> {{recipe.recipe_ingredients}} </p> 
-                    <p> {{recipe.recipe_instructions}} </p>     
+                    <p> {{recipe.recipe_instructions}} </p>                   
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">  
 		<div class="col-6">
-        {% if session['user'] == {{recipe_username}}: %}
+        {% if session['user'] == recipe.recipe_username %}
 			<div>
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="get-recipe-button">Edit</a>
 			</div>
