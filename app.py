@@ -133,9 +133,11 @@ def login():
             "username": request.form['username'].lower()})
     # Check if user exist in database
         if login_user:
-            hashpass = bcrypt.hashpw(login_user['password'], bcrypt.gensalt())
-            # Code used from http://zetcode.com/python/bcrypt/
-            if bcrypt.checkpw(login_user['password'], hashpass):
+            login_pass = login_user['password']
+            hashpass = bcrypt.hashpw(
+                request.form['password'].encode('utf-8'), login_pass)
+            # Code used from https://github.com/PrettyPrinted/mongodb-user-login
+            if login_pass == hashpass:
                 session['user'] = request.form['username']
                 return redirect(url_for('home'))
             return 'Invalid username/password'

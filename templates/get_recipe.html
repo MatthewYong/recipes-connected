@@ -24,7 +24,7 @@
 	</div>
 	<div class="row">  
 		<div class="col-6">
-        {% if 'user' in session %}
+        {% if session['user'] == {{recipe_username}}: %}
 			<div>
                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="get-recipe-button">Edit</a>
 			</div>
