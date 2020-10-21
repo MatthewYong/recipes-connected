@@ -50,6 +50,14 @@ nav a{
     border-radius: 0.2rem;
 }
 
+.logreg-button:hover{
+    background-color: rgb(223, 86, 86);
+    text-decoration: none;
+}
+
+.logreg-button:active{
+    border: 2px solid #fff;
+}
 
 #navbar-custom{
     top: 0;
