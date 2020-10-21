@@ -7,66 +7,62 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 welcome">
-                    <h1>Welcome {{session['user']}} to 
+                    <h1>Welcome <b>{{session['user']}}</b> to 
                     <br> Recipes &harr; Connected
                     </h1>
                     <p class="md-font">Share your Recipe with the World!</p>
                 </div>
                 <div class="col-2"></div>
             </div>    
-            <div class="row recipe-category">
-                <div class="col-4">
-                    <a href="{{ url_for('all_recipes') }}">
-                        <div class="recipe-box md-font">
-                            <p> All Recipes
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="{{ url_for('category_recipes', category='Asian') }}">
-                        <div class="recipe-box md-font">
-                            <p> Asian
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="{{ url_for('category_recipes', category='African')  }}">
-                        <div class="recipe-box md-font">
-                            <p> African
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row recipe-category">
-                <div class="col-4">
-                    <a href="{{ url_for('category_recipes', category='Western') }}">
-                        <div class="recipe-box md-font">
-                            <p> Western
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="{{ url_for('category_recipes', category='Middle Eastern') }}">
-                        <div class="recipe-box md-font">
-                            <p> Middle Eastern
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="{{ url_for('category_recipes', category='Other') }}">
-                        <div class="recipe-box md-font">
-                            <p> Other
-                            </p>                
-                        </div>
-                    </a>
-                </div>
-            </div> 
         </div>
     </div>
+    <div class="container">
+        <div class="row recipe-category">
+            <div class="col-4">
+                <a href="{{ url_for('all_recipes') }}">
+                    <div class="recipe-box md-font">
+                        <p>All Recipes</p>                
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="{{ url_for('category_recipes', category='Asian') }}">
+                    <div class="recipe-box md-font">
+                        <p>Asian</p>                
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="{{ url_for('category_recipes', category='African') }}">
+                    <div class="recipe-box md-font">
+                        <p>African</p>                
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row recipe-category">
+            <div class="col-4">
+                <a href="{{ url_for('category_recipes', category='Western') }}">
+                    <div class="recipe-box md-font">
+                        <p>Western</p>                
+                </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="{{ url_for('category_recipes', category='Middle Eastern') }}">
+                    <div class="recipe-box md-font">
+                        <p>Middle Eastern</p>                
+                    </div>
+                </a>
+            </div>
+            <div class="col-4">
+                <a href="{{ url_for('category_recipes', category='Other') }}">
+                    <div class="recipe-box md-font">
+                        <p>Other</p>                
+                    </div>
+                </a>
+            </div>
+        </div> 
+    </div>    
 
 {% endblock %}
