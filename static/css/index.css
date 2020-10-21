@@ -2,6 +2,7 @@ a:hover{
     text-decoration: none;
 }
 
+/*Hero section*/
 .image-hero{
     background-image: url("../images/image-banner1.jpg");
     background-attachment: fixed;
@@ -20,8 +21,36 @@ a:hover{
     margin-top: 12rem;
 }
 
+.welcome a{
+
+    font-size: 1rem;
+    color: #fff;
+}
+
+.add-recipe-button{
+    background-color: rgb(31, 117, 187);
+    margin: 3rem 0 1rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 0.15rem;    
+}
+
+.add-recipe-button:hover{ 
+    background-color: rgb(223, 86, 86);
+    border: 1px solid rgb(0, 0, 0);    
+    text-decoration: none;
+}
+
+.add-recipe-button:active{ 
+    border: 2px solid rgb(0, 0, 0);    
+}
+
+
+/*Categories section*/
 .recipe-category-header{
+    text-align: center;
     padding: 1.5rem;
+    margin-top: 3rem;
 }
 
 .recipe-category{

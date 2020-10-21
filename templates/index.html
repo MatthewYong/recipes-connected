@@ -10,10 +10,12 @@
                     <h1>Welcome <b>{{session['user']}}</b> to 
                     <br> Recipes &harr; Connected
                     </h1>
-                    <p class="md-font">Share your Recipe with the World!</p>
-                    <div class="col-4 mx-auto">
-                        <button>Add Your Recipe</button>            
-                    </div>
+                    <br><p class="md-font">Share your Recipe with the World!</p>
+                    <a href="{{url_for('add_recipe')}}">
+                        <div class="col-4 add-recipe-button mx-auto">
+                            Add Your Recipe
+                        </div>
+                    </a>
                 </div>
                 <div class="col-2"></div>
             </div>    
@@ -21,8 +23,9 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-4 recipe-category-header mx-auto">
-                <h2>Choose a Category</h2>         
+            <div class="col-8 recipe-category-header mx-auto">
+                <h1>Choose a Category</h1>
+                <br><h6>Start learning new recipes and taste the world!</h6>        
             </div>
         </div>        
         <div class="row recipe-category">
