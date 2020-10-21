@@ -43,6 +43,14 @@ nav a{
     text-decoration: underline;
 }
 
+.logreg-button{
+    margin-top: 0.5rem;
+    padding: 0.05rem 0 0.2rem 0;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+}
+
+
 #navbar-custom{
     top: 0;
     z-index: 9;

@@ -31,7 +31,7 @@
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('all_recipes')}}">All Recipes</a>
                 </li>
-                {%  if 'user' in session %}                
+                {% if 'user' in session %}                
                 <li class="nav-item">
                     <a class="nav-link nav-hover" href="{{url_for('add_recipe')}}">Add Recipe</a>
                 </li>    
@@ -40,10 +40,12 @@
                 </li>                   
                 {% else %}                        
                 <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('register')}}">Register</a>
+                    <a class="nav-link nav-hover logreg-button" 
+                    href="{{url_for('register')}}">Register</a>
                 </li>                                  
                 <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('login')}}">Login</a>
+                    <a class="nav-link nav-hover logreg-button" 
+                    href="{{url_for('login')}}">Login</a>
                 </li>                 
                 {% endif %}                 
             </ul>
