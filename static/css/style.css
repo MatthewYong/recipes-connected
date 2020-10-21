@@ -2,19 +2,18 @@
 
 /*General styling*/
 body{
-    background-color: rgb(226, 236, 247);
+    background-color: #fff7;
     color: #152a23;
     font-family: 'Playfair Display', serif, sans-serif;
 }
 
 footer{
-    background-color: #ffff;
+    background-color: rgb(226, 236, 247);
     text-align: center;
     width: 100%;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     bottom: 0;
     position: static;
-
 }
 
 .sm-font{
