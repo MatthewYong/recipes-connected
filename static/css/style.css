@@ -33,8 +33,13 @@ nav a{
     color: #152a23;
 }
 
+.nav-hover{
+    margin: 0 2rem 0 2rem;
+    color: #fff;
+}
+
 .nav-hover:hover{
-    color: #152a23;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -42,16 +47,19 @@ nav a{
     top: 0;
     z-index: 9;
     position: sticky;
-    background-color:rgb(60, 194, 67);
-    padding: 1rem 0 1rem 0; 
+    background-color:rgb(226, 63, 51);
+    padding: 0.5rem 0 1rem 0; 
 }
 
 #logo{
-    color: #152a23;
+    color: rgb(240, 238, 238);
+    padding-top: 0.5rem;
+    position: absolute;
+    top: 0;
 }
 
 #logo:hover{
-    color:#152a23;  
+    color:#fff;  
     text-decoration: none; 
 }
 
