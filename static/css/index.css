@@ -9,7 +9,7 @@ a:hover{
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
 }
 
 .welcome{
@@ -17,7 +17,7 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 0.5rem;
     padding: 2rem 0 1.25rem 0;
-    margin: 5rem 0 5rem 0;
+    margin-top: 12rem;
 }
 
 .recipe-category{
