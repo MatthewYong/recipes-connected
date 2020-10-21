@@ -35,7 +35,7 @@ nav a{
 }
 
 .nav-hover:hover{
-    color: rgb(79, 136, 6);
+    color: #152a23;
     text-decoration: underline;
 }
 
@@ -52,7 +52,8 @@ nav a{
 }
 
 #logo:hover{
-    color: rgb(79, 136, 6);    
+    color:#152a23;  
+    text-decoration: none; 
 }
 
 
