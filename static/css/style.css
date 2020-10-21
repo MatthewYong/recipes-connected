@@ -40,22 +40,25 @@ nav a{
 
 .nav-hover:hover{
     color: #fff;
-    text-decoration: underline;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.1rem;
 }
 
-.logreg-button{
-    margin-top: 0.5rem;
+.logreg-nav{
+    color: #fff;
+    margin: 0.5rem 2rem 0 2rem;
     padding: 0.05rem 0 0.2rem 0;
     border: 1px solid #fff;
     border-radius: 0.2rem;
 }
 
-.logreg-button:hover{
+.logreg-nav:hover{
+    color: #fff;    
     background-color: rgb(223, 86, 86);
     text-decoration: none;
 }
 
-.logreg-button:active{
+.logreg-nav:active{
     border: 2px solid #fff;
 }
 
@@ -69,6 +72,7 @@ nav a{
 
 #logo{
     color: rgb(240, 238, 238);
+    margin: 0 2rem 0 2rem;    
     padding-top: 0.5rem;
     position: absolute;
     top: 0;
