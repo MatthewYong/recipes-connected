@@ -20,6 +20,10 @@ footer{
     position: static;
 }
 
+.special-font{
+    font-family: 'Dancing Script', cursive;
+}
+
 .sm-font{
     font-size: 1rem;
 }
@@ -75,7 +79,6 @@ nav a{
 }
 
 #logo{
-    font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     color: rgb(240, 238, 238);
     margin: 0 2rem 0 2rem;    
