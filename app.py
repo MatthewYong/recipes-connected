@@ -123,6 +123,7 @@ def register():
                     "email": request.form['email'].lower(),
                     "username": request.form['username'].lower(),
                     "password": hashpass})
+                session['user'] = request.form['username']
                 return redirect(url_for('home'))
             return 'The username already exist'
         return 'The emailaddress already exist'
