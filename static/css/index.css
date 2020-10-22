@@ -67,7 +67,7 @@ a:hover{
 }
 
 .recipe-box:hover{
-    border: 3px solid rgba(7, 197, 188, 0.8)
+    border: 3px solid rgba(7, 197, 188)
 }
 
 .category-image{
@@ -79,4 +79,24 @@ a:hover{
 
 .category-image-all{
     background-image: url("../images/image-all-recipes.jpg");
+}
+
+.category-image-asian{
+    background-image: url("../images/image-asian.jpg");
+}
+
+.category-image-african{
+    background-image: url("../images/image-african.jpg");
+}
+
+.category-image-western{
+    background-image: url("../images/image-western.jpg");
+}
+
+.category-image-middle{
+    background-image: url("../images/image-middle-eastern.jpg");
+}
+
+.category-image-other{
+    background-image: url("../images/image-other.jpg");
 }
