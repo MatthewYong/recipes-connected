@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap:100,200,300,400,500,600,700');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
 /*General styling*/
 body{
     background-color: #fff7;
@@ -72,6 +75,8 @@ nav a{
 }
 
 #logo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
     color: rgb(240, 238, 238);
     margin: 0 2rem 0 2rem;    
     padding-top: 0.5rem;
