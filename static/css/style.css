@@ -48,7 +48,7 @@ nav a{
 
 .nav-hover:hover{
     color: #fff;
-    border-bottom: 2px solid #fff;
+    border-bottom: 0.2rem solid #fff;
     padding-bottom: 0.1rem;
 }
 
@@ -56,7 +56,7 @@ nav a{
     color: #fff;
     margin: 0.5rem 2rem 0 2rem;
     padding: 0.05rem 0 0.2rem 0;
-    border: 2px solid #fff;
+    border: 0.15rem solid #fff;
     border-radius: 0.2rem;
 }
 
@@ -67,7 +67,7 @@ nav a{
 }
 
 .logreg-nav:active{
-    border: 2px solid rgb(70, 23, 23);
+    border: 0.15rem solid rgb(70, 23, 23);
 }
 
 #navbar-custom{
