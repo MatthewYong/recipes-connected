@@ -69,3 +69,10 @@ a:hover{
 .recipe-box:hover{
     background-color: rgba(7, 197, 188, 0.8);  
 }
+
+.category-image{
+    background-image: url("../images/image-all-recipes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
