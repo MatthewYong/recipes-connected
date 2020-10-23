@@ -47,17 +47,13 @@ a:hover{
 
 
 /*Categories section*/
-.recipe-category-header{
+.category-header{
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
 }
 
-.recipe-category{
-    text-align: center;
-}
-
-.recipe-box{
+.category-box{
     text-align: center;
     color: #152a23;   
     border-radius: 0.1rem;
@@ -66,11 +62,11 @@ a:hover{
     margin: 1.5rem 0 1.5rem 0;
 }
 
-.recipe-box:hover{
+.category-box:hover{
     border: 0.2rem solid rgb(5, 156, 149);
 }
 
-.recipe-box p{
+.category-box p{
     border-radius: 0.1rem;
     background-color: rgba(255, 255, 255, 0.8);
 }

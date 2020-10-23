@@ -21,29 +21,29 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-8 recipe-category-header mx-auto">
+            <div class="col-8 category-header mx-auto">
                 <h1>Choose a Category</h1>
                 <br><h6>Start learning new recipes and taste the world!</h6>        
             </div>
         </div>        
-        <div class="row recipe-category">
+        <div class="row">
             <div class="col-4">
                 <a href="{{ url_for('all_recipes') }}">
-                    <div class="recipe-box md-font category-image category-image-all">
+                    <div class="category-box md-font category-image category-image-all">
                         <p>All Recipes</p>                           
                     </div>
                 </a>
             </div>
             <div class="col-4">
                 <a href="{{ url_for('category_recipes', category='Asian') }}">
-                    <div class="recipe-box md-font category-image category-image-asian">
+                    <div class="category-box md-font category-image category-image-asian">
                         <p>Asian</p>                
                     </div>
                 </a>
             </div>
             <div class="col-4">
                 <a href="{{ url_for('category_recipes', category='African') }}">
-                    <div class="recipe-box md-font category-image category-image-african">
+                    <div class="category-box md-font category-image category-image-african">
                         <p>African</p>                
                     </div>
                 </a>
@@ -52,21 +52,21 @@
         <div class="row recipe-category">
             <div class="col-4">
                 <a href="{{ url_for('category_recipes', category='Western') }}">
-                    <div class="recipe-box md-font category-image category-image-western">
+                    <div class="category-box md-font category-image category-image-western">
                         <p>Western</p>                
                 </div>
                 </a>
             </div>
             <div class="col-4">
                 <a href="{{ url_for('category_recipes', category='Middle Eastern') }}">
-                    <div class="recipe-box md-font category-image category-image-middle">
+                    <div class="category-box md-font category-image category-image-middle">
                         <p>Middle Eastern</p>                
                     </div>
                 </a>
             </div>
             <div class="col-4">
                 <a href="{{ url_for('category_recipes', category='Other') }}">
-                    <div class="recipe-box md-font category-image category-image-other">
+                    <div class="category-box md-font category-image category-image-other">
                         <p>Other</p>                
                     </div>
                 </a>
