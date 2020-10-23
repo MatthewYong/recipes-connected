@@ -37,6 +37,7 @@ a:hover{
 }
 
 .add-recipe-button:hover{ 
+    background-color: rgb(31, 73, 187);
     border: 0.1rem solid rgb(0, 0, 0);    
     text-decoration: none;
 }
@@ -63,7 +64,7 @@ a:hover{
 }
 
 .category-box:hover{
-    border: 0.2rem solid rgb(5, 156, 149);
+    border: 0.2rem solid rgb(4, 136, 4);
 }
 
 .category-box p{
