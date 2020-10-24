@@ -42,11 +42,18 @@ label{
     text-align: center;
 }
 
-.recipe-box-content{
+.recipe-box{
     color: #152a23;
-    padding: 1rem;
-    border: 0.1rem solid rgb(0, 0, 0);
-    margin: 1rem 0 1rem 0;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgb(184, 184, 184);
+}
+
+.recipe-box-header{
+    padding: 1rem 0 0 1rem;
+}
+
+.recipe-box-content{
+    padding-bottom: 1rem;
+    margin: 1rem 0 2rem 1rem;
 }
 
 .recipe-box:hover{
