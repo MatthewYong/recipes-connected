@@ -35,7 +35,7 @@ label{
 }
 
 
-/*All recipes page styling*/
+/*All & category recipes page styling*/
 
 .recipes-header{
     text-align: center;    
@@ -99,8 +99,9 @@ label{
 }
 
 .get-recipe-image{
-    width: 30rem;
-    height: 30rem;
+    padding: 1rem;
+    width: 25rem;
+    height: 25rem;
 }
 
 .get-recipe-box-content{
