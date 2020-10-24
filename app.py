@@ -56,7 +56,9 @@ def category_recipes(category):
 @login_required
 def add_recipe():
     return render_template(
-        "add_recipe.html", categories=mongo.db.categories.find())
+        "add_recipe.html",
+        categories=mongo.db.categories.find(),
+        preptime=mongo.db.preptime.find())
 
 
 @app.route('/add_recipe_mongodb', methods=['POST'])
