@@ -42,6 +42,14 @@ label{
     padding: 2rem;
 }
 
+.recipe-outer-box{
+    padding: 2rem;
+}
+
+.recipe-outer-box a:hover{
+    text-decoration: none;
+}
+
 .recipe-box{
     color: #152a23;
     box-shadow: 0.3125rem 0.3125rem 0.625rem rgb(184, 184, 184);
@@ -53,8 +61,11 @@ label{
 }
 
 .recipe-box-header{
-    text-transform: capitalize;
     padding: 1rem 0 0 1rem;
+}
+
+.recipe-box-header h2{
+    text-transform: capitalize;
 }
 
 .recipe-box-content{
