@@ -22,7 +22,11 @@
                     <label for="image">Recipe Image</label>
                         <div>
                             <input class="recipe-input" type="text" name="recipe_image" aria-label="image" required>
-                        </div>                        
+                        </div>             
+                    <label for="description">Description</label>
+                        <div>
+                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" required>
+                        </div>                                   
                     <label for="category">Category</label>
                         <div>
                             <select name="recipe_category" class="recipe-input">
@@ -32,14 +36,15 @@
                             {% endfor %}         
                             </select>
                         </div>                        
-                    <label for="description">Description</label>
-                        <div>
-                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" required>
-                        </div>       
                     <label for="description">Preparation Time</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_preptime" aria-label="description"  placeholder="30 mins" maxlength="20" required>
-                        </div>                                                   
+                            <select name="recipe_preptime" class="recipe-input">
+                            {% for prep in preptime %}
+                                <option value="{{prep.recipe_time}}">
+                                {{prep.recipe_time}}</option> 
+                            {% endfor %}         
+                            </select>
+                        </div>                                            
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
                             <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required></textarea>
