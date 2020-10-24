@@ -43,6 +43,9 @@ label{
 }
 
 .recipe-outer-box{
+    display: block;
+    width: 20rem;
+    height: 30rem;
     padding: 2rem;
 }
 
@@ -61,7 +64,7 @@ label{
 }
 
 .recipe-box-header{
-    padding: 1rem 0 0 1rem;
+    padding: 1rem 0 0.5rem 1rem;
 }
 
 .recipe-box-header h2{
@@ -79,7 +82,7 @@ label{
 
 .recipe-image{
     width: 100%;
-    height: 100%;
+    height: 14rem;
 }
 
 
