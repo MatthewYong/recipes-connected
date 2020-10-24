@@ -48,7 +48,8 @@ label{
 }
 
 .recipe-box:hover{
-    opacity: 0.8;
+    color: rgb(31, 73, 187);    
+    opacity: 0.9;
 }
 
 .recipe-box-header{
