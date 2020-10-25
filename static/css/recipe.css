@@ -138,6 +138,7 @@ label{
     margin-right: 4rem;
     margin-bottom: 5rem;
     border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(184, 184, 184);  
     background-color: rgb(226, 236, 247);
 }
 
