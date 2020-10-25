@@ -4,19 +4,23 @@
 
 
 /*General styling*/
+html{
+    height: 100%;
+}
+
 body{
     background-color: #fff7;
     color: #152a23;
     font-family: 'Playfair Display', serif, sans-serif;
+    height: 100%;
 }
 
 footer{
     background-color: rgb(226, 236, 247);
     text-align: center;
     width: 100%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin-top: 8rem;
-    position: static;
 }
 
 .special-font{
@@ -93,12 +97,25 @@ nav a{
 
 
 /*Footer*/
+
 .social-media{
     color: #326b58;
 }
 
 .social-media:hover{
     color: rgb(79, 136, 6);
+}
+
+/*Code used from https://gist.github.com/XtofK/5317209*/
+.wrapper{
+    min-height: 100%;
+    height: auto !important;
+	height: 100%;
+	margin: 0 auto -8rem;
+}
+
+.push, footer{
+    height: 8rem;
 }
 
 #copyright{
