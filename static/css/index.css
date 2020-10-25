@@ -32,7 +32,8 @@ a:hover{
     background-color: rgb(31, 117, 187);
     margin: 3rem 0 3rem 0;
     padding: 0.5rem 0 0.5rem 0;
-    border: 0.1rem solid rgb(0, 0, 0);
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(10, 10, 10);
+    border: 0.1rem solid rgb(10, 10, 10);
     border-radius: 0.15rem;    
 }
 
@@ -43,7 +44,7 @@ a:hover{
 }
 
 .add-recipe-button:active{ 
-    border: 0.15rem solid rgb(0, 0, 0);    
+    box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;   
 }
 
 
