@@ -152,30 +152,30 @@ label{
 }
 
 
-
-
-
-
-
-
 /*Get recipe page styling edit/delete recipe button*/
 
 .get-recipe-button{
-    border: 0.1rem solid #000000;
-    border-radius: 0.1rem;
-    color: #152a23;
-    background-color: rgb(218, 196, 196);
-    padding: 0.5rem;
+    color: #fff;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(31, 117, 187);
+    margin: 3rem 0 3rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    border: 0.1rem solid rgb(0, 0, 0);
+    border-radius: 0.15rem;    
 }
 
-.get-recipe-button:hover{
-    color: #152a23;
-    background-color: #fff;
-    border: 0.2rem solid #000000;
-    text-decoration: none;    
+.get-recipe-button:hover{ 
+    background-color: rgb(31, 73, 187);
+    border: 0.1rem solid rgb(0, 0, 0);    
+    text-decoration: none;
+}
+
+.get-recipe-button:active{ 
+    border: 0.15rem solid rgb(0, 0, 0);    
 }
 
 #delete-recipe-button{
-    background-color: rgb(118, 231, 103);
+    background-color: rgb(216, 13, 13);
 }
 
