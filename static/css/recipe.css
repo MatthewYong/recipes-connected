@@ -145,6 +145,10 @@ label{
     background-color: rgb(226, 236, 247);
 }
 
+.recipe-instructions{
+    background-color: rgb(233, 142, 135);
+}
+
 .recipe-ingredients li{
     text-transform: capitalize;
     margin-bottom: 1rem;
