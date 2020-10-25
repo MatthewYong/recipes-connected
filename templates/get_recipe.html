@@ -6,12 +6,12 @@
 
 <div class="container">
 	<div class="row mx-auto get-recipe-box">
-        <div class="col-4">
+        <div class="col-6">
             <div class="get-recipe-box-header special-font">
                 <p>{{recipe.recipe_name}}</p>       
                 <h5>by {{recipe.recipe_username}}</h5>         
             </div>
-            <div class="get-recipe-box-content">
+            <div>
                 <p><i class="fas fa-utensils"></i> 
                 {{recipe.recipe_description}}</p>
                 <p><i class="fas fa-globe-americas"></i>
@@ -20,7 +20,7 @@
                 Preparation Time: {{recipe.recipe_preptime}}</p>            
             </div>            
         </div> 
-		<div class="col-8">
+		<div class="col-6">
 			<img class="get-recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
         </div> 
 	</div>
