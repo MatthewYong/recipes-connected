@@ -100,7 +100,7 @@ label{
 }
 
 .get-recipe-image{
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
     border-radius: 0.5rem;
     box-shadow: 0.3125rem 0.3125rem 0.625rem rgb(184, 184, 184);    
     width: 30rem;
@@ -113,8 +113,8 @@ label{
 }
 
 .get-recipe-box-header{
-    padding: 0rem 0 0.5rem 0;
-    margin-top: 0;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
 }
 
 .get-recipe-box-header h2{
