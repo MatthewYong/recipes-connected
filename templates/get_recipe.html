@@ -28,13 +28,19 @@
         <div class="col-6">
             <div>
                 <h2 class="special-font">Ingredients</h2>
-                <p> {{recipe.recipe_ingredients}} </p>                 
+                {% for break in recipe.recipe_ingredients.splitlines() %}
+                <p><i class="far fa-circle"></i> {{break}}</p>  
+                {% endfor %}               
             </div>            
         </div>
         <div class="col-6">
             <div>
                 <h2 class="special-font">Instructions</h2>
-                <p> {{recipe.recipe_instructions}} </p>                
+                <ol>
+                    <li>
+                        {{recipe.recipe_instructions}}
+                    </li>
+                </ol>                
             </div>         
         </div>
     </div>
