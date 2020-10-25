@@ -117,13 +117,29 @@ label{
     margin-bottom: 3rem;
 }
 
-.get-recipe-box-header h2{
+.get-recipe-box-header p{
     text-transform: capitalize;
 }
 
 .get-recipe-box-header h5{
     color: rgb(216, 13, 13);
 }
+
+
+/*Get recipe page list styling*/
+
+.recipe-list h2{
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+/*Get recipe page styling edit/delete recipe button*/
 
 .get-recipe-button{
     border: 0.1rem solid #000000;
