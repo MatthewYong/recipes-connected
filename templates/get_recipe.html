@@ -26,21 +26,23 @@
 	</div>
     <div class="row mx-auto recipe-list">
         <div class="col-6">
-            <div>
+            <div class="ingredients">
                 <h2 class="special-font">Ingredients</h2>
                 {% for break in recipe.recipe_ingredients.splitlines() %}
                 <p><i class="far fa-circle"></i> {{break}}</p>  
-                {% endfor %}               
+                {% endfor %}                              
             </div>            
         </div>
         <div class="col-6">
             <div>
                 <h2 class="special-font">Instructions</h2>
                 <ol>
+                    {% for break in recipe.recipe_ingredients.splitlines() %}
                     <li>
-                        {{recipe.recipe_instructions}}
+                        {{break}}
                     </li>
-                </ol>                
+                    {% endfor %}    
+                </ol>             
             </div>         
         </div>
     </div>
