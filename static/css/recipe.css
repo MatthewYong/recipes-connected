@@ -94,14 +94,28 @@ label{
 
 
 /*Get recipe page styling*/
-.get-recipe-box{
-    margin: 2rem 0 2rem 0;
-}
 
 .get-recipe-image{
     padding: 1rem;
     width: 30rem;
     height: 20rem;
+}
+
+.get-recipe-box{
+    margin: 2rem 0 2rem 0;
+}
+
+.get-recipe-box-header{
+    padding: 1rem 0 0.5rem 0;
+    margin-top: 2rem;
+}
+
+.get-recipe-box-header h2{
+    text-transform: capitalize;
+}
+
+.get-recipe-box-header h5{
+    color: rgb(216, 13, 13);
 }
 
 .get-recipe-box-content{
