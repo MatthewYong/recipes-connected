@@ -133,22 +133,21 @@ label{
     margin-bottom: 2rem;
 }
 
-.recipe-ingredients{
-    padding: 2rem;
-    margin-right: 3rem;
+.recipe-instructions, .recipe-ingredients {
+    padding: 2rem 3rem 2rem 2rem;
+    margin-right: 4rem;
     margin-bottom: 5rem;
     border-radius: 1rem;
     background-color: rgb(226, 236, 247);
 }
 
-.recipe-instructions{
-    padding: 2rem;
-    border-radius: 1rem;
-    background-color: rgb(226, 236, 247);    
+.recipe-ingredients li{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid #222;
 }
-
 .recipe-instructions li{
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 
