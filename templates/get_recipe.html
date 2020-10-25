@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
 
 <div class="container">
-	<div class="row mx-auto">
+	<div class="row mx-auto get-recipe-box">
         <div class="col-4">
             <div class="get-recipe-box-header special-font">
                 <h1>{{recipe.recipe_name}}</h1>       
@@ -20,7 +20,7 @@
                 Preparation Time: {{recipe.recipe_preptime}}</p>            
             </div>            
         </div> 
-		<div class="col-8 get-recipe-box">
+		<div class="col-8">
 			<img class="get-recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
         </div> 
 	</div>
