@@ -46,12 +46,15 @@
                         </div>                                                   
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required>{{recipe.recipe_ingredients}}</textarea>
+                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" wrap="soft"   required>
+                                {{recipe.recipe_ingredients}}
+                            </textarea>
                         </div>                          
                     <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions"
-                            required>{{recipe.recipe_instructions}}</textarea>
+                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions"  wrap="soft" required>
+                                {{recipe.recipe_instructions}}
+                            </textarea>
                         </div>                          
                     <button onclick="update_alert()" type="submit" name="action">Update</button>
                 </form>              

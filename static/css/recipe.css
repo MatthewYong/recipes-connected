@@ -136,7 +136,8 @@ label{
     margin-bottom: 2rem;
 }
 
-.recipe-instructions, .recipe-ingredients {
+.recipe-instructions, .recipe-ingredients{
+    overflow: auto;
     padding: 2rem 3rem 2rem 2rem;
     margin-right: 4rem;
     margin-bottom: 5rem;
