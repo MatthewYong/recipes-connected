@@ -5,56 +5,64 @@
 
 <div class="image-bg-recipe">
     <div class="container">
-        <div class="row">
-            <div class="col recipe-header">
-            <h1>Edit your Recipe</h1>
-            </div>    
-        </div>
         <div class="row mx-auto">
             <div class="col recipe-form-cover">
+                <div class="col recipe-header">
+                    <h1>Edit your Recipe</h1>
+                </div> 
                 <form action="{{ url_for('update_recipe', 
                             recipe_id=recipe._id) }}" method="POST" class="recipe-form">
                     <div>
-                        <input class="recipe-input" type="hidden" name="recipe_username" value="{{session['user']}}">
-                    </div>                
+                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user']}}">
+                    </div>
                     <label for="name">Recipe Name</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" maxlength="50" 
-                            value="{{recipe.recipe_name}}" required>
+                            <input class="recipe-input xs-font" type="text" name="recipe_name" aria-label="recipe name" 
+                            value="{{recipe.recipe_name}}" maxlength="30" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" 
+                            <input class="recipe-input xs-font" type="text" name="recipe_image" aria-label="image" 
                             value="{{recipe.recipe_image}}" required>
-                        </div>                        
-                    <label for="category">Category</label>
-                        <div>
-                            <select name="recipe_category" class="recipe-input">
-                            {% for cat in categories %}
-                                <option value="{{cat.recipe_category}}">
-                                {{cat.recipe_category}}</option> 
-                            {% endfor %}         
-                            </select>
-                        </div>                        
+                        </div>             
                     <label for="description">Description</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" 
-                            value="{{recipe.recipe_description}}" required>
-                        </div>       
-                    <label for="description">Preparation Time</label>
-                        <div>
-                            <input class="recipe-input" type="text" name="recipe_preptime" aria-label="description"  placeholder="30 mins" maxlength="20" 
-                            value="{{recipe.recipe_preptime}}" required>
-                        </div>                                                  
+                            <input class="recipe-input xs-font" type="text" name="recipe_description" aria-label="description" value="{{recipe.recipe_description}}" maxlength="50" required>
+                        </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="category">Category</label>
+                                <div>
+                                    <select name="recipe_category" class="recipe-select-input xs-font">
+                                    {% for cat in categories %}
+                                        <option value="{{cat.recipe_category}}">
+                                        {{cat.recipe_category}}</option> 
+                                    {% endfor %}         
+                                    </select>
+                                </div> 
+                        </div>
+                        <div class="col-6">
+                            <label for="description">Preparation Time</label>
+                                <div>
+                                    <select name="recipe_preptime" class="recipe-select-input xs-font">
+                                    {% for prep in preptime %}
+                                        <option 
+                                        value="{{recipe.recipe_preptime}}">
+                                        {{prep.recipe_time}}</option> 
+                                    {% endfor %}         
+                                    </select>
+                                </div>   
+                        </div>                        
+                    </div>           
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="0" rows="8" aria-label="ingredients" required>{{recipe.recipe_ingredients}}</textarea>
+                            <textarea class="recipe-input xs-font" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required>{{recipe.recipe_ingredients}}</textarea>
                         </div>                          
                     <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions"  wrap="soft" required>{{recipe.recipe_instructions}}</textarea>
-                        </div>                          
-                    <button onclick="update_alert()" type="submit" name="action">Update</button>
+                            <textarea class="recipe-input xs-font" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" required>{{recipe.recipe_instructions}}</textarea>
+                        </div>           
+                    <input class="get-recipe-button" type="submit" value="Add!">
                 </form>              
             </div>  
         </div>
