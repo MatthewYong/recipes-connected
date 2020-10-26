@@ -47,6 +47,34 @@ label{
     width: 100%;
 }
 
+
+
+.share-recipe-button{
+    text-align: center;
+    color: #fff;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(31, 117, 187);
+    margin: 3rem 0 3rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(10, 10, 10);
+    border: 0.1rem solid rgb(10, 10, 10);
+    border-radius: 0.15rem;    
+}
+
+.share-recipe-button:hover{ 
+    background-color: rgb(31, 73, 187);  
+}
+
+.share-recipe-button:active{ 
+    text-decoration: none;
+    box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;    
+}
+
+
+
+
+
 #ingredients, #instructions{
     text-align: left;
 }
