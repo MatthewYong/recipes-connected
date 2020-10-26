@@ -22,7 +22,7 @@ label{
 }
 
 .recipe-form label{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -35,12 +35,14 @@ label{
 }
 
 .recipe-input{
+    font-size: 1.25rem;
     text-align: center;
     margin: 0.5rem 0 2.5rem 0;
     width: 100%;
 }
 
 .recipe-select-input{
+    font-size: 1.25rem;    ;
     margin: 0.5rem 0 2.5rem 0;
     width: 100%;
 }
