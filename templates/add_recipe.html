@@ -24,25 +24,31 @@
                     <label for="description">Description</label>
                         <div>
                             <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" required>
-                        </div>                                   
-                    <label for="category">Category</label>
-                        <div>
-                            <select name="recipe_category" class="recipe-input">
-                            {% for cat in categories %}
-                                <option value="{{cat.recipe_category}}">
-                                {{cat.recipe_category}}</option> 
-                            {% endfor %}         
-                            </select>
+                        </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="category">Category</label>
+                                <div>
+                                    <select name="recipe_category" class="recipe-select-input">
+                                    {% for cat in categories %}
+                                        <option value="{{cat.recipe_category}}">
+                                        {{cat.recipe_category}}</option> 
+                                    {% endfor %}         
+                                    </select>
+                                </div> 
+                        </div>
+                        <div class="col-6">
+                            <label for="description">Preparation Time</label>
+                                <div>
+                                    <select name="recipe_preptime" class="recipe-select-input">
+                                    {% for prep in preptime %}
+                                        <option value="{{prep.recipe_time}}">
+                                        {{prep.recipe_time}}</option> 
+                                    {% endfor %}         
+                                    </select>
+                                </div>   
                         </div>                        
-                    <label for="description">Preparation Time</label>
-                        <div>
-                            <select name="recipe_preptime" class="recipe-input">
-                            {% for prep in preptime %}
-                                <option value="{{prep.recipe_time}}">
-                                {{prep.recipe_time}}</option> 
-                            {% endfor %}         
-                            </select>
-                        </div>                                            
+                    </div>           
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
                             <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required></textarea>

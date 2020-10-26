@@ -36,8 +36,13 @@ label{
 
 .recipe-input{
     text-align: center;
-    margin: 0.5rem 0 1rem 0;
-    width: 50rem;
+    margin: 0.5rem 0 2.5rem 0;
+    width: 100%;
+}
+
+.recipe-select-input{
+    margin: 0.5rem 0 2.5rem 0;
+    width: 100%;
 }
 
 #ingredients, #instructions{
