@@ -34,7 +34,10 @@
                             <label for="category">Category</label>
                                 <div>
                                     <select name="recipe_category" class="recipe-select-input xs-font">
-                                    {% for cat in categories %}
+                                        <option 
+                                        value="{{recipe.recipe_category}}" hidden selected>
+                                        {{recipe.recipe_category}}</option>
+                                    {% for cat in categories %}    
                                         <option value="{{cat.recipe_category}}">
                                         {{cat.recipe_category}}</option> 
                                     {% endfor %}         
@@ -45,6 +48,8 @@
                             <label for="description">Preparation Time</label>
                                 <div>
                                     <select name="recipe_preptime" class="recipe-select-input xs-font">
+                                        <option 
+                                        value="{{recipe.recipe_preptime}}" hidden selected>                        {{recipe.recipe_preptime}}</option>
                                     {% for prep in preptime %}
                                         <option 
                                         value="{{prep.recipe_time}}">
