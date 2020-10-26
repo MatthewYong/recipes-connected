@@ -1,9 +1,12 @@
-/*edit_recipe JS */
+/*edit_recipe JS*/
 
 function update_alert() {
   alert("Recipe is Updated!");
 }
 
 
-/*get_recipe JS */
+/*add_recipe JS*/
 
+function add_alert() {
+  alert("Recipe is Added!");
+}

@@ -57,13 +57,13 @@
                         <div>
                             <textarea class="recipe-input xs-font" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" placeholder=" Add here your cooking instructions and place every instruction on a new line" required></textarea>
                         </div>           
-                    <input class="get-recipe-button" type="submit" value="Add!">
+                    <input class="get-recipe-button" type="submit" onclick="add_alert()" value="Add! ">
                 </form>              
             </div>  
         </div>
     </div>
 </div>
 
-
-
+<!--Link to script recipe.js-->
+<script src="{{ url_for('static', filename='js/recipe.js') }}"></script>
 {% endblock %}
