@@ -24,7 +24,7 @@ label{
 
 .recipe-form-cover{
     text-align: center;
-    background-color: rgba(253, 243, 243, 0.781);
+    background-color: rgba(233, 222, 222, 0.781);
     border-radius: 0.5rem;
     padding: 2rem 5rem 4rem 5rem;
     margin: 5rem 0 2rem 0;
@@ -40,7 +40,6 @@ label{
     margin: 0.5rem 0 2.5rem 0;
     width: 100%;
 }
-
 
 #ingredients, #instructions{
     text-align: left;
