@@ -8,7 +8,7 @@ label{
 }
 
 .image-bg-recipe {
-    background-image: url("../images/image-banner3.jpg");
+    background-image: url("../images/image-bg-recipe.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -18,7 +18,7 @@ label{
 
 .recipe-header{
     text-align: center;
-    padding-top: 2rem;
+    margin: 1rem 0 4rem 0;
 }
 
 .recipe-form-cover{
