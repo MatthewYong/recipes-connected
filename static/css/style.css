@@ -27,6 +27,10 @@ footer{
     font-family: 'Dancing Script', cursive;
 }
 
+.xs-font{
+    font-size: 1rem;
+}
+
 .sm-font{
     font-size: 1.25rem;
 }

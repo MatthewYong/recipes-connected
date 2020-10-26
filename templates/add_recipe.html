@@ -11,25 +11,25 @@
                 </div> 
                 <form action="{{ url_for('add_recipe_mongodb') }}" method="POST" class="recipe-form">
                     <div>
-                        <input class="recipe-input" type="hidden" name="recipe_username" value="{{session['user']}}">
+                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user']}}">
                     </div>
                     <label for="name">Recipe Name</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" placeholder="Give your recipe a name" maxlength="30" required>
+                            <input class="recipe-input xs-font" type="text" name="recipe_name" aria-label="recipe name" placeholder="Give your recipe a name" maxlength="30" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" placeholder="Add here an URL of your recipe image (recommended image ratio: 2:3)" required>
+                            <input class="recipe-input xs-font" type="text" name="recipe_image" aria-label="image" placeholder="Add here an URL of your recipe image (recommended image ratio: 2:3)" required>
                         </div>             
                     <label for="description">Description</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" placeholder="Describe here your delicous recipe" maxlength="50" required>
+                            <input class="recipe-input xs-font" type="text" name="recipe_description" aria-label="description" placeholder="Describe here your delicous recipe" maxlength="50" required>
                         </div>
                     <div class="row">
                         <div class="col-6">
                             <label for="category">Category</label>
                                 <div>
-                                    <select name="recipe_category" class="recipe-select-input">
+                                    <select name="recipe_category" class="recipe-select-input xs-font">
                                     {% for cat in categories %}
                                         <option value="{{cat.recipe_category}}">
                                         {{cat.recipe_category}}</option> 
@@ -40,7 +40,7 @@
                         <div class="col-6">
                             <label for="description">Preparation Time</label>
                                 <div>
-                                    <select name="recipe_preptime" class="recipe-select-input">
+                                    <select name="recipe_preptime" class="recipe-select-input xs-font">
                                     {% for prep in preptime %}
                                         <option value="{{prep.recipe_time}}">
                                         {{prep.recipe_time}}</option> 
@@ -51,13 +51,13 @@
                     </div>           
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" placeholder="Add here your ingredients and place every ingredient on a new line" required></textarea>
+                            <textarea class="recipe-input xs-font" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" placeholder="Add here your ingredients and place every ingredient on a new line" required></textarea>
                         </div>                          
                     <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" placeholder="Add here your cooking instructions and place every instruction on a new line" required></textarea>
+                            <textarea class="recipe-input xs-font" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" placeholder="Add here your cooking instructions and place every instruction on a new line" required></textarea>
                         </div>           
-                    <input class="get-recipe-button" type="submit" value="Add">                         
+                    <input class="get-recipe-button" type="submit" value="Add">
                 </form>              
             </div>  
         </div>
