@@ -15,15 +15,15 @@
                     </div>
                     <label for="name">Recipe Name</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="recipe_name" aria-label="recipe name" placeholder="Give your recipe a name" maxlength="30" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" required>
+                            <input class="recipe-input" type="text" name="recipe_image" aria-label="image" placeholder="Place here an image URL of your recipe, recommended image ratio: 2:3" required>
                         </div>             
                     <label for="description">Description</label>
                         <div>
-                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" maxlength="50" required>
+                            <input class="recipe-input" type="text" name="recipe_description" aria-label="description" placeholder="Describe here your delicous recipe" maxlength="50" required>
                         </div>
                     <div class="row">
                         <div class="col-6">
@@ -51,11 +51,11 @@
                     </div>           
                     <label class="label-ingredients" for="ingredients">Ingredient List</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" required></textarea>
+                            <textarea class="recipe-input" name="recipe_ingredients" id="ingredients" cols="50" rows="8" aria-label="ingredients" placeholder="Add here your ingredients and place every ingredient on a new line" required></textarea>
                         </div>                          
                     <label class="label-recipe" for="instructions">Instructions</label>
                         <div>
-                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" required></textarea>
+                            <textarea class="recipe-input" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" placeholder="Add here your cooking instructions and place every instruction on a new line" required></textarea>
                         </div>                          
                     <button type="submit">Share!</button>            
                 </form>              
