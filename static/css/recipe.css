@@ -124,7 +124,7 @@ label{
 }
 
 .get-recipe-box-header{
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
 }
 
@@ -132,7 +132,7 @@ label{
     text-transform: capitalize;
 }
 
-.get-recipe-box-header h5{
+.get-recipe-box-header h4{
     color: rgb(216, 13, 13);
 }
 
