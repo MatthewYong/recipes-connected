@@ -5,17 +5,16 @@
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    width: 100vw;
-    padding: 0 0 30rem 0;
+    width: 100%;
+    padding-bottom: 30rem;
     margin-bottom: -30rem;
 }
 
-.logreg-box{
-    padding: 1rem;
+.logreg-cover{
+    padding: 1rem 2rem 1rem 2rem;
     margin: 10rem 0 5rem 0;
-    border: 1px solid rgba(34, 34, 34, 0.829);
-    border-radius: 0.1rem;
-    background-color: rgb(226, 208, 208);
+    border-radius: 0.5rem;
+    background-color: rgba(233, 222, 222, 0.781);
 }    
 
 .logreg-form{
