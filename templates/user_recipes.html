@@ -5,7 +5,8 @@
 
 <div class="container">
     <div class="recipes-header">
-        <h1>{{ session['user'] }}'s Recipes</h1>
+        <h1><span class="special-font">{{ session['user'] }}'s</span> Recipes
+        </h1>
     </div>
 	<div class="row">
 		{% for recipe in my_recipes %}
