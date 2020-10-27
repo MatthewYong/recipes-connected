@@ -39,9 +39,19 @@
     opacity: 0.8;
 }
 
+.logreg-link a{
+    color: rgb(31, 73, 187);
+}
+
+.logreg-link a:hover{
+    text-decoration: underline;
+}
 
 #logreg-button{
     width: 20rem;
     margin: 0 0 2rem 0;
 }
 
+#logreg-button:active{
+    box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;
+}
