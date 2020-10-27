@@ -52,6 +52,11 @@ def category_recipes(category):
         "category_recipes.html", recipes=recipes, title=title)
 
 
+@app.route('/user_recipes')
+def user_recipes():
+    return render_template("user.html", recipes=mongo.db.recipes.find())
+
+
 @app.route('/add_recipe')
 @login_required
 def add_recipe():
