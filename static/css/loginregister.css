@@ -39,11 +39,9 @@
     opacity: 0.8;
 }
 
-.logreg-button{
-    color: #fff;
-    margin: 0.2rem 0 1rem 0;
+
+#logreg-button{
     width: 20rem;
-    border: 1px solid rgba(34, 34, 34, 0.829);
-    border-radius: 0.2rem;    
-    background-color: rgb(94, 94, 206);
+    margin: 0 0 2rem 0;
 }
+

@@ -17,7 +17,7 @@
                     <div class="logreg-form">        
                         <input class="login-input xs-font" type="password" name="password" aria-label="password" placeholder="Password" required>
                     </div>  
-                    <div class="col-6 mx-auto xs-font flash_message">
+                    <div class="col-8 mx-auto xs-font flash_message">
                     <!--Code used from https://pythonise.com/series/learning-flask/flask-message-flashing-->
                         {% with messages = get_flashed_messages() %}
                             {% if messages %}
@@ -27,7 +27,7 @@
                             {% endif %}
                         {% endwith %}
                     </div>                       
-                    <button class="logreg-button" type="submit" name="action">Log In</button>                               
+                    <button class="recipes-connected-button" id="logreg-button" type="submit" name="action">Log In</button>                               
                     <div>
                         <p>Don't have an account? <a href="{{ url_for('register') }}">Register here.</a></p>
                     </div>                      
