@@ -11,7 +11,7 @@
                     <h1>Edit your Recipe</h1>
                 </div> 
                 <form action="{{ url_for('update_recipe', 
-                            recipe_id=recipe._id) }}" method="POST" class="recipe-form">
+                            recipe_id=recipe._id) }}" method="POST" class="recipe-form" onsubmit="update_alert()">
                     <div>
                         <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user']}}">
                     </div>
@@ -67,7 +67,7 @@
                         <div>
                             <textarea class="recipe-input xs-font" name="recipe_instructions" id="instructions" cols="50" rows="8" aria-label="instructions" required>{{recipe.recipe_instructions}}</textarea>
                         </div>           
-                    <input class="get-recipe-button" type="submit"  onclick="update_alert()" value="Update">
+                    <input class="get-recipe-button" type="submit" value="Update">
                 </form>              
             </div>  
         </div>
