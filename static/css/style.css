@@ -110,7 +110,7 @@ nav a{
     color: rgb(79, 136, 6);
 }
 
-/*Code used from https://gist.github.com/XtofK/5317209*/
+/*Push footer to bottom. Code used from https://gist.github.com/XtofK/5317209*/
 .wrapper{
     min-height: 100%;
     height: auto !important;
@@ -126,3 +126,26 @@ nav a{
     padding-top: 0.5rem;
 }
 
+
+/*General website button*/
+
+.recipes-connected-button{
+    text-align: center;
+    color: #fff;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: rgb(31, 117, 187);
+    margin: 3rem 0 3rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    box-shadow: 0.1rem 0.1rem 0.2rem rgb(10, 10, 10);
+    border: 0.1rem solid rgb(10, 10, 10);
+    border-radius: 0.15rem;    
+}
+
+.recipes-connected-button:hover{ 
+    background-color: rgb(31, 73, 187);  
+}
+
+.recipes-connected-button:active, #delete-recipe-button:active{ 
+    box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;    
+}

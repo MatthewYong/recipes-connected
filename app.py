@@ -135,22 +135,26 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        user = mongo.db.users
-        # Code used from https://github.com/PrettyPrinted/mongodb-user-login
-        login_user = user.find_one({
-            "username": request.form['username'].lower()})
-        # Check if user exist in database
-        if login_user:
-            login_pass = login_user['password']
-            hashpass = bcrypt.hashpw(
-                request.form['password'].encode('utf-8'), login_pass)
-            if login_pass == hashpass:
-                session['user'] = request.form['username']
-                return redirect(url_for('home'))
+    if 'user' in session:
+        return redirect(url_for('home'))
+
+    else:
+        if request.method == 'POST':
+            user = mongo.db.users
+            # Code used from https://github.com/PrettyPrinted/mongodb-user-login
+            login_user = user.find_one({
+                "username": request.form['username'].lower()})
+            # Check if user exist in database
+            if login_user:
+                login_pass = login_user['password']
+                hashpass = bcrypt.hashpw(
+                    request.form['password'].encode('utf-8'), login_pass)
+                if login_pass == hashpass:
+                    session['user'] = request.form['username']
+                    return redirect(url_for('home'))
+                return 'Invalid username/password'
             return 'Invalid username/password'
-        return 'Invalid username/password'
-    return render_template("login.html")
+        return render_template("login.html")
 
 
 # Session logout
