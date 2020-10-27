@@ -52,9 +52,12 @@ def category_recipes(category):
         "category_recipes.html", recipes=recipes, title=title)
 
 
-@app.route('/user_recipes')
-def user_recipes():
-    return render_template("user.html", recipes=mongo.db.recipes.find())
+@app.route('/user_recipes/<user>')
+@login_required
+def user_recipes(user):
+    logged_user = {"recipe_username": user}
+    my_recipes = mongo.db.recipes.find(logged_user)
+    return render_template("user_recipes.html", recipe=my_recipes)
 
 
 @app.route('/add_recipe')
@@ -128,7 +131,8 @@ def register():
             if existing_email is None:
                 if existing_user is None:
                     # Code used from http://zetcode.com/python/bcrypt/
-                    hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
+                    hashpass = bcrypt.hashpw(
+                        request.form['password'].encode('utf-8'), bcrypt.gensalt())
                     user.insert_one({
                         "email": request.form['email'].lower(),
                         "username": request.form['username'].lower(),

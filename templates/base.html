@@ -36,7 +36,7 @@
                     <a class="nav-link nav-hover" href="{{url_for('add_recipe')}}">Add Recipe</a>
                 </li>    
                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('add_recipe')}}">My Recipes</a>
+                    <a class="nav-link nav-hover" href="{{url_for('user_recipes', user='session['user']')}}">My Recipes</a>
                 </li>                 
                 <li class="nav-item">
                     <a class="nav-link logreg-nav" href="{{url_for('logout')}}">Logout</a>
