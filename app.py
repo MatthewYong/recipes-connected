@@ -165,6 +165,18 @@ def logout():
     return redirect(url_for('login'))
 
 
+# 404 Error page
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+# 404 Error page
+@app.errorhandler(500)
+def internal_service_error(e):
+    return render_template('500.html'), 500
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
