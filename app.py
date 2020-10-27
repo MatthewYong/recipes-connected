@@ -55,6 +55,7 @@ def category_recipes(category):
 @app.route('/user_recipes/<user>')
 @login_required
 def user_recipes(user):
+    user = session['user']
     logged_user = {"recipe_username": user}
     recipes = mongo.db.recipes.find(logged_user)
     return render_template("user_recipes.html", my_recipes=recipes)
