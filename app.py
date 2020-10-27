@@ -159,7 +159,6 @@ def login():
 
 # Session logout
 @app.route('/logout')
-@login_required
 def logout():
     if 'user' in session:
         session.pop("user", None)
