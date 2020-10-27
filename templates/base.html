@@ -26,29 +26,32 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto md-font">
                 <li class="nav-item active">
-                    <a class="nav-link nav-hover" href="{{url_for('home')}}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link nav-hover" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('all_recipes')}}">All Recipes</a>
+                    <a class="nav-link nav-hover" 
+                    href="{{ url_for('all_recipes') }}">All Recipes</a>
                 </li>
                 {% if 'user' in session %}                
                 <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('add_recipe')}}">Add Recipe</a>
+                    <a class="nav-link nav-hover" 
+                    href="{{ url_for('add_recipe') }}">Add Recipe</a>
                 </li>    
                <li class="nav-item">
-                    <a class="nav-link nav-hover" href="{{url_for('user_recipes', user='session['user']')}}">My Recipes</a>
+                    <a class="nav-link nav-hover" 
+                    href="{{ url_for('user_recipes', user=session['user']) }}">My Recipes</a>
                 </li>                 
                 <li class="nav-item">
-                    <a class="nav-link logreg-nav" href="{{url_for('logout')}}">Logout</a>
+                    <a class="nav-link logreg-nav" href="{{ url_for('logout') }}">Logout</a>
                 </li>                   
                 {% else %}                        
                 <li class="nav-item">
                     <a class="nav-link logreg-nav" 
-                    href="{{url_for('register')}}">Register</a>
+                    href="{{ url_for('register') }}">Register</a>
                 </li>                                  
                 <li class="nav-item">
                     <a class="nav-link logreg-nav" 
-                    href="{{url_for('login')}}">Login</a>
+                    href="{{ url_for('login') }}">Login</a>
                 </li>                 
                 {% endif %}                 
             </ul>
