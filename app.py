@@ -111,26 +111,28 @@ def delete_recipe(recipe_id):
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    if request.method == 'POST':
-        user = mongo.db.users
-        existing_user = user.find_one({
-            "username": request.form['username'].lower()})
-        existing_email = user.find_one({
-            "email": request.form['email'].lower()})
-        if existing_email is None:
-            if existing_user is None:
-                # Code used from http://zetcode.com/python/bcrypt/
-                hashpass = bcrypt.hashpw(
-                    request.form['password'].encode('utf-8'), bcrypt.gensalt())
-                user.insert_one({
-                    "email": request.form['email'].lower(),
-                    "username": request.form['username'].lower(),
-                    "password": hashpass})
-                session['user'] = request.form['username']
-                return redirect(url_for('home'))
-            return 'The username already exist'
-        return 'The emailaddress already exist'
-    return render_template("register.html")
+    if 'user' in session:
+        return redirect(url_for('home'))
+    else:
+        if request.method == 'POST':
+            user = mongo.db.users
+            existing_user = user.find_one({
+                "username": request.form['username'].lower()})
+            existing_email = user.find_one({
+                "email": request.form['email'].lower()})
+            if existing_email is None:
+                if existing_user is None:
+                    # Code used from http://zetcode.com/python/bcrypt/
+                    hashpass = bcrypt.hashpw(request.form['password'].encode('utf-8'), bcrypt.gensalt())
+                    user.insert_one({
+                        "email": request.form['email'].lower(),
+                        "username": request.form['username'].lower(),
+                        "password": hashpass})
+                    session['user'] = request.form['username']
+                    return redirect(url_for('home'))
+                return 'The username already exist'
+            return 'The emailaddress already exist'
+        return render_template("register.html")
 
 
 @app.route('/login', methods=['GET', 'POST'])
