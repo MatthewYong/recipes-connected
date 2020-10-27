@@ -149,3 +149,9 @@ nav a{
 .recipes-connected-button:active, #delete-recipe-button:active{ 
     box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;    
 }
+
+/*Flash message*/
+
+.flash_message{
+    text-align: center;
+}
