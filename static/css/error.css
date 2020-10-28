@@ -13,8 +13,9 @@ a:hover{
 }
 
 .error-header{
-    font-size: 5rem;
-    padding-top: 20vh;
+    font-size: 7rem;
+    padding-top: 10vh;
+    margin-bottom: 5rem;
 }
 
 .error-content{
@@ -22,8 +23,7 @@ a:hover{
 }
 
 .error-link{
-    color: #222;
-
+    color: #152a23;
 }
 
 .error-link:hover{
