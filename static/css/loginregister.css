@@ -56,3 +56,7 @@
     box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset;
     outline: none;
 }
+
+#logreg-button:focus{
+    outline: none;
+}
