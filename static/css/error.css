@@ -1,3 +1,7 @@
+a:hover{
+    text-decoration: none;
+}
+
 .image-bg-error{
     background-image: url("../images/image-bg-error.jpg");
     background-position: center;
@@ -17,8 +21,19 @@
     text-align: center;
 }
 
+.error-link{
+    color: #222;
+
+}
+
+.error-link:hover{
+    background-color: rgba(34, 34, 34, 0.144);
+    opacity: 0.8;
+}
+
 .error-link p{
     text-align: center;
+    border: 0.1rem solid #222;    
     padding: 1rem;
-    border: 0.1rem solid #222;
+    margin-top: 3rem;
 }
