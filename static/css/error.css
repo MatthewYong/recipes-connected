@@ -16,3 +16,9 @@
 .error-content{
     text-align: center;
 }
+
+.error-link p{
+    text-align: center;
+    padding: 1rem;
+    border: 0.1rem solid #222;
+}

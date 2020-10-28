@@ -1,16 +1,24 @@
 {% extends 'base.html' %} {% block content %}
 <!--Link to css files-->
 <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
-    <div class="image-bg-error error-content ">
-        <div class="lg-font">
-            <p class="error-header">404 Page</p>
-            <p>Page not Found</p>
-            <p>Sorry but the page that you requested does not exist doesn't exist</p> 
+<div class="image-bg-error error-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 md-font mx-auto">
+                <p class="error-header">404 Page</p>
+                <p>Page not Found</p>
+                <p>Sorry but the page that you requested does not exist doesn't exist</p> 
+            </div>        
         </div>
-        <a href="{{url_for('home')}}">
-            <div class="col-4 add-recipe-button mx-auto">
-                Return to Home Page
+        <div class="row">
+            <div class="col-3 mx-auto">
+                <a href="{{url_for('home')}}">
+                    <div class="error-link">
+                        <p>Return to Home Page</p>
+                    </div>
+                </a>                 
             </div>
-        </a>    
+        </div>
     </div>
+</div>
 {% endblock %}
