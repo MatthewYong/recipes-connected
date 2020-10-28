@@ -1,0 +1,8 @@
+.image-bg-error{
+    background-image: url("../images/image-bg-error.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 10rem;
+    margin-bottom: -10rem;  
+}
