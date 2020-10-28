@@ -165,8 +165,12 @@ def login():
                 if login_pass == hashpass:
                     session['user'] = request.form['username']
                     return redirect(url_for('home'))
-                return 'Invalid username/password'
-            return 'Invalid username/password'
+                else:
+                    flash("Invalid username/password")
+                    return redirect(url_for('login'))
+            else:
+                flash("Invalid username/password")
+                return redirect(url_for('login'))
         return render_template("login.html")
 
 
