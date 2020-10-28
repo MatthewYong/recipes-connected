@@ -141,8 +141,12 @@ def register():
                         "password": hashpass})
                     session['user'] = request.form['username']
                     return redirect(url_for('home'))
-                return 'The username already exist'
-            return 'The emailaddress already exist'
+                else:
+                    flash('The username already exist')
+                    return redirect(url_for('register'))
+            else:
+                flash('The emailaddress already exist')
+                return redirect(url_for('register'))
         return render_template("register.html")
 
 
