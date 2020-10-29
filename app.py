@@ -203,7 +203,7 @@ def internal_service_error(e):
 
 @app.route('/test404')
 def test404():
-    return render_template('404.html')
+    return render_template('500.html')
 
 
 if __name__ == '__main__':

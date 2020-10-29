@@ -1,18 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Link to css files-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">    
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
-
-    <title>500 Error page</title>
-</head>
-<body>
-    <h1>500 Error</h1>
-    
-</body>
-</html>
+{% extends 'base.html' %} {% block content %}
+<!--Link to css files-->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/error.css') }}">
+<div class="image-bg-error error-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 md-font mx-auto">
+                <p class="error-header">500</p>
+                <p>Internal Server Error</p>
+                <p>Sorry, but the server was unable to complete your request</p> 
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col-4 md-font mx-auto">
+                <a href="{{url_for('home')}}">
+                    <div class="error-link">
+                        <p>Return to Home Page</p>
+                    </div>
+                </a>                 
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

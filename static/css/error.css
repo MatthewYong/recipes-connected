@@ -5,6 +5,7 @@ a:hover{
 .image-bg-error{
     background-image: url("../images/image-bg-error.jpg");
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -15,7 +16,7 @@ a:hover{
 .error-header{
     font-size: 7rem;
     padding-top: 10vh;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .error-content{
@@ -31,9 +32,15 @@ a:hover{
     opacity: 0.8;
 }
 
+.error-link:active{
+    box-shadow: 0.05rem 0.05rem 0.1rem rgb(10, 10, 10) inset; 
+}
+
 .error-link p{
     text-align: center;
     border: 0.1rem solid #222;    
     padding: 1rem;
     margin-top: 3rem;
 }
+
+
