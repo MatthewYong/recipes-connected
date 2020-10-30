@@ -59,6 +59,14 @@ nav a{
     padding-bottom: 0.1rem;
 }
 
+.navbar-toggler{
+    margin-right: 1rem;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
 
 .logreg-nav{
     color: #fff;
