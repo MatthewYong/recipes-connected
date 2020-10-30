@@ -123,10 +123,10 @@ a:hover{
 }
 
 
-/*Media screen max-width 576px*/
+/*Media screen max-width 767px*/
 
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 767px){
 
 .welcome{
     margin-top: 6rem;
@@ -152,9 +152,9 @@ a:hover{
 }
 
 
-/*Media screen max-height 375px*/
+/*Media screen max-height 450px*/
 
-@media only screen and (max-height: 375px){
+@media only screen and (max-height: 450px){
 
 .welcome{
     margin-top: 5rem;
