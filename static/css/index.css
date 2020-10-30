@@ -114,24 +114,24 @@ a:hover{
 @media only screen and (max-width: 576px){
 
 .welcome{
-    margin-top: 8rem;
+    margin-top: 6rem;
+    height: 50vh;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
 
-.welcome{
-    height: 50vh;
-    font-size: 2.5rem;
-    padding-top: 2rem;
-    margin-top: 12rem;
+.welcome-slogan{
+    font-size: 1rem;
 }
 
 .welcome a{
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 .add-recipe-button{
     width: 10rem;
-    height: 2.5rem;
-    margin: 3rem 0 3rem 0;
+    height: 1.75rem;
+    margin: 1rem 0 3rem 0;
     padding: 0.5rem 0 0.5rem 0;
 }
 
