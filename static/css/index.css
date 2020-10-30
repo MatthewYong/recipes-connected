@@ -128,27 +128,27 @@ a:hover{
 
 @media only screen and (max-width: 767px){
 
-.welcome{
-    margin-top: 6rem;
-    height: 40%;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-}
+    .welcome{
+        margin-top: 6rem;
+        height: 40%;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
 
-.welcome-slogan{
-    font-size: 1rem;
-}
+    .welcome-slogan{
+        font-size: 1rem;
+    }
 
-.welcome a{
-    font-size: 0.5rem;
-}
+    .welcome a{
+        font-size: 0.5rem;
+    }
 
-.add-recipe-button{
-    width: 10rem;
-    height: 1.5rem;
-    margin: 1.5rem 0 2rem 0;
-    padding-bottom: 1.25rem;
-}
+    .add-recipe-button{
+        width: 10rem;
+        height: 1.5rem;
+        margin: 1.5rem 0 2rem 0;
+        padding-bottom: 1.25rem;
+    }
 }
 
 
@@ -156,25 +156,25 @@ a:hover{
 
 @media only screen and (max-height: 450px){
 
-.welcome{
-    margin-top: 5rem;
-    font-size: 1rem;
-    padding-top: 1rem;
-}
+    .welcome{
+        margin-top: 5rem;
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
 
-.welcome-slogan{
-    font-size: 0.75rem;
-}
+    .welcome-slogan{
+        font-size: 0.75rem;
+    }
 
-.welcome a{
-    font-size: 0.5rem;
-}
+    .welcome a{
+        font-size: 0.5rem;
+    }
 
-.add-recipe-button{
-    width: 6rem;
-    height: 0.5rem;
-    padding: 0 0 0.75rem 0;    
-    margin-bottom: 1rem;
-}
+    .add-recipe-button{
+        width: 6rem;
+        height: 0.5rem;
+        padding: 0 0 0.75rem 0;    
+        margin-bottom: 1rem;
+    }
 }
 

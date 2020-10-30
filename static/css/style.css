@@ -160,9 +160,9 @@ footer{
 }
 
 
-/*Media screen max-width 1250px*/
+/*Media screen max-width 1300px*/
 
-    @media only screen and (max-width: 1250px){
+    @media only screen and (max-width: 1300px){
 
     .nav-item a{
         font-size: 1.30rem;
