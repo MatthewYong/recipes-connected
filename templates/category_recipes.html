@@ -10,7 +10,7 @@
     </div>
 	<div class="row">
 		{% for recipe in recipes %}
-		<div class="col-4 recipe-outer-box">
+		<div class="col-12 col-md-6 col-xl-4 recipe-outer-box">
             <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}">
                 <div class="recipe-box">
                     <div>
