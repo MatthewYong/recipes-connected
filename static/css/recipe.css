@@ -17,9 +17,9 @@ label{
     margin-bottom: -10rem;
 }
 
-.recipe-header{
+.recipes-header{
     text-align: center;
-    margin: 1rem 0 4rem 0;
+    margin-top: 5rem;
 }
 
 .recipe-form-cover{
@@ -191,6 +191,6 @@ label{
     }
 
     .recipe-outer-box{
-    margin-bottom: 4rem;
-}
+        margin-bottom: 4rem;
+    }
 }
