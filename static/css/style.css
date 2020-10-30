@@ -155,3 +155,16 @@ nav a{
 .flash_message{
     text-align: center;
 }
+
+
+/*Media screen max-width 576px*/
+
+@media only screen and (max-width: 575px){
+
+#copyright{
+    font-size: 0.75rem;
+}
+
+}
+
+
