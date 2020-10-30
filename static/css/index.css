@@ -108,6 +108,21 @@ a:hover{
 }
 
 
+/*Media screen max-width 1199px*/
+
+
+@media only screen and (max-width: 1199px){
+
+.welcome{
+    margin-top: 8rem;
+}
+
+.welcome a{
+    font-size: 0.8rem;
+}
+}
+
+
 /*Media screen max-width 576px*/
 
 
