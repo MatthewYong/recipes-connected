@@ -44,19 +44,19 @@ footer{
 }
 
 /*Navbar*/
-nav a{
-    color: #152a23;
-}
-
 .nav-title{
+    text-align: center;
     margin: 0 2rem 0 2rem;
-    color: #fff;
 }
 
 .nav-title:hover{
     color: #fff;
     border-bottom: 0.2rem solid #fff;
     padding-bottom: 0.1rem;
+}
+
+.nav-item a{
+    color: #fff !important;
 }
 
 .navbar-toggler{
@@ -67,8 +67,8 @@ nav a{
     outline: none;
 }
 
-
 .logreg-nav{
+    text-align: center;
     color: #fff;
     margin: 0.5rem 2rem 0 2rem;
     padding: 0.05rem 0 0.2rem 0;
@@ -87,11 +87,12 @@ nav a{
 }
 
 #navbar-custom{
+    background-color:rgb(226, 63, 51);
+    padding: 0.5rem 0 1rem 0;     
     top: 0;
     z-index: 9;
     position: sticky;
-    background-color:rgb(226, 63, 51);
-    padding: 0.5rem 0 1rem 0; 
+
 }
 
 #logo{
