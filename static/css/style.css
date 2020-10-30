@@ -162,11 +162,11 @@ footer{
 
 /*Media screen max-width 1250px*/
 
-@media only screen and (max-width: 1250px){
+    @media only screen and (max-width: 1250px){
 
-.nav-item a{
-    font-size: 1.35rem;
-}
+    .nav-item a{
+        font-size: 1.35rem;
+    }
 }
 
 
@@ -174,13 +174,21 @@ footer{
 
 @media only screen and (max-width: 575px){
 
-#logo{
-    font-size: 1.5rem;
+    #logo{
+        font-size: 1.5rem;
+    }
+
+    #copyright{
+        font-size: 0.75rem;
+    }
 }
 
-#copyright{
-    font-size: 0.75rem;
-}
-}
 
+/*Media screen max-height 375px*/
 
+    @media only screen and (max-height: 450px){
+
+    #logo{
+        font-size: 1.25rem;
+    }
+}
