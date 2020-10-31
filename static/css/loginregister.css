@@ -89,16 +89,15 @@
 }
 
 
-/*Media screen max-height 280*/
+/*Media screen max-height 280px*/
 
 @media only screen and (max-height: 280px){
     .logreg-cover{
-        margin-top: 10vh;
-        padding-bottom: 1rem;
+        margin-top: 30vh;
+        padding: 1rem;
     }   
 
     .logreg-header{
         font-size: 0.75rem;
     }
-
 }
