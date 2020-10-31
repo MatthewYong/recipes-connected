@@ -6,8 +6,8 @@
 <div class="image-bg-recipe">
     <div class="container">
         <div class="row mx-auto">
-            <div class="col recipe-form-cover">
-                <div class="col recipe-header">
+            <div class="col-12 recipe-form-cover">
+                <div class="col-12 recipe-header">
                     <h1>Edit your Recipe</h1>
                 </div> 
                 <form action="{{ url_for('update_recipe', 
@@ -30,7 +30,7 @@
                             <input class="recipe-input xs-font" type="text" name="recipe_description" aria-label="description" value="{{recipe.recipe_description}}" maxlength="50" required>
                         </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <label for="category">Category</label>
                                 <div>
                                     <select name="recipe_category" class="recipe-select-input xs-font">
@@ -44,7 +44,7 @@
                                     </select>
                                 </div> 
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <label for="description">Preparation Time</label>
                                 <div>
                                     <select name="recipe_preptime" class="recipe-select-input xs-font">

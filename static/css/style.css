@@ -16,9 +16,10 @@ body{
 }
 
 footer{
+    width: 100%;
     background-color: rgb(226, 236, 247);
     text-align: center;
-    width: 100%;
+    position: relative;
     padding-top: 1rem;
     margin-top: 10vh;
 }
@@ -113,18 +114,6 @@ footer{
     color: rgb(79, 136, 6);
 }
 
-/*Push footer to bottom. Code used from https://gist.github.com/XtofK/5317209*/
-.wrapper{
-    min-height: 100%;
-    height: auto !important;
-	height: 100%;
-	margin: 0 auto -8rem;
-}
-
-.push, footer{
-    height: 8rem;
-}
-
 #copyright{
     padding-top: 0.5rem;
 }
@@ -186,17 +175,9 @@ footer{
 /*Media screen max-height 414px*/
 
     @media only screen and (max-height: 414px){
-    
-    footer {
-        margin-top: 30vh;
-    }
  
     #logo{
         font-size: 1.25rem;
-    }
-
-    .wrapper{
-        margin: 0 auto -10vh;
     }
 
     .social-media{
@@ -206,21 +187,4 @@ footer{
     #copyright{
         font-size: 0.75rem;
     }   
-}
-
-
-/*Media screen max-height 320px*/
-
-@media only screen and (max-height: 320px){
-    .push, footer{
-        height: 7rem;
-    }    
-
-    footer{
-        margin-top: 60vh;      
-    }
-
-    .wrapper{
-        margin: 0 auto -10vh;
-    }
 }

@@ -10,11 +10,11 @@ label{
 
 .image-bg-recipe {
     background-image: url("../images/image-bg-recipe.jpg");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    padding-bottom: 10rem;
-    margin-bottom: -10rem;
+    height: 100%;
 }
 
 .recipe-header{
@@ -191,9 +191,6 @@ label{
     .recipe-outer-box{
         margin-bottom: 4rem;
     }
-
-
-
 }
 
 
@@ -206,7 +203,9 @@ label{
         height: 16rem;
     }
 
+
 /*Add & edit category recipes page styling*/
+
 
     .recipe-header{
         font-size: 2rem;
@@ -268,5 +267,4 @@ label{
         font-size: 1.5rem;
     }
 }
-
 
