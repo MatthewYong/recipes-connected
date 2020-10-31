@@ -9,10 +9,10 @@
 
 .logreg-cover{
     text-align: center;
-    padding: 2rem;
-    margin-top: 20vh;
     border-radius: 0.5rem;
-    background-color: rgba(233, 222, 222, 0.781);
+    background-color: rgba(233, 222, 222, 0.781);    
+    padding: 2rem;
+    margin: 25vh 0 10vh 0;
 }    
 
 .logreg-form{
@@ -82,29 +82,5 @@
         height: 1.5rem;
         padding: 0;
         margin: 0 0 1.5rem 0;
-    }
-}
-
-
-/*Media screen max-height 450px*/
-@media only screen and (max-height: 450px){
-    
-    .image-bg-logreg{
-        height: 120vh;
-    }
-}
-
-
-/*Media screen max-height 280px*/
-
-@media only screen and (max-height: 280px){
-    
-    .logreg-cover{
-        margin-top: 30vh;
-        padding: 1rem;
-    }   
-
-    .logreg-header{
-        font-size: 0.75rem;
     }
 }
