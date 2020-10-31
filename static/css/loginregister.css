@@ -49,7 +49,7 @@
 
 #logreg-button{
     width: 20rem;
-    margin: 0 0 2rem 0;
+    margin-bottom: 2rem;
 }
 
 #logreg-button:active{
@@ -68,11 +68,40 @@
 @media only screen and (max-width: 575px){
 
     .logreg-cover{
-        text-align: center;
-        padding: 2rem;
-        margin-top: 10rem;
-        border-radius: 0.5rem;
-        background-color: rgba(233, 222, 222, 0.781);
+        margin-top: 5rem;
     }   
+
+    .logreg-header{
+        font-size: 1rem;
+    }
+
+    .login-input{
+        font-size: 0.75rem;
+        height: 1.5rem;
+        width: 10rem;
+    }
+
+    .logreg-link{
+        font-size: 0.75rem;
+    }
+
+    #logreg-button{
+        font-size: 0.75rem;
+        height: 1.5rem;
+        width: 10rem;
+        padding: 0;
+        margin: 0 0 1.5rem 0;
+    }
+
+}
+
+
+
+/*Media screen max-height 400px*/
+
+@media only screen and (max-height: 400px){
+
+
+
 
 }
