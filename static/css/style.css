@@ -138,7 +138,7 @@ footer{
     width: 8rem;
     height: 2.5rem;
     background-color: rgb(31, 117, 187);
-    margin: 3rem 0 3rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     padding: 0.5rem 0 0.5rem 0;
     box-shadow: 0.1rem 0.1rem 0.2rem rgb(10, 10, 10);
     border: 0.1rem solid rgb(10, 10, 10);
@@ -180,6 +180,12 @@ footer{
 
     #copyright{
         font-size: 0.75rem;
+    }
+
+
+    /*Push footer to bottom. Code used from https://gist.github.com/XtofK/5317209*/
+    .wrapper{
+        margin: 0 auto -12rem;
     }
 }
 
