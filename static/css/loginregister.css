@@ -89,3 +89,16 @@
         margin: 0 0 1.5rem 0;
     }
 }
+
+/*Media screen max-height 375px*/
+
+@media only screen and (max-height: 375px){
+
+    .image-bg-logreg {
+        height: 100%;
+    }
+
+    .logreg-cover{
+        margin: 5rem 0 5rem 0;
+    }    
+}
