@@ -89,9 +89,21 @@
 }
 
 
+@media only screen and (max-height: 450px){
+    
+    .image-bg-logreg{
+        height: 120vh;
+    }
+
+}
+
+
+
+
 /*Media screen max-height 280px*/
 
 @media only screen and (max-height: 280px){
+    
     .logreg-cover{
         margin-top: 30vh;
         padding: 1rem;

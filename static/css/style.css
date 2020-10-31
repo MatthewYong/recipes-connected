@@ -188,7 +188,7 @@ footer{
     @media only screen and (max-height: 414px){
     
     footer {
-        margin-top: 20vh;
+        margin-top: 30vh;
     }
  
     #logo{
@@ -196,8 +196,16 @@ footer{
     }
 
     .wrapper{
-        margin: 0 auto -8vh;
+        margin: 0 auto -10vh;
     }
+
+    .social-media{
+        font-size: 1.75rem;
+    }
+
+    #copyright{
+        font-size: 0.75rem;
+    }   
 }
 
 
@@ -214,13 +222,5 @@ footer{
 
     .wrapper{
         margin: 0 auto -10vh;
-    }
-
-    .social-media{
-        font-size: 1.75rem;
-    }
-
-    #copyright{
-        font-size: 0.75rem;
     }
 }
