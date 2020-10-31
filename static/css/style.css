@@ -173,7 +173,6 @@ footer{
 /*Media screen max-width 575px*/
 
 @media only screen and (max-width: 575px){
-
     #logo{
         font-size: 1.5rem;
     }
@@ -184,29 +183,37 @@ footer{
 }
 
 
-/*Media screen max-height 450px*/
+/*Media screen max-height 414px*/
 
-    @media only screen and (max-height: 450px){
+    @media only screen and (max-height: 414px){
+    
+    footer {
+        margin-top: 20vh;
+    }
  
     #logo{
         font-size: 1.25rem;
     }
 
     .wrapper{
-        margin: 0 auto -4rem;
+        margin: 0 auto -8vh;
     }
 }
 
 
-/*Media screen max-height 280px*/
+/*Media screen max-height 320px*/
 
-@media only screen and (max-height: 280px){
-
+@media only screen and (max-height: 320px){
     .push, footer{
         height: 7rem;
+    }    
+
+    footer{
+        margin-top: 60vh;      
     }
+
     .wrapper{
-        margin: 0 auto 0rem;
+        margin: 0 auto -10vh;
     }
 
     .social-media{

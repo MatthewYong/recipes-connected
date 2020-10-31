@@ -5,7 +5,7 @@
 <div class="image-bg-logreg">
     <div class="container">
         <div class="row">
-            <div class="col-5 logreg-cover mx-auto">
+            <div class="col-xl-5 col-lg-6 col-md-7 col-sm-9 col-10 logreg-cover mx-auto">
                 <form action="{{ url_for('register') }}" method="POST">
                     <div class="logreg-header md-font">Register</div>   
                     <div class="logreg-form">        
@@ -17,7 +17,7 @@
                     <div class="logreg-form">        
                         <input class="login-input xs-font" type="password" name="password" aria-label="choose password" placeholder="Choose Password" minlength="8" maxlength="20" required>
                     </div>  
-                    <div class="col-8 mx-auto xs-font flash_message">
+                    <div class="col-12 mx-auto xs-font flash_message">
                     <!--Code used from https://pythonise.com/series/learning-flask/flask-message-flashing-->
                         {% with messages = get_flashed_messages() %}
                             {% if messages %}
