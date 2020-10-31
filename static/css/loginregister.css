@@ -60,3 +60,19 @@
 #logreg-button:focus{
     outline: none;
 }
+
+
+
+/*Media screen max-width 576px*/
+
+@media only screen and (max-width: 575px){
+
+    .logreg-cover{
+        text-align: center;
+        padding: 2rem;
+        margin-top: 10rem;
+        border-radius: 0.5rem;
+        background-color: rgba(233, 222, 222, 0.781);
+    }   
+
+}
