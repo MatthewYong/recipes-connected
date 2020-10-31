@@ -137,15 +137,12 @@ label{
     color: rgb(216, 13, 13);
 }
 
-
-/*Get recipe page list styling*/
-
-.recipe-list h2{
+.get-recipe-list h2{
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.recipe-instructions, .recipe-ingredients{
+.get-recipe-instructions, .get-recipe-ingredients{
     overflow: auto;
     padding: 2rem 3rem 2rem 2rem;
     margin-right: 4rem;
@@ -155,16 +152,16 @@ label{
     background-color: rgb(226, 236, 247);
 }
 
-.recipe-instructions{
+.get-recipe-instructions{
     background-color: rgb(233, 142, 135);
 }
 
-.recipe-ingredients li{
+.get-recipe-ingredients li{
     text-transform: capitalize;
     margin-bottom: 1rem;
     border-bottom: 0.1rem solid #222;
 }
-.recipe-instructions li{
+.get-recipe-instructions li{
     margin-bottom: 1rem;
 }
 

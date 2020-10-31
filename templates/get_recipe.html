@@ -24,9 +24,9 @@
 			<img class="get-recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">
         </div> 
 	</div>
-    <div class="row mx-auto recipe-list sm-font">
+    <div class="row mx-auto get-recipe-list sm-font">
         <div class="col-lg-6 col-12">
-            <div class="recipe-ingredients mx-auto">
+            <div class="get-recipe-ingredients mx-auto">
                 <h2 class="special-font">Ingredients</h2>
                 <ol>
                     {% for break in recipe.recipe_ingredients.splitlines() %}
@@ -38,7 +38,7 @@
             </div>            
         </div>
         <div class="col-lg-6 col-12">
-            <div class="recipe-instructions mx-auto">
+            <div class="get-recipe-instructions mx-auto">
                 <h2 class="special-font">Instructions</h2>
                 <ol>
                     {% for break in recipe.recipe_instructions.splitlines() %}
