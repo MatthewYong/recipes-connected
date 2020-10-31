@@ -191,10 +191,10 @@ label{
     .recipe-outer-box{
         margin-bottom: 4rem;
     }
+
+
+
 }
-
-
-
 
 
 /*Media screen max-width 576px*/
@@ -204,6 +204,17 @@ label{
 /*All & category recipes page styling*/
     .recipe-image{
         height: 16rem;
+    }
+
+/*Add & edit category recipes page styling*/
+
+    .recipe-header{
+        font-size: 2rem;
+    }
+
+    .recipe-form-cover{
+        padding: 2rem 0.75rem 2rem 0.75rem;
+        margin: 8rem 0 2rem 0;
     }
 
 
@@ -245,4 +256,17 @@ label{
         height: 11rem;
     }
 }
+
+
+/*Media screen max-width 280px*/
+
+@media only screen and (max-width: 280px){
+
+/*Add & edit category recipes page styling*/
+
+    .recipe-header{
+        font-size: 1.5rem;
+    }
+}
+
 
