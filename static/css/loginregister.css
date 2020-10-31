@@ -30,7 +30,7 @@
 
 .login-input{
     height: 2rem;
-    width: 20rem;
+    width: 100%;
     border: 1px solid rgba(34, 34, 34, 0.829);
     border-radius: 0.1rem;
 }
@@ -48,7 +48,7 @@
 }
 
 #logreg-button{
-    width: 20rem;
+    width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -63,9 +63,9 @@
 
 
 
-/*Media screen max-width 576px*/
+/*Media screen max-width 812*/
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 812px){
 
     .logreg-cover{
         margin-top: 5rem;
@@ -78,7 +78,7 @@
     .login-input{
         font-size: 0.75rem;
         height: 1.5rem;
-        width: 10rem;
+
     }
 
     .logreg-link{
@@ -88,20 +88,17 @@
     #logreg-button{
         font-size: 0.75rem;
         height: 1.5rem;
-        width: 10rem;
         padding: 0;
         margin: 0 0 1.5rem 0;
     }
-
 }
 
 
+/*Media screen max-height 450px*/
 
-/*Media screen max-height 400px*/
-
-@media only screen and (max-height: 400px){
-
-
-
-
+@media only screen and (max-height: 450px){
+    .logreg-cover{
+        margin-top: 5rem;
+        padding-bottom: 1rem;
+    }   
 }

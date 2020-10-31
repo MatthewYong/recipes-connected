@@ -170,7 +170,7 @@ footer{
 }
 
 
-/*Media screen max-width 576px*/
+/*Media screen max-width 575px*/
 
 @media only screen and (max-width: 575px){
 
@@ -181,19 +181,18 @@ footer{
     #copyright{
         font-size: 0.75rem;
     }
-
-    /*Push footer to bottom. Code used from https://gist.github.com/XtofK/5317209*/
-    .wrapper{
-        margin: 0 auto -12rem;
-    }
 }
 
 
 /*Media screen max-height 450px*/
 
     @media only screen and (max-height: 450px){
-
+ 
     #logo{
         font-size: 1.25rem;
+    }
+
+    .wrapper{
+        margin: 0 auto -4rem;
     }
 }
