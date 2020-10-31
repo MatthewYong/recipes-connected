@@ -63,13 +63,9 @@
 
 
 
-/*Media screen max-width 812*/
+/*Media screen max-width 812px*/
 
 @media only screen and (max-width: 812px){
-
-    .logreg-cover{
-        margin-top: 15vh;
-    }   
 
     .logreg-header{
         font-size: 1rem;
@@ -78,7 +74,6 @@
     .login-input{
         font-size: 0.75rem;
         height: 1.5rem;
-
     }
 
     .logreg-link{
@@ -94,11 +89,16 @@
 }
 
 
-/*Media screen max-height 450px*/
+/*Media screen max-height 280*/
 
-@media only screen and (max-height: 450px){
+@media only screen and (max-height: 280px){
     .logreg-cover{
-        margin-top: 5rem;
+        margin-top: 10vh;
         padding-bottom: 1rem;
     }   
+
+    .logreg-header{
+        font-size: 0.75rem;
+    }
+
 }
