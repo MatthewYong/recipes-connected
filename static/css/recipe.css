@@ -210,7 +210,7 @@ label{
     .get-recipe-image{
         margin-bottom: 4rem;
         width: 100%;
-        height: 10rem;
+        height: 18rem;
     }
 
     .get-recipe-box{
@@ -233,3 +233,15 @@ label{
         text-align: center;
     }    
 }
+
+
+/*Media screen max-width 375px*/
+
+@media only screen and (max-width: 375px){
+
+/*All & category recipes page styling*/
+    .get-recipe-image{
+        height: 11rem;
+    }
+}
+
