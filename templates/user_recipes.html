@@ -11,7 +11,9 @@
 	<div class="row">
         {% if my_recipes.count() %}
         {% else %}
-            <div><h1>Nothing here</h1></div>
+            <div class="image-bg-user no-recipes">
+                <p>No recipes found. <br>add your first recipe!</p>
+            </div>
         {% endif %}        
 		{% for recipe in my_recipes %}
 		<div class="col-12 col-md-6 col-xl-4 recipe-outer-box">
