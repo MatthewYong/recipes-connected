@@ -4,15 +4,16 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/recipe.css') }}">
 
 <div class="container">
+    {% if my_recipes.count() %}
     <div class="recipes-header">
         <h1><span class="special-font">{{ session['user'] }}'s</span> Recipes
         </h1>
     </div>
 	<div class="row">
-        {% if my_recipes.count() %}
+
         {% else %}
             <div class="image-bg-user no-recipes">
-                <p>No recipes found. <br>add your first recipe!</p>
+                <p>No recipes found <br>Share your first recipe!</p>
             </div>
         {% endif %}        
 		{% for recipe in my_recipes %}
