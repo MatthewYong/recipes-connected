@@ -56,8 +56,9 @@ footer{
     padding-bottom: 0.1rem;
 }
 
-.nav-item a{
-    color: #fff !important;
+/*Bootstrap text color selector*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
 .navbar-toggler{
