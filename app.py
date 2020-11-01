@@ -1,6 +1,7 @@
 import os
 import bcrypt
 from flask import Flask, render_template, request, url_for, redirect, session, flash
+from flask_bcrypt import Bcrypt
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from functools import wraps
