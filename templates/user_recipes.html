@@ -9,6 +9,10 @@
         </h1>
     </div>
 	<div class="row">
+        {% if my_recipes.count() %}
+        {% else %}
+            <div><h1>Nothing here</h1></div>
+        {% endif %}        
 		{% for recipe in my_recipes %}
 		<div class="col-12 col-md-6 col-xl-4 recipe-outer-box">
             <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}">
