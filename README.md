@@ -85,6 +85,15 @@ Below you can find an example of a wireframe of the landing page.
 
 
 ### Surface Plane
+The surface plane defines the appearance of the website. This website needs to attract and encourage users to focus on the website's content.
+The following design style has been used:
+
+| Design Style | Design Choice|
+| :------------- | :---------- |
+Font: Playfair Display | A clear font to give the website a personal look|
+Text colour: #152a23 | A dark green color|
+Background colour: #fff7| To enhance the recipe images |
+Contrast ratio: 9.26 | A high ratio to express the visibility of the text (source: contrast-ratio.com)|
 
 
 ## Features
