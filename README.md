@@ -116,10 +116,13 @@ Contrast ratio: 9.26 | A high ratio to express the visibility of the text (sourc
 
 ## Credits
 ### Content
-
+- All text in the website is entirely written by myself, except for the recipes which are taken from [bbcgoodfood.com](https://bbcgoodfood.com)
+- To maintain consistency through all my Code Institute projects, a similar structure for the readme file has been used from my previous projects
 
 ### Media
-
+- All photos for this project are used from:
+    - [Unsplash.com](https://unsplash.com)
+    - [bbcgoodfood.com](https://bbcgoodfood.com)
 
 
 ### Source of codes
