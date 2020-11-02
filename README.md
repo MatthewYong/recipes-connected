@@ -1,5 +1,5 @@
 # Recipes-Connected | Taste the World at Home
-
+Recipes-Connected is a website for foodies. Users can learn how to cook different recipes from all over the world. Each user can add, edit, and delete their recipes by creating a registration and logging into their profile. Each recipe contains an ingredient list, cooking instructions and an image of the dish. The goal of the website is to have users share and/or learn recipes from all over the world. The website should give the user an ‘learning’ experience.
 
 ## Table of Contents
 - [UX](#ux)
