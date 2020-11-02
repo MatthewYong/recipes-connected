@@ -42,7 +42,19 @@ As a **developer** I want to:
 3.  Add and share my own personal favorite recipes on the website
 
 ### Scope Plane
+The scope plane defines the features that are and are not possible to include on the website.
+This will be further explained in the next chapter. A summary of the included and not included features are:
 
+| Features (included) | Future features (not included)|
+| :------------- | :---------- |
+|1. Navigation menu | 1. Contact form to contact the owner of the recipe|
+|2. Hero image with link to add recipes | 2. Rearranging the recipes by name|
+|3. Landing page with category recipes| 3. Rating a recipe
+|4. Add recipe page | 4. Adding a comment to a recipe
+|5. Edit recipe page |
+|6. Registration page |
+|7. Login page |
+|8. User's profile page |
 
 ### Structure Plane
 
