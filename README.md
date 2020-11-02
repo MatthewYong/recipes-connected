@@ -58,6 +58,15 @@ This will be further explained in the next chapter. A summary of the included an
 
 ### Structure Plane
 
+The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
+
+- First impression of the website needs to be simple and clear as possible
+- No more than three clicks are required for the user to reach the page
+- The type of information architecture that will be used is the ‘Hierarchical Tree’, see below:
+
+![alt text][wireframe]
+
+[wireframe]:
 
 
 ### Skeleton Plane
