@@ -73,9 +73,9 @@ The structure plane defines the information architecture and interaction design 
 The skeleton plane defines a basic visual design of the website through, for example, a wireframe.  
 The wireframes for this project are made with Balsamiq can be downloaded from the following link:
 
-- [Wireframe - Desktop version]()
-- [Wireframe - Tablet version]()
-- [Wireframe - Mobile version]()
+- [Wireframe - Desktop version](https://github.com/MatthewYong/recipes-connected/raw/master/static/wireframes/Wireframe%20-%20Desktop.pdf)
+- [Wireframe - Tablet version](https://github.com/MatthewYong/recipes-connected/raw/master/static/wireframes/Wireframe%20-%20Tablet.pdf)
+- [Wireframe - Mobile version](https://github.com/MatthewYong/recipes-connected/raw/master/static/wireframes/Wireframe%20-%20Mobile.pdf)
 
 Below you can find an example of a wireframe of the landing page.
 
