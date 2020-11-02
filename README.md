@@ -64,9 +64,9 @@ The structure plane defines the information architecture and interaction design 
 - No more than three clicks are required for the user to reach the page
 - The type of information architecture that will be used is the ‘Hierarchical Tree’, see below:
 
-![alt text][wireframe]
+![alt text][wireframe tree]
 
-[wireframe]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-wireframe-structureplane.jpg
+[wireframe tree]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-wireframe-structureplane.jpg
 
 
 ### Skeleton Plane
