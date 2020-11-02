@@ -81,7 +81,7 @@ Below you can find an example of a wireframe of the landing page.
 
 ![alt text][wireframe]
 
-[wireframe]: 
+[wireframe]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-wireframe-skeletonplane.jpg
 
 
 ### Surface Plane
