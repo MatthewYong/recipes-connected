@@ -66,10 +66,22 @@ The structure plane defines the information architecture and interaction design 
 
 ![alt text][wireframe]
 
-[wireframe]:
+[wireframe]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-wireframe-structureplane.jpg
 
 
 ### Skeleton Plane
+The skeleton plane defines a basic visual design of the website through, for example, a wireframe.  
+The wireframes for this project are made with Balsamiq can be downloaded from the following link:
+
+- [Wireframe - Desktop version]()
+- [Wireframe - Tablet version]()
+- [Wireframe - Mobile version]()
+
+Below you can find an example of a wireframe of the landing page.
+
+![alt text][wireframe]
+
+[wireframe]: 
 
 
 ### Surface Plane
