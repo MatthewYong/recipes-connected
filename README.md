@@ -126,7 +126,11 @@ Contrast ratio: 9.26 | A high ratio to express the visibility of the text (sourc
 
 
 ### Acknowledgement
-
+The completion of this project could not have been possible without support and the extensive knowledge of other people. My appreciation goes to:
+- Gerard (Gerry) McBride, my mentor, for giving me tips on how to start with coding in Python, how to use bcrypt for encrypting password, guidance throughout the project and giving me useful tips to finish a good project
+- Code Institute, for the valuable lessons through videos and exercises
+- Stack Overflow, for giving me code support 
+- Slack community for giving me new ideas and code support and helping me deploy my app on Heroku
 
 ## Disclaimer
 This website is for educational purposes only. All content and images are illustrative.
