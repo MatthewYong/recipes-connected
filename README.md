@@ -97,12 +97,28 @@ Contrast ratio: 9.26 | A high ratio to express the visibility of the text (sourc
 
 
 ## Features
+A summary of the features was described in the scope plane. This chapter will explain what the purpose is of each feature and what will be left to implement for the future.
 
 
 ### Existing Features
+| Features (included) | Explanation|
+| :------------- | :---------- |
+|1. Navigation menu | 1. Allows user to quick access different pages of the website|
+|2. Hero image with link to add recipe | 2. Allows user to quick access the add recipe page |
+|3. Landing page with category recipes | 3. Allows the user to quick access a specific recipe category|
+|4. Add recipe page | 4. Users can add their recipe by filling out the recipe form|
+|5. Edit button/recipe page | 5. Allows users to edit their own recipes|
+|6. Login page | 6. Allows users to login to their profile|
+|7. Registration page | 7. Allows user to create a new profile
+|8. User's profile page | 8. Allows user to view all of their own recipes
 
 
 ### Features Left to Implement
+| Features (not included) | Explanation|
+| :------------- | :---------- |
+|1. Contact form | This feature allows users to contact the owner of a recipe for comments or tips|
+|2. Rearranging the recipes by name | This feature allows users to rearrange the recipes by alphabet
+|3. Rating a recipe | This feature allows users to give the recipe a rating|
 
 
 ## Technologies Used
