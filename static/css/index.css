@@ -109,8 +109,6 @@ a:hover{
 
 
 /*Media screen max-width 1199px*/
-
-
 @media only screen and (max-width: 1199px){
 
 .welcome{
@@ -124,8 +122,6 @@ a:hover{
 
 
 /*Media screen max-width 767px*/
-
-
 @media only screen and (max-width: 767px){
 
     .welcome{
@@ -153,7 +149,6 @@ a:hover{
 
 
 /*Media screen max-height 450px*/
-
 @media only screen and (max-height: 450px){
 
     .welcome{

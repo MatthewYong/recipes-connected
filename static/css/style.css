@@ -110,7 +110,6 @@ footer{
 
 
 /*Footer*/
-
 .social-media{
     color: #326b58;
 }
@@ -124,8 +123,7 @@ footer{
 }
 
 
-/*General website button*/
-
+/*General button for website*/
 .recipes-connected-button{
     text-align: center;
     color: #fff;
@@ -148,14 +146,12 @@ footer{
 }
 
 /*Flash message*/
-
 .flash_message{
     text-align: center;
 }
 
 
 /*Media screen max-width 1300px*/
-
     @media only screen and (max-width: 1300px){
 
     .nav-item a{
@@ -165,7 +161,6 @@ footer{
 
 
 /*Media screen max-width 575px*/
-
 @media only screen and (max-width: 575px){
     #logo{
         font-size: 1.5rem;
@@ -178,7 +173,6 @@ footer{
 
 
 /*Media screen max-height 414px*/
-
     @media only screen and (max-height: 414px){
  
     #logo{

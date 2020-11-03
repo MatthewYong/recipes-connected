@@ -1,3 +1,11 @@
+# -----------------------------------------------------------
+# Flask Project for Code Institute
+# Using MongoDB as database
+#
+# (C) 2020 Matthew Yong
+# email kfm.yong@gmail.com
+# -----------------------------------------------------------
+
 import os
 import bcrypt
 from flask import Flask, render_template, request, url_for, redirect, session, flash
@@ -31,7 +39,7 @@ def login_required(f):
         else:
             flash("Please Login First!")
             return redirect(url_for('login'))
-        return wrap
+    return wrap
 
 
 @app.route('/')

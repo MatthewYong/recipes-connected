@@ -45,6 +45,7 @@
     text-decoration: underline;
 }
 
+/*Styling login registration button*/
 #logreg-button{
     width: 100%;
     margin-bottom: 2rem;
@@ -62,7 +63,6 @@
 
 
 /*Media screen max-width 812px*/
-
 @media only screen and (max-width: 812px){
 
     .image-bg-logreg {
@@ -91,7 +91,6 @@
 }
 
 /*Media screen max-height 375px*/
-
 @media only screen and (max-height: 375px){
 
     .image-bg-logreg {
