@@ -178,13 +178,10 @@ Testing
 
 ### Source of codes
 The following codes were inspired or taken from:
-- [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask
-- [Zetcode](http://zetcode.com/python/bcrypt/): How to use bcrypt to hash password in Python
-- [YouTube](https://www.youtube.com/watch?v=vVx1737auSE): How to create login system using Python, Flask and MongoDB
-
-
-
-
+- [Code Institute](https://codeinstitute.net/) For guidance throughout this project based on the Flask mini project in module Datacentric development
+- [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask. Code used on line 31 in app.py
+- [Zetcode](http://zetcode.com/python/bcrypt/): How to use bcrypt to hash password in Python. Code used on line 154 in app.py
+- [YouTube](https://www.youtube.com/watch?v=vVx1737auSE): How to create login system using Python, Flask and MongoDB. Code used on line 186 in app.py
 
 
 ### Acknowledgement
