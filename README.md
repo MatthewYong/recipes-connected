@@ -104,13 +104,13 @@ A summary of the features was described in the scope plane. This chapter will ex
 | Features (included) | Explanation|
 | :------------- | :---------- |
 |1. Navigation menu | 1. Allows user to quick access different pages of the website|
-|2. Hero image with link to add recipe | 2. Allows user to quick access the add recipe page |
-|3. Landing page with category recipes | 3. Allows the user to quick access a specific recipe category|
-|4. Add recipe page | 4. Users can add their recipe by filling out the recipe form|
+|2. Hero image with link to add recipe | 2. Allows users to quick access the add recipe page |
+|3. Landing page with category recipes | 3. Allows users to quick access a specific recipe category|
+|4. Add recipe page | 4. Allows users to add their recipe by filling out the recipe form|
 |5. Edit button/recipe page | 5. Allows users to edit their own recipes|
 |6. Login page | 6. Allows users to login to their profile|
-|7. Registration page | 7. Allows user to create a new profile
-|8. User's profile page | 8. Allows user to view all of their own recipes
+|7. Registration page | 7. Allows users to create a new profile
+|8. User's profile page | 8. Allows users to view all of their own recipes
 
 
 ### Features Left to Implement
