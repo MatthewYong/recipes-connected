@@ -21,10 +21,9 @@ mongo = PyMongo(app)
 
 
 def login_required(f):
-"""
-A decorator used for redirecting to the login page when the is not logged in.
-Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
-"""
+    """
+    A decorator used for redirecting to login page when the user is not logged in. Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
+    """
     @wraps(f)
     def wrap(*args, **kwargs):
         if 'user' in session:
@@ -32,7 +31,7 @@ Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-l
         else:
             flash("Please Login First!")
             return redirect(url_for('login'))
-    return wrap
+        return wrap
 
 
 @app.route('/')
@@ -48,6 +47,7 @@ def all_recipes():
 
 @app.route('/category_recipes/<category>')
 def category_recipes(category):
+    # Function to place all recipes with a similar category in one page
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
     title = mongo.db.recipes.find_one(cat)
@@ -58,6 +58,7 @@ def category_recipes(category):
 @app.route('/user_recipes/<user>')
 @login_required
 def user_recipes(user):
+    # Function to place all user's recipes in one page
     user = session['user']
     logged_user = {"recipe_username": user}
     recipes = mongo.db.recipes.find(logged_user)
@@ -90,6 +91,7 @@ def get_recipe(recipe_id):
 @app.route('/edit_recipe/<recipe_id>')
 @login_required
 def edit_recipe(recipe_id):
+    # Edit recipe by pulling information from MongoDB
     edit_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template(
         "edit_recipe.html",
@@ -100,6 +102,7 @@ def edit_recipe(recipe_id):
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 @login_required
 def update_recipe(recipe_id):
+    # Function to update the recipe that user has edited
     update_recipe = mongo.db.recipes
     update_recipe.update({"_id": ObjectId(recipe_id)}, {
         "recipe_username": request.form.get('recipe_username'),
@@ -117,12 +120,14 @@ def update_recipe(recipe_id):
 @app.route('/delete_recipe/<recipe_id>')
 @login_required
 def delete_recipe(recipe_id):
+    # Function to delete a recipe
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     return redirect(url_for('all_recipes'))
 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    # Function to register a profile by pushing information to MongoDB
     if 'user' in session:
         return redirect(url_for('home'))
     else:
@@ -170,7 +175,6 @@ def login():
             Condition checks if user exist in database.
             Code used from https://www.youtube.com/watch?v=vVx1737auSE
             """
-            # Check if user exist in database
             if login_user:
                 login_pass = login_user['password']
                 hashpass = bcrypt.hashpw(
@@ -187,9 +191,9 @@ def login():
         return render_template("login.html")
 
 
-# Session logout
 @app.route('/logout')
 def logout():
+    # Session logout
     if 'user' in session:
         session.pop("user", None)
         flash("Logout Succesfull!")
@@ -198,15 +202,15 @@ def logout():
     return redirect(url_for('login'))
 
 
-# 404 Error page
 @app.errorhandler(404)
 def page_not_found(e):
+    # 404 Error page
     return render_template('404.html'), 404
 
 
-# 404 Error page
 @app.errorhandler(500)
 def internal_service_error(e):
+    # 500 Error page
     return render_template('500.html'), 500
 
 
