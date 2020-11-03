@@ -122,7 +122,42 @@ A summary of the features was described in the scope plane. This chapter will ex
 
 
 ## Technologies Used
+The following technologies have been used to achieve this project:
 
+Resources
+- [HTML](https://www.w3.org/TR/html52/) is used as the main writing language of this project
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) is used for styling the HTML text
+- [JavaScript](https://www.javascript.com/) is used for adding button alerts
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) is used as templating language for Python and its depending framework Flask
+
+Styling
+- [FontAwesome](https://fontawesome.com/) is used to improve the visual design of the website
+- [Contrast-ratio.com](https://contrast-ratio.com/) is used to test the visibility of the text with the background color
+- [Google fonts](https://fonts.google.com/) is used for the style the font
+
+Framework & API
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) is used as main  web framework for the website
+- [Bootstrap](https://getbootstrap.com/) is used for its framework. 
+
+Database & Platform
+- [MongoDB](https://www.mongodb.com/) is used for storing data from users. Specifically for this website: storing of user information and user recipes.
+- [Heroku](https://heroku.com/) is used for deploying the app through the its cloud platform
+
+Images
+- [Adobe Photoshop CC 2019](https://www.adobe.com/uk/products/photoshop) is used to crop the images and delete white background
+- [Tinyjpg.com](https://tinyjpg.com/) is used to reduce the size of the JPG images
+- [Tinypng.com](https://tinypng.com/) is used to reduce the size of the PNG images
+
+
+Wireframe
+- [Balsamic](https://balsamiq.com/) is used to draw wireframes for the skeleton plane and making the visual design of the structure plane
+
+Testing
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) is used to test the responsiveness of the website and to debug any problems
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) is used to determine any overflow on the website
+- [Validator.w3.org](https://validator.w3.org/) is used to validate the HTML code
+- [Jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/validator.html.en) is used to validate the CSS code
+- [JSHint](https://jshint.com/) is used to validate the JavaScript code
 
 ## Testing
 
