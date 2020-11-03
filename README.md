@@ -179,6 +179,11 @@ Testing
 ### Source of codes
 The following codes were inspired or taken from:
 - [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask
+- [Zetcode](http://zetcode.com/python/bcrypt/): How to use bcrypt to hash password in Python
+- [YouTube](https://www.youtube.com/watch?v=vVx1737auSE): How to create login system using Python, Flask and MongoDB
+
+
+
 
 
 

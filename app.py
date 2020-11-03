@@ -134,7 +134,10 @@ def register():
                 "email": request.form['email'].lower()})
             if existing_email is None:
                 if existing_user is None:
-                    # Code used from http://zetcode.com/python/bcrypt/
+                    """
+                    Hashing password for extra protection.
+                    Code used from http://zetcode.com/python/bcrypt/
+                    """
                     hashpass = bcrypt.hashpw(
                         request.form['password'].encode('utf-8'),
                         bcrypt.gensalt())
@@ -161,9 +164,12 @@ def login():
     else:
         if request.method == 'POST':
             user = mongo.db.users
-            # Code used from https://github.com/PrettyPrinted/mongodb-user-login
             login_user = user.find_one({
                 "username": request.form['username'].lower()})
+            """
+            Condition checks if user exist in database.
+            Code used from https://www.youtube.com/watch?v=vVx1737auSE
+            """
             # Check if user exist in database
             if login_user:
                 login_pass = login_user['password']
