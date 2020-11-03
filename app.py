@@ -20,8 +20,11 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
 def login_required(f):
+"""
+A decorator used for redirecting to the login page when the is not logged in.
+Code used from https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/
+"""
     @wraps(f)
     def wrap(*args, **kwargs):
         if 'user' in session:

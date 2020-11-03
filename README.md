@@ -137,7 +137,7 @@ Styling
 
 Framework & API
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) is used as main  web framework for the website
-- [Bootstrap](https://getbootstrap.com/) is used for its framework. 
+- [Bootstrap](https://getbootstrap.com/) is used for its grid system and navigation bar. 
 
 Database & Platform
 - [MongoDB](https://www.mongodb.com/) is used for storing data from users. Specifically for this website: storing of user information and user recipes.
@@ -167,7 +167,7 @@ Testing
 
 ## Credits
 ### Content
-- All text in the website is entirely written by myself, except for the recipes which are taken from [bbcgoodfood.com](https://bbcgoodfood.com)
+- All text in the website is entirely written by myself, except for the recipes which are taken from [BBCgoodfood](https://bbcgoodfood.com)
 - To maintain consistency through all my Code Institute projects, a similar structure for the readme file has been used from my previous projects
 
 ### Media
@@ -177,6 +177,9 @@ Testing
 
 
 ### Source of codes
+The following codes were inspired or taken from:
+- [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask
+
 
 
 ### Acknowledgement
