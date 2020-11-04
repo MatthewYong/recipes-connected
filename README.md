@@ -181,6 +181,7 @@ To work with a local copy of this project the following steps needs to be taken:
 3. In the terminal of your IDE type in **git clone** and the paste the URL copied from step 2
 4. Press Enter and the clone will be created
 
+
 ### Working with a Local Copy
 To work with the local copy that is created the following steps needs to be taken:
 
@@ -188,18 +189,30 @@ To work with the local copy that is created the following steps needs to be take
 1. To install all the required libraries of the project go to the workspace of your local copy
 2. In the terminal window of your IDE type in: **pip3 install -r requirements.txt**
 
-#### Step 2: Setting up the enviroment variables
+
+#### Step 2: Creating collections in MongoDB
+1. Login to your MongoDB account
+2. Create a database and create a database name
+3. Create four collections in the database named:
+    - **categories**
+    - **preptime**
+    - **recipes**
+    - **users**
+4. Add string names for categories (click [here](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and preptime (click [here](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) 
+
+
+#### Step 3: Setting up the enviroment variables
 1. Create a file called **.gitignore** in the root directory of your project
 2. Add the following text in your .gitignore file: **env.py**
 3. Create a file called **env.py**. This will contain all your environment variables
-4. Create your own personal database name and password. In **env.py** add the following text as seen in the screenshot below and replace **YOURPASSWORD**, **YOUR-DATABASE-NAME** AND **YOURSECRETKEY** with your chosen one.
+4. Create your own personal secret key and password. In **env.py** add the following text as seen in the screenshot below and replace **YOURPASSWORD**, **YOUR-DATABASE-NAME** and **YOURSECRETKEY**
 
 ![alt text][environment-variables]
 
 [environment-variables]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-environment-variables.png
 
 
-#### Step 3: Run the app
+#### Step 4: Run the app
 1. Open your terminal window in your IDE
 2. Type in **python3 app.py** to run the app
 
