@@ -177,6 +177,7 @@ To work with a local copy of this project the following steps needs to be taken:
 ![alt text][copy-clone]
 
 [copy-clone]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-dropdown-clone.png
+
 2. Copy the URL and go to your local IDE
 
 3. In the terminal of your IDE type in **git clone** and the paste the URL copied from step 2
