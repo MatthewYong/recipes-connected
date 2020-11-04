@@ -165,7 +165,7 @@ Testing
 ## Deployment
 
 ### Requirements
-- Python (minimal version 3.0)
+- Python (version 3.0)
 - MongoDB account
 - Heroku account
 - Github account
@@ -191,8 +191,9 @@ To work with the local copy that is created the following steps needs to be take
 #### Step 2: Setting up the enviroment variables
 1. Create a file called **.gitignore** in the root directory of your project
 2. Add the following text in your .gitignore file: **env.py**
-3. Create a file called env.py. This will contain all your environment variables
-4. Create your own personal database name and password. In **env.py** add the following text as seen in the screenshot below and replace **YOURPASSWORD**, **YOUR-DATABASE-NAME** AND **YOURSECRETKEY** with your chosen :
+3. Create a file called **env.py**. This will contain all your environment variables
+4. Create your own personal database name and password. In **env.py** add the following text as seen in the screenshot below and replace **YOURPASSWORD**, **YOUR-DATABASE-NAME** AND **YOURSECRETKEY** with your chosen one.
+
 ![alt text][environment-variables]
 
 [environment-variables]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-environment-variables.png
