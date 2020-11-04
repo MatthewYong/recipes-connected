@@ -24,12 +24,12 @@ The following test scenarios confirms that the website is behaving accordingly, 
 2. Verified that this will open the target page
 
 #### Access each Element on the Navigation menu
-1. On any page click on one of the element in the navigation menu
+1. On any page click on one of the elements in the navigation menu
 2. Verified that this will open the target page
 3. Repeated step 1 and 2 for remaining elements
 
 #### Access each Element on the Footer
-1. On any page click on one of the social media icon in the footer
+1. On any page click on one of the social media icons in the footer
 2. Verified that this will open the target page
 3. Repeated step 1 and 2 for remaining icons
 
@@ -42,10 +42,10 @@ The following test scenarios confirms that the website is behaving accordingly, 
 4. Logout of an account
 5. Click on button **Add Your Recipe**
 6. Verified that this will open the Login page
-7. Verified that a the text message **'Please Login First!'** will appear below the password input
+7. Verified that the text message **'Please Login First!'** will appear below the password input
 
 #### User Profile - My Recipes
-1. Login to acccount
+1. Login to account
 2. Add a recipe
 3. Go to the My Recipes page
 4. Verified that the added recipe is shown on My Recipes page
@@ -56,44 +56,44 @@ The following test scenarios confirms that the website is behaving accordingly, 
     - Add a valid image
     - Select a category and a preparation time from the dropdown menu
 2. Click on button **Add!**
-3. Verified that that a window will popup with the text **'Recipe is Added!**
-4. Verified in All Recipes that the recipe is added
-5. Verified that the added recipe exist in the related category
+3. Verified that that a window will pop up with the text **'Recipe is Added!'**
+4. Verified in All Recipes page that the recipe has been added
+5. Verified that the added recipe exists in the related category
 
 #### Edit Recipe
 1. Add a recipe and go to the added recipe page
 2. Click on button **Edit**
 3. Make changes to the form
 4. Click on button **Update**
-5. Verified that that a window will popup with the text **'Recipe is Updated!**
+5. Verified that that a window will pop up with the text **'Recipe is Updated!'**
 6. Verified that the recipe is updated
 
 #### Delete Recipe
 1. Add a recipe and go to the added recipe page
 2. Click on button **Delete**
-3. Verified that that a window will popup with the text **'Recipe is Deleted!**
+3. Verified that that a window will pop up with the text **'Recipe is Deleted!'**
 4. Verified that the recipe is deleted in all recipes page
 5. Verified that the added recipe deleted in the related category
 
-#### Registration - Successfull
+#### Registration - Successful
 1. Click on **Register** button in navigation menu
 2. Choose an email, username and password
 3. Click on **Register** button of the form
 4. Verified that profile has been created and redirected to landing page
 
-#### Registration - Unsuccessfull
+#### Registration - Unsuccessful
 1. Click on **Register** button in navigation menu
 2. Choose an existing email
-3. Verified that registration failed and that a text message **'The emailaddress already exist'** will appear under the password input 
+3. Verified that registration failed and that a text message **'The email address already exist'** will appear under the password input 
 4. Choose an existing username
 5. Verified that registration failed and that a text message **'The username already exist'** will appear under the password input 
 
-#### Login - Successfull
+#### Login - Successful
 1. Click on **Login** button in navigation menu
 2. Fill in your username and password
-3. Verified that login was succesfull and redirected to landing page
+3. Verified that login was succesful and redirected to landing page
 
-#### Login - Unsuccessfull
+#### Login - Unsuccessful
 1. Click on **Login** button in navigation menu
 2. Fill in your a wrong username and/or password
 3. Verified that login failed and that a text message **'Invalid username/password'** will appear under the password input 
@@ -102,7 +102,7 @@ The following test scenarios confirms that the website is behaving accordingly, 
 1. Login into account
 2. Click on logout button in navigation menu
 3. Verified that this will open the login page 
-4. Verified that a text message **'Logout Successfull!'** will appear under the password input
+4. Verified that a text message **'Logout Successful!'** will appear under the password input
 5. Verified that Add Recipe, My Recipes, Logout button disappears from the navigation menu
 
 

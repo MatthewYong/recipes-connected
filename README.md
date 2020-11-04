@@ -21,7 +21,7 @@ Recipes-Connected is a website for foodies. Users can learn how to cook differen
 
 
 ## UX
-To understand what the end result of the website needs to be, we need to define the development process of each stage. This can be done by analysing and breaking down the problem into five planes:
+To understand what the result of the website needs to be, we need to define the development process of each stage. This can be done by analysing and breaking down the problem into five planes:
 
 ### Strategy Plane
 The strategy plane defines the developer’s objective and the user needs (goals).
@@ -39,7 +39,7 @@ As a **user** I want to:
 As a **developer** I want to:
 1.  Gain more knowledge on Python, MongoDB and Flask
 2.  Learn more on databases, in particular MongoDB
-3.  Add and share my own personal favorite recipes on the website
+3.  Add and share my own personal favourite recipes on the website
 
 ### Scope Plane
 The scope plane defines the features that are and are not possible to include on the website.
@@ -140,8 +140,8 @@ Framework & API
 - [Bootstrap](https://getbootstrap.com/) is used for its grid system and navigation bar
 
 Database & Platform
-- [MongoDB](https://www.mongodb.com/) is used for storing data from users. Specifically for this website: storing of user information and user recipes.
-- [Heroku](https://heroku.com/) is used for deploying the app through the its cloud platform
+- [MongoDB](https://www.mongodb.com/) is used for storing data from users. Specifically, for this website: storing of user information and user recipes.
+- [Heroku](https://heroku.com/) is used for deploying the app through its cloud platform
 
 Images
 - [Adobe Photoshop CC 2019](https://www.adobe.com/uk/products/photoshop) is used to crop the images and delete white background
@@ -208,7 +208,7 @@ To work with the local copy that is created the following steps needs to be take
     - **users**
 5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (click on the collection name for its string values)
 
-#### Step 3: Setting Up the Enviroment Variables
+#### Step 3: Setting Up the Environment Variables
 1. Create a file called **.gitignore** in the root directory of your project
 2. Add the following text in your .gitignore file: **env.py**
 3. Create a file called **env.py**. This will contain all your environment variables
@@ -236,7 +236,7 @@ To host this project on Heroku the following steps needs to be taken:
 
 #### Step 3: Pushing files to Heroku 
 1. In the terminal window of your local IDE type in **heroku login** or **heroku login -i** and fill in your heroku credentials and password
-2. Commit all your files and type in the same terminal window **git push heroku master**. Now all your files are commited to Heroku
+2. Commit all your files and type in the same terminal window **git push heroku master**. Now all your files are committed to Heroku
 
 #### Step 4: Setting the Configuration Variables in Heroku
 1. Go back to your Heroku account and go to **settings**
@@ -250,7 +250,7 @@ To host this project on Heroku the following steps needs to be taken:
     - SECRET_KEY: YOURSECRETKEY
 
 #### Step 5: Open App in Heroku
-1. Click on **Open app** in the right corner of your Heroku account, the appliciation will open in a new window
+1. Click on **Open app** in the right corner of your Heroku account, the application will open in a new window
 2. The live link is available from the address bar
 
 

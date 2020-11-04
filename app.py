@@ -164,7 +164,7 @@ def register():
                     flash('The username already exist')
                     return redirect(url_for('register'))
             else:
-                flash('The emailaddress already exist')
+                flash('The email address already exist')
                 return redirect(url_for('register'))
         return render_template("register.html")
 
@@ -204,7 +204,7 @@ def logout():
     # Session logout
     if 'user' in session:
         session.pop("user", None)
-        flash("Logout Succesfull!")
+        flash("Logout Succesful!")
     else:
         flash("You Are Already Logged Out")
     return redirect(url_for('login'))
