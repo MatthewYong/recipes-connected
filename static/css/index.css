@@ -52,6 +52,7 @@ a:hover{
 
 /*Categories section*/
 .category-header{
+    font-size: 3rem;
     text-align: center;
     padding: 1.5rem;
     margin-top: 3rem;
@@ -145,6 +146,10 @@ a:hover{
         margin: 1.5rem 0 2rem 0;
         padding-bottom: 1.25rem;
     }
+
+    .category-header{
+        font-size: 2rem;
+    }    
 }
 
 
