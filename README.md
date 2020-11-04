@@ -172,14 +172,24 @@ Testing
 ### Cloning the Repository
 To work with a local copy of this project the following steps needs to be taken:
 
-#### Step 1: Cloning a local copy
 1. Go to the main page of the GitHub repository and click on the dropdown menu 'Code'
+![alt text][copy-clone]
+
+[copy-clone]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-dropdown-clone.png
 2. Copy the URL and go to your local IDE (Integrated Development Environment)
 3. In the terminal of your IDE type in 'git clone' and the paste the URL copied from step 2
 4. Press Enter and the clone will be created
 
-#### Step 2: Setting up the requirements
+### Working with a Local Copy
+To work with the local copy that is created the following steps needs to be taken:
 
+#### Step 1: Installing the Requirements
+1. To install all the required libraries of the project go to the workspace of your local copy
+2. In the terminal window of your IDE type in: 'pip3 install -r requirements.txt'
+
+#### Step 2: Setting up the enviroment variables
+1. Create a file called env.py
+2. 
 
 
 
