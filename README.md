@@ -201,7 +201,7 @@ To work with the local copy that is created the following steps needs to be take
     - **preptime**
     - **recipes**
     - **users**
-5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (please click on the collection name for its string values)
+5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (click on the collection name for its string values)
 
 
 #### Step 3: Setting Up the Enviroment Variables
@@ -222,9 +222,9 @@ To work with the local copy that is created the following steps needs to be take
 ### Heroku Deployment
 To host this project on Heroku the following steps needs to be taken:
 
-#### Step 1: Setting up Heroku
-1. Create a Heroku account and create a new app
-2. 
+#### Step 1: Setting Up Heroku
+1. Create a Heroku account
+2. Create a new app and select your region
 
 #### Step 2: Preparing Local Workspace for Heroku
 1. In the terminal window of your local IDE type **pip3 freeze --local > requirements.txt** to create a requirements.txt file. This file is needed so that Heroku knows which files needs to be installed
