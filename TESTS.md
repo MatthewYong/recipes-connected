@@ -34,9 +34,9 @@ The following test scenarios confirms that the website is behaving accordingly, 
 3. Repeated step 1 and 2 for remaining icons
 
 
-### Button Testing
+### Feature Testing
 #### Add Your Recipe Button
-1. Login into an account
+1. Login into account
 2. Click on button **Add Your Recipe**
 3. Verified that this will open the Add Recipe page
 4. Logout of an account
@@ -44,12 +44,13 @@ The following test scenarios confirms that the website is behaving accordingly, 
 6. Verified that this will open the Login page
 7. Verified that a the text message **'Please Login First!'** will appear below the password input
 
+#### User Profile - My Recipes
+1. Login to acccount
+2. Add a recipe
+3. Go to the My Recipes page
+4. Verified that the added recipe is shown on My Recipes page
 
-### User Profile - My Recipes
-
-
-
-### Add Recipe
+#### Add Recipe
 1. On Add Recipe page:
     - Fill in the form,
     - Add a valid image
@@ -59,7 +60,7 @@ The following test scenarios confirms that the website is behaving accordingly, 
 4. Verified in All Recipes that the recipe is added
 5. Verified that the added recipe exist in the related category
 
-### Edit Recipe
+#### Edit Recipe
 1. Add a recipe and go to the added recipe page
 2. Click on button **Edit**
 3. Make changes to the form
@@ -67,34 +68,42 @@ The following test scenarios confirms that the website is behaving accordingly, 
 5. Verified that that a window will popup with the text **'Recipe is Updated!**
 6. Verified that the recipe is updated
 
-### Delete Recipe
+#### Delete Recipe
 1. Add a recipe and go to the added recipe page
 2. Click on button **Delete**
 3. Verified that that a window will popup with the text **'Recipe is Deleted!**
 4. Verified that the recipe is deleted in all recipes page
 5. Verified that the added recipe deleted in the related category
 
-### Registration
+#### Registration - Successfull
+1. Click on **Register** button in navigation menu
+2. Choose an email, username and password
+3. Click on **Register** button of the form
+4. Verified that profile has been created and redirected to landing page
 
+#### Registration - Unsuccessfull
+1. Click on **Register** button in navigation menu
+2. Choose an existing email
+3. Verified that registration failed and that a text message **'The emailaddress already exist'** will appear under the password input 
+4. Choose an existing username
+5. Verified that registration failed and that a text message **'The username already exist'** will appear under the password input 
 
+#### Login - Successfull
+1. Click on **Login** button in navigation menu
+2. Fill in your username and password
+3. Verified that login was succesfull and redirected to landing page
 
-### Login
+#### Login - Unsuccessfull
+1. Click on **Login** button in navigation menu
+2. Fill in your a wrong username and/or password
+3. Verified that login failed and that a text message **'Invalid username/password'** will appear under the password input 
 
-
-
-### Logout
-1. Login into an account
+#### Logout
+1. Login into account
 2. Click on logout button in navigation menu
 3. Verified that this will open the login page 
-4. Verified that a textmessage **'Logout Successfull!** will appear under the password input
+4. Verified that a text message **'Logout Successfull!'** will appear under the password input
 5. Verified that Add Recipe, My Recipes, Logout button disappears from the navigation menu
-
-
-
-
-
-
-
 
 
 ### Browser and Mobile Devices Testing
