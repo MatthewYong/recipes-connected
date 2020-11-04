@@ -164,16 +164,47 @@ Testing
 
 ## Deployment
 
+### Requirements
+- Python (minimal version 3.0)
+- Heroku account
+- Github account
+
+### Cloning the Repository
+To work with a local copy of this project the following steps needs to be taken:
+
+#### Step 1: Cloning a local copy
+1. Go to the main page of the GitHub repository and click on the dropdown menu 'Code'
+2. Copy the URL and go to your local IDE (Integrated Development Environment)
+3. In the terminal of your IDE type in 'git clone' and the paste the URL copied from step 2
+4. Press Enter and the clone will be created
+
+#### Step 2: Setting up the requirements
+
+
+
+
+### Heroku Deployment
+To host this project on Heroku the following steps needs to be taken:
+
+
+
+
+
+
+
+
+
+
 
 ## Credits
 ### Content
-- All text in the website is entirely written by myself, except for the recipes which are taken from [BBCgoodfood](https://bbcgoodfood.com)
+- All text in the website is written by myself, except for the recipes which are taken from [BBCgoodfood](https://bbcgoodfood.com)
 - To maintain consistency through all my Code Institute projects, a similar structure for the readme file has been used from my previous projects
 
 ### Media
 - All photos for this project are used from:
     - [Unsplash.com](https://unsplash.com)
-    - [bbcgoodfood.com](https://bbcgoodfood.com)
+    - [BBCgoodfood.com](https://bbcgoodfood.com)
 
 
 ### Source of codes
