@@ -166,18 +166,19 @@ Testing
 
 ### Requirements
 - Python (minimal version 3.0)
+- MongoDB account
 - Heroku account
 - Github account
 
 ### Cloning the Repository
 To work with a local copy of this project the following steps needs to be taken:
 
-1. Go to the main page of the GitHub repository and click on the dropdown menu 'Code'
+1. Go to the main page of the GitHub repository and click on the dropdown menu **Code**
 ![alt text][copy-clone]
 
 [copy-clone]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-dropdown-clone.png
 2. Copy the URL and go to your local IDE (Integrated Development Environment)
-3. In the terminal of your IDE type in 'git clone' and the paste the URL copied from step 2
+3. In the terminal of your IDE type in **git clone** and the paste the URL copied from step 2
 4. Press Enter and the clone will be created
 
 ### Working with a Local Copy
@@ -185,18 +186,21 @@ To work with the local copy that is created the following steps needs to be take
 
 #### Step 1: Installing the Requirements
 1. To install all the required libraries of the project go to the workspace of your local copy
-2. In the terminal window of your IDE type in: 'pip3 install -r requirements.txt'
+2. In the terminal window of your IDE type in: **pip3 install -r requirements.txt**
 
 #### Step 2: Setting up the enviroment variables
-1. Create a file called .gitignore in the root directory of your project
-2. Add the following text in your .gitignore file: 'env.py'
+1. Create a file called **.gitignore** in the root directory of your project
+2. Add the following text in your .gitignore file: **env.py**
 3. Create a file called env.py. This will contain all your environment variables
-4. Create your own personal database name and password. In env.py add the following text as seen in the screenshot below and replace the database name and password with your chosen :
+4. Create your own personal database name and password. In **env.py** add the following text as seen in the screenshot below and replace **YOURPASSWORD**, **YOUR-DATABASE-NAME** AND **YOURSECRETKEY** with your chosen :
 ![alt text][environment-variables]
 
-[environment-variables]: 
+[environment-variables]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-environment-variables.png
 
 
+#### Step 3: Run the app
+1. Open your terminal window in your IDE
+2. Type in **python3 app.py** to run the app
 
 
 
