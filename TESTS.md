@@ -36,7 +36,13 @@ The following test scenarios confirms that the website is behaving accordingly, 
 
 ### Button Testing
 #### Add Your Recipe Button
-
+1. Login into an account
+2. Click on button **Add Your Recipe**
+3. Verified that this will open the Add Recipe page
+4. Logout of an account
+5. Click on button **Add Your Recipe**
+6. Verified that this will open the Login page
+7. Verified that a the text message **'Please Login First!'** will appear below the password input
 
 
 ### User Profile - My Recipes
@@ -49,31 +55,43 @@ The following test scenarios confirms that the website is behaving accordingly, 
     - Add a valid image
     - Select a category and a preparation time from the dropdown menu
 2. Click on button **Add!**
-3. Verified that that a popup window will show with text **'Recipe is Added!**
+3. Verified that that a window will popup with the text **'Recipe is Added!**
 4. Verified in All Recipes that the recipe is added
-5. Verified that the added recipe exist in the chosen category
+5. Verified that the added recipe exist in the related category
 
 ### Edit Recipe
 1. Add a recipe and go to the added recipe page
 2. Click on button **Edit**
 3. Make changes to the form
 4. Click on button **Update**
-5. Verified that that a popup window will show with text **'Recipe is Updated!**
+5. Verified that that a window will popup with the text **'Recipe is Updated!**
 6. Verified that the recipe is updated
 
-
-
-
-
 ### Delete Recipe
+1. Add a recipe and go to the added recipe page
+2. Click on button **Delete**
+3. Verified that that a window will popup with the text **'Recipe is Deleted!**
+4. Verified that the recipe is deleted in all recipes page
+5. Verified that the added recipe deleted in the related category
 
+### Registration
 
 
 
 ### Login
 
 
-### Registration
+
+### Logout
+1. Login into an account
+2. Click on logout button in navigation menu
+3. Verified that this will open the login page 
+4. Verified that a textmessage **'Logout Successfull!** will appear under the password input
+5. Verified that Add Recipe, My Recipes, Logout button disappears from the navigation menu
+
+
+
+
 
 
 
