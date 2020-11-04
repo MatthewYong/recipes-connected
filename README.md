@@ -177,7 +177,8 @@ To work with a local copy of this project the following steps needs to be taken:
 ![alt text][copy-clone]
 
 [copy-clone]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-dropdown-clone.png
-2. Copy the URL and go to your local IDE (Integrated Development Environment)
+2. Copy the URL and go to your local IDE
+
 3. In the terminal of your IDE type in **git clone** and the paste the URL copied from step 2
 4. Press Enter and the clone will be created
 
@@ -198,7 +199,7 @@ To work with the local copy that is created the following steps needs to be take
     - **preptime**
     - **recipes**
     - **users**
-4. Add string names for categories (click [here](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and preptime (click [here](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) 
+4. Add string names for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png)
 
 
 #### Step 3: Setting up the enviroment variables
