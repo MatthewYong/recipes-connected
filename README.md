@@ -188,8 +188,17 @@ To work with the local copy that is created the following steps needs to be take
 2. In the terminal window of your IDE type in: 'pip3 install -r requirements.txt'
 
 #### Step 2: Setting up the enviroment variables
-1. Create a file called env.py
-2. 
+1. Create a file called .gitignore in the root directory of your project
+2. Add the following text in your .gitignore file: 'env.py'
+3. Create a file called env.py. This will contain all your environment variables
+4. Create your own personal database name and password. In env.py add the following text as seen in the screenshot below and replace the database name and password with your chosen :
+![alt text][environment-variables]
+
+[environment-variables]: 
+
+
+
+
 
 
 
@@ -230,7 +239,7 @@ The completion of this project could not have been possible without support and 
 - Gerard (Gerry) McBride, my mentor, for giving me tips on how to start with coding in Python, how to use bcrypt for encrypting password, guidance throughout the project and giving me useful tips to finish a good project
 - Code Institute, for the valuable lessons through videos and exercises
 - Stack Overflow, for giving me code support 
-- Slack community for giving me new ideas and code support and helping me deploy my app on Heroku
+- Slack community for giving me new ideas and code support and helping me deploy my app on Heroku, especially anna_ci for her explanation on how to setup environment variables
 
 ## Disclaimer
 This website is for educational purposes only. All content and images are illustrative.
