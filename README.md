@@ -163,6 +163,10 @@ Testing
 
 
 ## Deployment
+The following chapter explains how to:
+    - Clone a Repository from Github
+    - Work with a Local Copy
+    - Deploy on Heroku
 
 ### Requirements
 - Python (version 3.0)
@@ -202,7 +206,6 @@ To work with the local copy that is created the following steps needs to be take
     - **recipes**
     - **users**
 5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (click on the collection name for its string values)
-
 
 #### Step 3: Setting Up the Enviroment Variables
 1. Create a file called **.gitignore** in the root directory of your project
@@ -246,7 +249,7 @@ To host this project on Heroku the following steps needs to be taken:
     - SECRET_KEY: YOURSECRETKEY
 
 #### Step 5: Open App in Heroku
-1. Click on **Open app** in right corner of your Heroku account, the appliciation will open in a new window
+1. Click on **Open app** in the right corner of your Heroku account, the appliciation will open in a new window
 2. The live link is available from the address bar
 
 
@@ -261,7 +264,7 @@ To host this project on Heroku the following steps needs to be taken:
     - [BBCgoodfood.com](https://bbcgoodfood.com)
 
 
-### Source of codes
+### Source of Codes
 The following codes were inspired or taken from:
 - [Code Institute](https://codeinstitute.net/) For guidance throughout this project based on the Flask mini project in module Datacentric development
 - [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask. Code used on line 31 in app.py
