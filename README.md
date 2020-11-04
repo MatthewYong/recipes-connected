@@ -137,7 +137,7 @@ Styling
 
 Framework & API
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) is used as main  web framework for the website
-- [Bootstrap](https://getbootstrap.com/) is used for its grid system and navigation bar. 
+- [Bootstrap](https://getbootstrap.com/) is used for its grid system and navigation bar
 
 Database & Platform
 - [MongoDB](https://www.mongodb.com/) is used for storing data from users. Specifically for this website: storing of user information and user recipes.
@@ -158,6 +158,7 @@ Testing
 - [Validator.w3.org](https://validator.w3.org/) is used to validate the HTML code
 - [Jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/validator.html.en) is used to validate the CSS code
 - [JSHint](https://jshint.com/) is used to validate the JavaScript code
+- [Pep8](http://pep8online.com/) is used to validate the Python code
 
 ## Testing
 
@@ -234,7 +235,7 @@ To host this project on Heroku the following steps needs to be taken:
 2. In the terminal window of your local IDE type **python app.py > Procfile** to create a Procfile. This file is needed so that Heroku knows which file is needed as its entry point to get the app up and running
 
 #### Step 3: Pushing files to Heroku 
-1. In the terminal window of your local IDE type **heroku login** or **heroku login -i** and fill in your heroku credentials and password
+1. In the terminal window of your local IDE type in **heroku login** or **heroku login -i** and fill in your heroku credentials and password
 2. Commit all your files and type in the same terminal window **git push heroku master**. Now all your files are commited to Heroku
 
 #### Step 4: Setting the Configuration Variables in Heroku
@@ -255,8 +256,9 @@ To host this project on Heroku the following steps needs to be taken:
 
 ## Credits
 ### Content
-- All text in the website is written by myself, except for the recipes which are taken from [BBCgoodfood](https://bbcgoodfood.com)
-- To maintain consistency through all my Code Institute projects, a similar structure for the readme file has been used from my previous projects
+- All text, besides the recipes, are written by myself
+- All recipes are taken from [BBC GoodFood](https://bbcgoodfood.com)
+- To maintain consistency through all my Code Institute projects, a similar structure for the Readme file has been used from my previous projects
 
 ### Media
 - All photos for this project are used from:
