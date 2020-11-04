@@ -161,7 +161,7 @@ Testing
 - [Pep8](http://pep8online.com/) is used to validate the Python code
 
 ## Testing
-
+The test procedures and the key issues of the tests are written in the file [TEST.md]()).
 
 ## Deployment
 The following chapter explains how to:
