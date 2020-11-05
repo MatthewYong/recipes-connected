@@ -108,6 +108,10 @@ a:hover{
     background-image: url("../images/image-other.jpg");
 }
 
+.category-wrap{
+    margin-bottom: 15vh;
+}
+
 
 /*Media screen max-width 1199px*/
 @media only screen and (max-width: 1199px){
