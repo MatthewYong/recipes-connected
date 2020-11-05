@@ -61,7 +61,7 @@ def category_recipes(category):
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
     title = mongo.db.recipes.find_one(cat)
-    # If a category does not exist then return to 404 error page
+    # If a category does not exist in database then return to 404 error page
     if recipes.count():
         return render_template(
             "category_recipes.html", recipes=recipes, title=title)
