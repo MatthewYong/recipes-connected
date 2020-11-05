@@ -270,8 +270,9 @@ To host this project on Heroku the following steps needs to be taken:
 The following codes were inspired or taken from:
 - [Code Institute](https://codeinstitute.net/) For guidance throughout this project based on the Flask mini project in module Datacentric development
 - [Python Programming](https://pythonprogramming.net/decorator-wrappers-flask-tutorial-login-required/): How to use decorators in Flask. Code used on line 31 in app.py
-- [Zetcode](http://zetcode.com/python/bcrypt/): How to use bcrypt to hash password in Python. Code used on line 154 in app.py
-- [YouTube](https://www.youtube.com/watch?v=vVx1737auSE): How to create login system using Python, Flask and MongoDB. Code used on line 186 in app.py
+- [Zetcode](http://zetcode.com/python/bcrypt/): How to use bcrypt to hash password in Python. Code used on line 175 in app.py
+- [YouTube](https://www.youtube.com/watch?v=vVx1737auSE): How to create login system using Python, Flask and MongoDB. Code used on line 203 in app.py
+- [Pythonise](https://pythonise.com/series/learning-flask/flask-session-object) How to logout user from Flask session. Code used on line 234 in app.py
 
 
 ### Acknowledgement

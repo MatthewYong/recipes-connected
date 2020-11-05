@@ -55,7 +55,9 @@ def all_recipes():
 
 @app.route('/category_recipes/<category>')
 def category_recipes(category):
-    """Place all recipes with the same category in one page"""
+    """
+    Place all recipes with the same category in one page
+    """
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
     title = mongo.db.recipes.find_one(cat)
@@ -66,7 +68,9 @@ def category_recipes(category):
 @app.route('/user_recipes/<user>')
 @login_required
 def user_recipes(user):
-    """Place all useer added recipes in one page"""
+    """
+    Place all useer added recipes in one page
+    """
     user = session['user']
     logged_user = {"recipe_username": user}
     recipes = mongo.db.recipes.find(logged_user)
@@ -76,7 +80,9 @@ def user_recipes(user):
 @app.route('/add_recipe')
 @login_required
 def add_recipe():
-    """"Function that finds the collections categories and preptime from MongoDB"""
+    """"
+    Function that finds the collections categories and preptime from MongoDB
+    """
     return render_template(
         "add_recipe.html",
         categories=mongo.db.categories.find(),
@@ -86,7 +92,9 @@ def add_recipe():
 @app.route('/add_recipe_mongodb', methods=['POST'])
 @login_required
 def add_recipe_mongodb():
-    """"Function that inserts recipes into MongoDB"""
+    """"
+    Function that inserts recipes into MongoDB
+    """
     recipe = mongo.db.recipes
     recipe.insert_one(request.form.to_dict())
     return redirect(url_for('all_recipes'))
@@ -94,7 +102,9 @@ def add_recipe_mongodb():
 
 @app.route('/get_recipe/<recipe_id>')
 def get_recipe(recipe_id):
-    """"Function that finds a specific recipe from MongoDB"""    
+    """"
+    Function that finds a specific recipe from MongoDB
+    """    
     one_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("get_recipe.html", recipe=one_recipe)
 
@@ -102,7 +112,9 @@ def get_recipe(recipe_id):
 @app.route('/edit_recipe/<recipe_id>')
 @login_required
 def edit_recipe(recipe_id):
-    """Edit recipe by pulling information from MongoDB and returning into edit form"""
+    """
+    Edit recipe by pulling information from MongoDB and returning into edit form
+    """
     edit_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template(
         "edit_recipe.html",
@@ -113,8 +125,10 @@ def edit_recipe(recipe_id):
 @app.route('/update_recipe/<recipe_id>', methods=['POST'])
 @login_required
 def update_recipe(recipe_id):
-    """Update the recipe that user has edited by inserting values to MongoDB.
-    Code inspired from Code Institute Mini Flask Project"""
+    """
+    Update the recipe that user has edited by inserting values to MongoDB.
+    Code inspired from Code Institute Mini Flask Project
+    """
     update_recipe = mongo.db.recipes
     update_recipe.update({"_id": ObjectId(recipe_id)}, {
         "recipe_username": request.form.get('recipe_username'),
@@ -132,18 +146,22 @@ def update_recipe(recipe_id):
 @app.route('/delete_recipe/<recipe_id>')
 @login_required
 def delete_recipe(recipe_id):
-    """Delete a recipe by removing id from MongoDB. Code inspired from MongoDB documentation: https://docs.mongodb.com/manual/reference/method/db.collection.remove/"""
+    """
+    Delete a recipe by removing id from MongoDB. Code inspired from MongoDB documentation: https://docs.mongodb.com/manual/reference/method/db.collection.remove/
+    """
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     return redirect(url_for('all_recipes'))
 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    """Registration of a profile by inserting information in MongoDB. If user is in session redirects to home page"""
+    """
+    Registration of a profile by inserting information in MongoDB. If user is in session redirects to home page
+    """
     if 'user' in session:
         return redirect(url_for('home'))
     else:
-        # If user is not in session find username or email in a MongoDB database
+        # If user is not in session find username or email in a MongoDB
         if request.method == 'POST':
             user = mongo.db.users
             existing_user = user.find_one({
@@ -152,7 +170,8 @@ def register():
                 "email": request.form['email'].lower()})
             if existing_email is None:
                 if existing_user is None:
-                    #If username and email does not exist, hash password for extra protection.
+                    # If username and email does not exist,
+                    # hash password for extra protection.
                     # Code used from http://zetcode.com/python/bcrypt/
                     crypt_pass = bcrypt.hashpw(
                         request.form['password'].encode('utf-8'),
@@ -174,18 +193,18 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """
+    Login user to his/her profile
+    """
     if 'user' in session:
         return redirect(url_for('home'))
-
     else:
+        # Condition checks if user exist in database
+        # Code used from https://www.youtube.com/watch?v=vVx1737auSE
         if request.method == 'POST':
             user = mongo.db.users
             logged_in = user.find_one({
                 "username": request.form['username'].lower()})
-            """
-            Condition checks if user exist in database.
-            Code used from https://www.youtube.com/watch?v=vVx1737auSE
-            """
             if logged_in:
                 login_pass = logged_in['password']
                 crypt_pass = bcrypt.hashpw(
@@ -194,9 +213,11 @@ def login():
                     session['user'] = request.form['username']
                     return redirect(url_for('home'))
                 else:
+                    # Added text to alert user logged in has failed
                     flash("Invalid username/password")
                     return redirect(url_for('login'))
             else:
+                # Added text to alert user logged in has failed
                 flash("Invalid username/password")
                 return redirect(url_for('login'))
         return render_template("login.html")
@@ -204,8 +225,12 @@ def login():
 
 @app.route('/logout')
 def logout():
-    # Session logout
+    """
+    Log out user from session using 'pop'
+    """
     if 'user' in session:
+        # Log out user from session
+        # Code learned from https://pythonise.com/series/learning-flask/flask-session-object
         session.pop("user", None)
         flash("Logout Succesful!")
     else:
@@ -215,13 +240,17 @@ def logout():
 
 @app.errorhandler(404)
 def page_not_found(e):
-    # 404 Error page
+    """"
+    Flask error apphandler returns 404 Error page
+    """
     return render_template('404.html'), 404
 
 
 @app.errorhandler(500)
 def internal_service_error(e):
-    # 500 Error page
+    """"
+    Flask error apphandler returns 500 Error page
+    """
     return render_template('500.html'), 500
 
 
