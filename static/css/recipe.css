@@ -103,13 +103,15 @@ label{
 .recipe-image-cover{
     width: 100%;
     height: 14rem;
+    overflow: hidden;
 }
 
 .recipe-image{
+    display: block;
     width: 100%;
-    height: 14rem;
-}
+    height: auto;
 
+}
 
 /*Get recipe page styling*/
 .get-recipe-outer-box{
@@ -220,7 +222,7 @@ label{
 @media only screen and (max-width: 767px){
 
 /*All & category recipes page styling*/
-    .recipe-image{
+    .recipe-image-cover{
         height: 18rem;
     }
 
@@ -245,7 +247,7 @@ label{
 @media only screen and (max-width: 576px){
 
 /*All & category recipes page styling*/
-    .recipe-image{
+    .recipe-image-cover{
         height: 16rem;
     }
 
