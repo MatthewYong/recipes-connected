@@ -105,6 +105,10 @@ The following test scenarios confirms that the website is behaving accordingly, 
 4. Verified that a text message **'Logout Successful!'** will appear under the password input
 5. Verified that Add Recipe, My Recipes, Logout button disappears from the navigation menu
 
+#### 404 Error Testing
+1. Open any page on the website
+2. Add extra text to the address bar
+3. Verified that link does not exist and 404 page will show
 
 ### Browser and Mobile Devices Testing
 All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality.
