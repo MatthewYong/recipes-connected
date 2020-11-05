@@ -61,8 +61,12 @@ def category_recipes(category):
     cat = {"recipe_category": category}
     recipes = mongo.db.recipes.find(cat)
     title = mongo.db.recipes.find_one(cat)
-    return render_template(
-        "category_recipes.html", recipes=recipes, title=title)
+    # If a category does not exist then return to 404 error page
+    if recipes.count():
+        return render_template(
+            "category_recipes.html", recipes=recipes, title=title)
+    else:
+        return render_template("404.html")
 
 
 @app.route('/user_recipes/<user>')
