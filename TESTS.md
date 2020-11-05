@@ -111,8 +111,8 @@ All the test scenarios have been carried out in the browsers and mobile devices 
 
 #### Browser Testing
 - Google Chrome - version 86.0.4240.111 (64-bit)
-- Mozilla Firefox - version 78.0.2 (64-bit)
-- Microsoft Edge - version 83.0.478.61 (64-bit)
+- Mozilla Firefox - version 81.0.2 (64-bit)
+- Microsoft Edge - version 86.0.622.63 (64-bit)
 - Internet Explorer - version 11.719.18362.0
 
 #### Mobile Device Testing through Chrome DevTools
