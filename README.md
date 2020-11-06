@@ -281,7 +281,8 @@ To host this project on Heroku the following steps needs to be taken:
 - All photos for this project are used from:
     - [Unsplash.com](https://unsplash.com)
     - [BBCgoodfood.com](https://bbcgoodfood.com)
-
+    - [icons8.com](https://icons8.com)
+    
 
 ### Source of Codes
 The following codes were inspired or taken from:
