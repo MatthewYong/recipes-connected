@@ -220,8 +220,10 @@ To work with the local copy that is created the following steps needs to be take
     - **recipes**
     - **users**
 
-    See **information architecture** under UX for more information
 5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (click on the collection name for its string values)
+
+
+    See **Information Architecture** in [Structure Plane](#structure-plane) on how the database needs to be setup in MongoDB
 
 #### Step 3: Setting Up the Environment Variables
 1. Create a file called **.gitignore** in the root directory of your project
