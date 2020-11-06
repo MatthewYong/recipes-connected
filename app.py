@@ -77,7 +77,9 @@ def user_recipes(user):
     """
     logged_user = {"recipe_username": user}
     recipes = mongo.db.recipes.find(logged_user)
-    if recipes.count():
+    check_user = {"username": user}
+    user = mongo.db.users.find(check_user)
+    if user.count():
         return render_template("user_recipes.html", my_recipes=recipes)
     else:
         return render_template('404.html'), 404
