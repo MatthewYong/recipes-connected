@@ -18,7 +18,7 @@
                         <input class="login-input xs-font" type="password" name="password" aria-label="choose password" placeholder="Choose Password" minlength="8" maxlength="20" required>
                     </div>  
                     <div class="col-12 mx-auto xs-font flash_message">
-                    <!--Code used from https://pythonise.com/series/learning-flask/flask-message-flashing-->
+                    <!--Add a text message to show user that registration has failed. Code used from https://pythonise.com/series/learning-flask/flask-message-flashing-->
                         {% with messages = get_flashed_messages() %}
                             {% if messages %}
                                 {% for message in messages %}
