@@ -58,8 +58,10 @@ This will be further explained in the next chapter. A summary of the included an
 
 ### Structure Plane
 
-The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
+The structure plane defines the information architecture and interaction design with the user. 
 
+#### Interaction Design
+The following definitions has been used for this website:
 - First impression of the website needs to be simple and clear as possible
 - No more than three clicks are required for the user to reach the page
 - The type of information architecture that will be used is the ‘Hierarchical Tree’, see below:
@@ -67,6 +69,14 @@ The structure plane defines the information architecture and interaction design 
 ![alt text][wireframe tree]
 
 [wireframe tree]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-wireframe-structureplane.jpg
+
+#### Information architecture
+
+This project has 4 collections in the database. The database structure in MongoDB has been set up as follow:
+
+![alt text][diagram]
+
+[diagram]: 
 
 
 ### Skeleton Plane
@@ -148,9 +158,11 @@ Images
 - [Tinyjpg.com](https://tinyjpg.com/) is used to reduce the size of the JPG images
 - [Tinypng.com](https://tinypng.com/) is used to reduce the size of the PNG images
 
-
 Wireframe
 - [Balsamic](https://balsamiq.com/) is used to draw wireframes for the skeleton plane and making the visual design of the structure plane
+
+Database Diagram
+- [Visual Paradigm](https://online.visual-paradigm.com/) is used to to show the database architecture of MongoDB
 
 Testing
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) is used to test the responsiveness of the website and to debug any problems

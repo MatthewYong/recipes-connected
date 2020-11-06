@@ -66,7 +66,7 @@ def category_recipes(category):
         return render_template(
             "category_recipes.html", recipes=recipes, title=title)
     else:
-        return render_template("404.html")
+        return render_template('404.html'), 404
 
 
 @app.route('/user_recipes/<user>')
