@@ -14,17 +14,17 @@
             <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}">
                 <div class="recipe-box">
                     <div class="recipe-image-cover">
-                        <img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">                
+                        <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="recipe image">                
                     </div>
                     <div class="recipe-box-header special-font">
-                        <h2>{{recipe.recipe_name}}</h2>       
-                        <h5>by {{recipe.recipe_username}}</h5>         
+                        <h2>{{ recipe.recipe_name }}</h2>       
+                        <h5>by {{ recipe.recipe_username }}</h5>         
                     </div>                
                     <div class="recipe-box-content">
                         <p><i class="fas fa-globe-americas"></i> 
-                        {{recipe.recipe_category}}</p>                    
+                        {{ recipe.recipe_category }}</p>                    
                         <p><i class="fas fa-hourglass-end"></i>
-                        {{recipe.recipe_preptime}}</p>               
+                        {{ recipe.recipe_preptime }}</p>               
                     </div>
                 </div>
             </a>
