@@ -79,6 +79,7 @@ def user_recipes(user):
     recipes = mongo.db.recipes.find(logged_user)
     check_user = {"username": user}
     user = mongo.db.users.find(check_user)
+    # If a user does not exist in database then return to 404 error page
     if user.count():
         return render_template("user_recipes.html", my_recipes=recipes)
     else:
@@ -112,7 +113,7 @@ def add_recipe_mongodb():
 def get_recipe(recipe_id):
     """"
     Function that finds a specific recipe from MongoDB
-    """    
+    """
     one_recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("get_recipe.html", recipe=one_recipe)
 
@@ -218,7 +219,7 @@ def login():
                 crypt_pass = bcrypt.hashpw(
                     request.form['password'].encode('utf-8'), login_pass)
                 if login_pass == crypt_pass:
-                    session['user'] = request.form['username']
+                    session['user'] = request.form['username'].lower()
                     return redirect(url_for('home'))
                 else:
                     # Added text to alert user logged in has failed

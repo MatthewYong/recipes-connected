@@ -11,7 +11,7 @@
                 </div> 
                 <form action="{{ url_for('add_recipe_mongodb') }}" method="POST" class="recipe-form" onsubmit="add_alert()" >
                     <div>
-                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user']}}">
+                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user'].capitalize()}}">
                     </div>
                     <label for="name">Recipe Name</label>
                         <div>
