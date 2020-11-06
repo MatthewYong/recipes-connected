@@ -206,6 +206,10 @@ label{
     margin-top: 30vh;
 }
 
+.my-recipe-box{
+    margin-bottom: 30vh;
+}
+
 
 /*Media screen max-width 991px*/
 @media only screen and (max-width: 991px){
