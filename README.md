@@ -72,11 +72,11 @@ The following definitions has been used for this website:
 
 #### Information architecture
 
-This project has 4 collections in the database. The database structure in MongoDB has been set up as follow:
+This project has 4 collections in the database. The database structure in MongoDB has been set up as follows:
 
 ![alt text][diagram]
 
-[diagram]: 
+[diagram]: https://raw.githubusercontent.com/MatthewYong/recipes-connected/master/static/images/readme-images/image-dbdiagram.png
 
 
 ### Skeleton Plane
@@ -214,10 +214,13 @@ To work with the local copy that is created the following steps needs to be take
 2. Create a **cluster**
 3. Create a **database**
 4. Create four **collections** in the database named:
+
     - **categories**
     - **preptime**
     - **recipes**
     - **users**
+
+    See **information architecture** under UX for more information
 5. Add string values for [categories](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-categories.png) and [preptime](https://github.com/MatthewYong/recipes-connected/raw/master/static/images/readme-images/image-preptime.png) (click on the collection name for its string values)
 
 #### Step 3: Setting Up the Environment Variables
