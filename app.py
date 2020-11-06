@@ -75,12 +75,12 @@ def user_recipes(user):
     """
     Place all user added recipes in one page
     """
-    logged_user = {"recipe_username": user}
+    logged_user = {"recipe_username": user.capitalize()}
     recipes = mongo.db.recipes.find(logged_user)
     check_user = {"username": user}
-    user = mongo.db.users.find(check_user)
+    find_user = mongo.db.users.find(check_user)
     # If a user does not exist in database then return to 404 error page
-    if user.count():
+    if find_user.count():
         return render_template("user_recipes.html", my_recipes=recipes)
     else:
         return render_template('404.html'), 404
@@ -189,7 +189,7 @@ def register():
                         "email": request.form['email'].lower(),
                         "username": request.form['username'].lower(),
                         "password": crypt_pass})
-                    session['user'] = request.form['username']
+                    session['user'] = request.form['username'].lower()
                     return redirect(url_for('home'))
                 else:
                     flash('The username already exist')

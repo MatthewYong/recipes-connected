@@ -50,7 +50,7 @@
             </div>         
         </div>
     </div>
-    {% if session['user'] == recipe.recipe_username %}
+    {% if session['user'].capitalize() == recipe.recipe_username %}
 	<div class="row">  
 		<div class="col-6">
         <!--Only show edit/delete button if user has added the recipe-->
