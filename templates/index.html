@@ -6,7 +6,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-10 col-lg-8 col-xl-6 mx-auto welcome">
-                    <p>Welcome <b class="special-font">{{ session['user'].capitalize() }}</b> to<br> <span class="special-font">Recipes &harr; Connected</span> 
+                    <p>Welcome <b class="special-font">
+                    {% if session['user'] %}
+                    {{ session['user'].capitalize() }}
+                    {% endif %}
+                    </b> to<br> <span class="special-font">Recipes &harr; Connected</span> 
                     </p>
                     <p class="md-font welcome-slogan">Share your Recipe with the World!</p>
                     <a href="{{url_for('add_recipe')}}">
