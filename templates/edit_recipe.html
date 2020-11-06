@@ -13,21 +13,21 @@
                 <form action="{{ url_for('update_recipe', 
                             recipe_id=recipe._id) }}" method="POST" class="recipe-form" onsubmit="update_alert()">
                     <div>
-                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user'].capitalize()}}">
+                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{ session['user'].capitalize() }}">
                     </div>
                     <label for="name">Recipe Name</label>
                         <div>
                             <input class="recipe-input xs-font" type="text" name="recipe_name" aria-label="recipe name" 
-                            value="{{recipe.recipe_name}}" maxlength="20" required>
+                            value="{{ recipe.recipe_name }}" maxlength="20" required>
                         </div>
                     <label for="image">Recipe Image</label>
                         <div>
                             <input class="recipe-input xs-font" type="text" name="recipe_image" aria-label="image" 
-                            value="{{recipe.recipe_image}}" required>
+                            value="{{ recipe.recipe_image }}" required>
                         </div>             
                     <label for="description">Description</label>
                         <div>
-                            <input class="recipe-input xs-font" type="text" name="recipe_description" aria-label="description" value="{{recipe.recipe_description}}" maxlength="50" required>
+                            <input class="recipe-input xs-font" type="text" name="recipe_description" aria-label="description" value="{{ recipe.recipe_description }}" maxlength="50" required>
                         </div>
                     <div class="row">
                         <div class="col-md-6 col-12">
@@ -35,10 +35,10 @@
                                 <div>
                                     <select name="recipe_category" class="recipe-select-input xs-font">
                                         <option 
-                                        value="{{recipe.recipe_category}}" hidden selected>
+                                        value="{{ recipe.recipe_category }}" hidden selected>
                                         {{recipe.recipe_category}}</option>
                                     {% for cat in categories %}    
-                                        <option value="{{cat.recipe_category}}">
+                                        <option value="{{ cat.recipe_category }}">
                                         {{cat.recipe_category}}</option> 
                                     {% endfor %}         
                                     </select>
@@ -49,10 +49,10 @@
                                 <div>
                                     <select name="recipe_preptime" class="recipe-select-input xs-font">
                                         <option 
-                                        value="{{recipe.recipe_preptime}}" hidden selected>                        {{recipe.recipe_preptime}}</option>
+                                        value="{{ recipe.recipe_preptime }}" hidden selected>                        {{recipe.recipe_preptime}}</option>
                                     {% for prep in preptime %}
                                         <option 
-                                        value="{{prep.recipe_time}}">
+                                        value="{{ prep.recipe_time }}">
                                         {{prep.recipe_time}}</option> 
                                     {% endfor %}         
                                     </select>

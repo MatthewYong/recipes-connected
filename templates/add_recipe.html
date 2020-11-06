@@ -11,7 +11,7 @@
                 </div> 
                 <form action="{{ url_for('add_recipe_mongodb') }}" method="POST" class="recipe-form" onsubmit="add_alert()" >
                     <div>
-                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{session['user'].capitalize()}}">
+                        <input class="recipe-input xs-font" type="hidden" name="recipe_username" value="{{ session['user'].capitalize() }}">
                     </div>
                     <label for="name">Recipe Name</label>
                         <div>
@@ -31,7 +31,7 @@
                                 <div>
                                     <select name="recipe_category" class="recipe-select-input xs-font">
                                     {% for cat in categories %}
-                                        <option value="{{cat.recipe_category}}">
+                                        <option value="{{ cat.recipe_category }}">
                                         {{cat.recipe_category}}</option> 
                                     {% endfor %}         
                                     </select>
@@ -42,7 +42,7 @@
                                 <div>
                                     <select name="recipe_preptime" class="recipe-select-input xs-font">
                                     {% for prep in preptime %}
-                                        <option value="{{prep.recipe_time}}">
+                                        <option value="{{ prep.recipe_time }}">
                                         {{prep.recipe_time}}</option> 
                                     {% endfor %}         
                                     </select>

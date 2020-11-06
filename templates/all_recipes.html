@@ -13,7 +13,7 @@
             <a href="{{ url_for('get_recipe', recipe_id=recipe._id) }}">
                 <div class="recipe-box">
                     <div class="recipe-image-cover">
-                        <img class="recipe-image" src="{{recipe.recipe_image}}" alt="recipe image">                
+                        <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="recipe image">                
                     </div>
                     <div class="recipe-box-header special-font">
                         <h2>{{recipe.recipe_name}}</h2>       
