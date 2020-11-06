@@ -73,12 +73,14 @@ def category_recipes(category):
 @login_required
 def user_recipes(user):
     """
-    Place all useer added recipes in one page
+    Place all user added recipes in one page
     """
-    user = session['user']
     logged_user = {"recipe_username": user}
     recipes = mongo.db.recipes.find(logged_user)
-    return render_template("user_recipes.html", my_recipes=recipes)
+    if recipes.count():
+        return render_template("user_recipes.html", my_recipes=recipes)
+    else:
+        return render_template('404.html'), 404
 
 
 @app.route('/add_recipe')
