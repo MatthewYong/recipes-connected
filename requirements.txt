@@ -2,7 +2,7 @@ bcrypt==3.2.0
 cachelib==0.1.1
 click==7.1.2
 dnspython==2.0.0
-Flask==1.1.2
+Flask==2.3.2
 Flask-PyMongo==2.3.0
 Flask-Session==0.3.2
 itsdangerous==1.1.0
